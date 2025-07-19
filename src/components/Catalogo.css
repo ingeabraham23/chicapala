@@ -1,0 +1,63 @@
+.contenedor {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .titulo {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  
+  .slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .imagen {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .descripcion {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #555;
+  }
+
+  /* Ajustar el contenedor del carrusel */
+.carrusel {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding-bottom: 40px; /* Espacio extra para los puntos */
+  }
+  
+  /* Personalizar la paginación de Swiper */
+  .swiper-pagination {
+    bottom: 10px !important; /* Baja los puntos un poco más */
+  }
+  
+  .swiper-pagination-bullet {
+    background: #333; /* Cambia el color de los puntos si quieres */
+    opacity: 0.7; /* Hace los puntos un poco transparentes */
+  }
+  
+  .swiper-pagination-bullet-active {
+    background: #007BFF; /* Color del punto activo */
+    opacity: 1; /* Punto activo completamente opaco */
+  }
+  
+  /* Ajustar el texto de descripción */
+  .descripcion {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  

@@ -1,0 +1,78 @@
+.ventas-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem;
+  max-width: 400px;
+  margin: 0 auto;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+}
+
+/* Estilo para los inputs */
+.ventas-input {
+  width: 100%;
+  padding: 0.25rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+/* Botón elegante */
+.ventas-button {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1.1rem;
+  color: #fff;
+  background-color: #007bff;
+  border: 1px solid black;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.ventas-button:hover {
+  background-color: #0056b3;
+}
+
+.ventas-button:active {
+  background-color: #004085;
+  transform: scale(0.98);
+}
+
+.tabla-ventas-joyvolt {
+    border-collapse: collapse;
+    border: 1px solid black;
+    width: 100%;
+  }
+
+  /* Botón elegante */
+.boton-cambio-joyvolt {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1.1rem;
+    color: #000000;
+    background-color: #e30eff;
+    border: 1px solid black;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  /* Botón elegante */
+.boton-pagar-joyvolt {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1.1rem;
+    color: #000000;
+    background-color: #ffaa0d;
+    border: 1px solid black;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }

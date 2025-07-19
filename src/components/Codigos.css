@@ -1,0 +1,207 @@
+/* Estilos específicos para dispositivos móviles */
+@media (max-width: 768px) {
+  @font-face {
+    font-family: "ARCO Typography";
+    src: url("../fonts/ARCO.ttf") format("truetype"); /* Ajusta la ruta según la ubicación de tu archivo de fuente */
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Coolvetica";
+    src: url("../fonts/Coolvetica Rg.otf") format("truetype"); /* Ajusta la ruta según la ubicación de tu archivo de fuente */
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Allerta";
+    src: url("../fonts/allerta.ttf") format("truetype"); /* Ajusta la ruta según la ubicación de tu archivo de fuente */
+    font-weight: bold;
+    font-style: normal;
+  }
+
+  .contenedor-codigos-joyvolt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .separador-codigos-joyvolt {
+    height: 2px;
+    width: 100%;
+    background-color: #000000;
+    margin: 10px 0; /* Puedes ajustar el margen según tus necesidades */
+  }
+
+  .serie-codigos {
+    font-size: 30px;
+    font-weight: bold;
+    color: darkgreen;
+  }
+
+  .fecha-codigos {
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+  }
+
+  .detalle-codigos {
+    text-align: center;
+    width: 100%;
+    font-size: 12px;
+    color: rgb(0, 0, 0);
+  }
+
+  .titulo-mes-codigos {
+    background-color: chartreuse;
+    width: 100%;
+    text-align: center;
+    font-size: 42px;
+    font-weight: bold;
+  }
+
+  .boton-descarga-codigos {
+    background: linear-gradient(135deg, #ff7eb3, #ff758c);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .boton-descarga-codigos:hover {
+    background: linear-gradient(135deg, #ff5f9e, #ff4f82);
+    transform: scale(1.05);
+  }
+
+  .boton-descarga-codigos:active {
+    transform: scale(0.95);
+  }
+
+  .tabla-codigos {
+    border-collapse: collapse;
+  }
+
+  .celda-codigos-img {
+    text-align: center;
+  }
+
+  .celda-codigos-fecha {
+    font-family: "Allerta";
+    letter-spacing: 2px; /* Ajusta el espaciado según sea necesario */
+    color: #eeff00;
+    font-size: 10 px;
+    text-align: center;
+    padding: 1px;
+
+    -webkit-text-stroke-width: 0.5px; /* Grosor del contorno */
+    -webkit-text-stroke-color: #000000; /* Color del contorno */
+  }
+
+  .celda-codigos-serie {
+    font-family: "Allerta";
+    color: #7bff00;
+    text-shadow: 1px 1px 1px #000000; /* Ajusta el sombreado según sea necesario */
+    font-size: 30px;
+    text-align: center;
+    padding: 2px;
+
+    -webkit-text-stroke-width: 0.5px; /* Grosor del contorno */
+    -webkit-text-stroke-color: #000000; /* Color del contorno */
+  }
+
+  .celda-codigos-serie-largo {
+    font-family: "Allerta";
+    color: #00ffdd;
+    text-shadow: 1px 1px 1px #000000; /* Ajusta el sombreado según sea necesario */
+    font-size: 30px;
+    text-align: center;
+    padding: 1px;
+    font-weight: bold;
+
+    -webkit-text-stroke-width: 0.5px; /* Grosor del contorno */
+    -webkit-text-stroke-color: #000000; /* Color del contorno */
+  }
+
+  .menu-flotante {
+  position: fixed;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 2px;
+  z-index: 999;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.boton-menu {
+  display: block;
+  margin-bottom: 2px;
+  background-color: transparent;
+  border: 1px solid #999;
+  padding: 4px 6px;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: left;
+  font-size: 8px;
+  transition: all 0.3s ease;
+}
+
+.boton-menu:hover {
+  background-color: #eee;
+}
+
+.boton-menu.activo {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+.contenido-codigos {
+  padding: 20px;
+}
+
+.seccion-codigos {
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+.seccion-codigos span {
+  display: block;
+  margin-bottom: 8px; /* o el espacio que quieras */
+}
+
+.seccion-codigos.detalle-codigos {
+  text-align: center;
+}
+
+.titulo-mes-codigos {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Botón flotante en la esquina superior derecha */
+.toggle-boton {
+  position: fixed;
+  top: 120px;
+  right: 10px;
+  z-index: 1001;
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+
+}

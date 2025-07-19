@@ -1,0 +1,452 @@
+.tabla-simbolos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Siempre 4 columnas */
+  gap: 12px;
+  padding: 12px;
+}
+
+.tabla-simbolos-rutas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Siempre 4 columnas */
+  gap: 2px;
+  padding: 4px;
+}
+
+.tabla-simbolos-grandes {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Siempre 4 columnas */
+  gap: 12px;
+  padding: 12px;
+}
+
+.celda-simbolo {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 8px;
+  text-align: center;
+  background-color: #fff;
+  font-size: 20px; /* Ajusta para pantallas pequeñas */
+}
+
+.tabla-tipos {
+  width: 100%;
+  max-width: 600px;
+  margin: 40px auto;
+  border-collapse: collapse;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #ffffff;
+}
+
+.tabla-tipos thead {
+  background: #0d47a1;
+  color: white;
+  font-size: 20px;
+}
+
+.celda-tipos-titulo {
+  padding: 16px;
+  text-align: center;
+  background-color: #0d47a1;
+  font-weight: bold;
+  color: #fff;
+  font-size: 22px;
+  letter-spacing: 1px;
+}
+
+.celda-tipos-encabezado {
+  background: #e3f2fd;
+  color: #0d47a1;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  padding: 3px;
+  border-top: 4px solid #90caf9;
+}
+
+.celda-tipos {
+  padding: 3px;
+  border-bottom: 1px solid #e0e0e0;
+  text-align: left;
+  font-size: 16px;
+  color: #333;
+}
+
+.celda-vacia {
+  height: 6px;
+  background: #fafafa;
+}
+
+.terminos {
+  font-size: 14px;
+  padding: 1px;
+  color: #616161;
+  background: #f5f5f5;
+  text-align: center;
+  border-top: 1px solid #ddd;
+}
+
+.copyright {
+  font-size: 13px;
+  padding: 12px;
+  text-align: center;
+  color: #999;
+  background: #eeeeee;
+}
+
+.caracter-titulo {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 1px;
+  color: #ffffff;
+  background-color: rgb(158, 158, 158);
+  padding: 1px; /* Ajusta el valor según lo que necesites */
+  text-align: center; /* Centra el texto horizontalmente */
+}
+
+.caracter-talzintan {
+  font-weight: bold;
+  margin-bottom: 6px;
+  background-color: rgb(43, 255, 0);
+  padding: 10px; /* Ajusta el valor según lo que necesites */
+  text-align: center; /* Centra el texto horizontalmente */
+}
+
+.caracter-sosa {
+  font-weight: bold;
+  margin-bottom: 6px;
+  background-color: rgb(212, 0, 255);
+  padding: 10px; /* Ajusta el valor según lo que necesites */
+  text-align: center; /* Centra el texto horizontalmente */
+}
+
+.caracter-tezo {
+  font-weight: bold;
+  margin-bottom: 6px;
+  background-color: rgb(255, 158, 12);
+  padding: 10px; /* Ajusta el valor según lo que necesites */
+  text-align: center; /* Centra el texto horizontalmente */
+}
+
+.caracter-c {
+  font-weight: bold;
+  margin-bottom: 6px;
+  background-color: rgb(106, 158, 255);
+  padding: 10px; /* Ajusta el valor según lo que necesites */
+  text-align: center; /* Centra el texto horizontalmente */
+}
+
+.caracter {
+  font-weight: bold;
+  margin-bottom: 6px;
+  background-color: lightcoral;
+}
+
+.imagen-simbolo {
+  max-height: 60px;
+  max-width: 60px;
+  object-fit: contain;
+}
+
+.imagen-simbolo-grande {
+  max-height: 60px;
+  max-width: 140px;
+  object-fit: contain;
+}
+
+.titulo-simbolos {
+  text-align: center;
+  font-size: 20px;
+  background-color: aquamarine;
+}
+
+.pie-copyright {
+  text-align: center;
+}
+
+.boton-capturar-simbolos {
+  display: block; /* Hace que respete el centrado con margin */
+  margin: 2rem auto; /* Centrado horizontal y separación arriba/abajo */
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(135deg, #ff416c, #ff4b2b);
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.boton-capturar-simbolos:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.boton-capturar-simbolos:active {
+  transform: scale(0.98);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.contenedor-tabla {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 10px;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.tabla-boton {
+  width: 100%;
+  border-collapse: collapse;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.tabla-boton th,
+.tabla-boton td {
+  padding: 3px 4px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.tabla-boton thead th {
+  background-color: #f2f2f2;
+  font-size: 16px;
+}
+
+.tabla-boton tbody tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+.tabla-boton tbody tr:hover {
+  background-color: #f0f0f0;
+}
+
+.descripcion {
+  font-size: 14px;
+  color: #333;
+  background-color: #fcfcfc;
+  padding-top: 0;
+  border-top: none;
+}
+
+.titulo-rojo {
+  background-color: #ffe5e5;
+  color: #a30000;
+  font-size: 18px;
+}
+
+.titulo-verde {
+  background-color: #e4f9e4;
+  color: #007500;
+  font-size: 18px;
+}
+
+.icono-boton {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  margin-right: 8px;
+  vertical-align: middle;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+}
+
+.icono-boton.rojo {
+  background-color: #d60000;
+}
+
+.icono-boton.verde {
+  background-color: #00aa00;
+}
+
+.iled-pro {
+  font-size: 26px;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.titulo-iled {
+  text-align: center;
+}
+
+.guia-fondo {
+  background: linear-gradient(to right, #f9f9f9, #eef2f3);
+  padding: 1px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: auto;
+}
+
+.guia-titulo {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 3px;
+  color: #333;
+}
+
+.guia-tabla {
+  width: 100%;
+  border-collapse: separate;
+  text-align: center;
+}
+
+.guia-fila {
+  text-align: center;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.guia-fila td {
+  padding: 2px;
+}
+
+.paso-contenido {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.paso-numero {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #0d6efd;
+  margin-bottom: 2px;
+}
+
+.paso-descripcion {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 2px;
+}
+
+.paso-imagen img {
+  width: 64px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.paso-imagen-grande img {
+  width: 250px; /* o más grande si quieres */
+}
+
+.pie {
+  font-size: 15px;
+  text-align: center;
+}
+
+/* Colores suaves por paso */
+.paso-color-1 {
+  background-color: #e3f2fd; /* azul claro */
+  color: #0d47a1;
+}
+
+.paso-color-2 {
+  background-color: #e8f5e9; /* verde muy claro */
+  color: #1b5e20;
+}
+
+.paso-color-3 {
+  background-color: #fff8e1; /* amarillo claro */
+  color: #f57f17;
+}
+
+.paso-color-4 {
+  background-color: #fce4ec; /* rosa claro */
+  color: #880e4f;
+}
+
+.imagen-boton {
+  text-align: center;
+}
+
+.paso-imagen-boton {
+  text-align: center;
+}
+
+.paso-imagen-boton img {
+  width: 64px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.imagen-guia {
+  text-align: center;
+}
+
+.imagen-guia img {
+  width: 22rem;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.tabla-condiciones {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Segoe UI', sans-serif;
+  background: #fdfdfd;
+  color: #333;
+  border: 1px solid #ccc;
+  margin: 2rem 0;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.tabla-condiciones th,
+.tabla-condiciones td {
+  padding: 1px;
+  border-bottom: 1px solid #e6e6e6;
+  vertical-align: top;
+}
+
+.celda-condiciones-titulo {
+  background: #222;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+.celda-condiciones-subtitulo {
+  background: #f0f0f0;
+  font-weight: bold;
+  color: #333;
+  font-size: 12px;
+  text-align: center;
+}
+
+.celda-condiciones {
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+.celda-contacto {
+  font-size: 10px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.tabla-condiciones ul {
+  padding-left: 1rem;
+  list-style-type: disc;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 10px;
+  color: #777;
+  padding-top: 1rem;
+  background: #fafafa;
+}
+

@@ -1,0 +1,85 @@
+/* Contenedor principal */
+.tabla-container {
+    width: 98%;
+    margin: auto;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Título principal */
+  .tabla-titulo {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Contenedor de cada mes */
+  .mes-container {
+    margin-bottom: 30px;
+  }
+  
+  /* Título del mes */
+  .mes-titulo {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+  }
+  
+  /* Tabla */
+  .tabla {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  /* Encabezado de la tabla */
+  .tabla thead {
+    background-color: #555;
+    color: white;
+  }
+  
+  /* Celdas */
+  .tabla th, .tabla td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  /* Filas alternas para mejorar la visualización */
+  .tabla tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  /* Columna del índice */
+  .tabla td:first-child, .tabla th:first-child {
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .celda-fecha{
+    font-size: 10px;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .celda-contador{
+    font-size: 10px;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .filtros {
+  margin-bottom: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.filtros input {
+  padding: 0.5rem;
+  font-size: 1rem;
+  width: 150px;
+}
+  
+  

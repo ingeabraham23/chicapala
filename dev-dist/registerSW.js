@@ -1,0 +1,1 @@
+if('serviceWorker' in navigator) navigator.serviceWorker.register('/joyvolt/dev-sw.js?dev-sw', { scope: '/joyvolt/', type: 'classic' })

@@ -1,0 +1,65 @@
+.contenedor-curso-joyvolt {
+    text-align: center;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .titulo-enlace-curso {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .descripcion-enlace-curso {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 15px;
+  }
+  
+  .link-container-curso {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .boton-enlace-curso,
+  .boton-copiar-curso {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  .boton-enlace-curso:hover,
+  .boton-copiar-curso:hover {
+    background: linear-gradient(135deg, #0056b3, #003f7f);
+    transform: scale(1.05);
+  }
+  
+  .boton-copiar-curso {
+    background: linear-gradient(135deg, #28a745, #1e7e34);
+  }
+  
+  .boton-copiar-curso:hover {
+    background: linear-gradient(135deg, #1e7e34, #155d27);
+  }
+
+  .direccion-web-curso{
+    font-size: 14px;
+  }
+
+  .separador-curso-joyvolt {
+    height: 2px;
+    width: 100%;
+    background-color: #000000;
+    margin: 10px 0; /* Puedes ajustar el margen según tus necesidades */
+  }
