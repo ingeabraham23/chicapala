@@ -5,7 +5,7 @@ import Navbar from "./components/Navbar";
 import Inventario from "./components/Inventario";
 import Ventas from "./components/Ventas";
 import Administracion from "./components/Administrar";
-import Catalogo from "./components/catalogo";
+import Catalogo from "./components/Catalogo";
 import Codigos from "./components/Codigos";
 import Kit from "./components/Kit";
 import Curso from "./components/Curso";
@@ -13,6 +13,7 @@ import TablaCodigos from "./components/TablaCodigos";
 import Simbolos from "./components/Simbolos";
 import 'react-perfect-scrollbar/dist/css/styles.css';
 import GifGallery from "./components/GifGallery";
+import TablaRutas from "./components/TablaRutas";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
             <Route path="/kit" element={<Kit />} />
             <Route path="/curso" element={<Curso />} />
             <Route path="/gifs" element={<GifGallery />} />
+            <Route path="/rol" element={<TablaRutas />} />
           </Routes>
         </div>
     </HashRouter>

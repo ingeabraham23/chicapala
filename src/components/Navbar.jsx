@@ -7,7 +7,7 @@ import {
     faTableCells,
     faTableList,
     faPlay,
-    faGift,
+    faImages,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faQrcode } from '@fortawesome/free-solid-svg-icons/faQrcode';
@@ -22,7 +22,8 @@ const navigationItems = [
   { path: '/simbolos', icon: faTableCells, label: 'Simbolos' },
   { path: '/kit', icon: faScrewdriverWrench, label: 'Kit' },
   { path: '/curso', icon: faPlay, label: 'Curso' },
-  { path: '/gifs', icon: faGift, label: 'Gifs' },
+  { path: '/gifs', icon: faImages, label: 'Gifs' },
+  { path: '/rol', icon: faTableList, label: 'Rol' },
 
 ];
 

@@ -19,7 +19,7 @@ export default defineConfig({
         dir: "ltr",
         display_override: ["standalone", "fullscreen"],
         display: "standalone",
-        scope: "/joyvolt/",
+        scope: "/chicapala/",
         icons: [
           {
             src: "pwa-64x64.png",
@@ -50,13 +50,13 @@ export default defineConfig({
         name: "PWA JoyVolt Auto",
         orientation: "portrait",
         prefer_related_application: false,
-        short_name: "JoyVolt",
-        start_url: "/joyvolt/",
+        short_name: "Chicapala",
+        start_url: "/chicapala/",
         theme_color: "#317EFB",
       },
     }),
   ],
-  base: "/joyvolt/",
+  base: "/chicapala/",
   server: {
     host: true,
   },

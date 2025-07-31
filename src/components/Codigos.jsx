@@ -123,7 +123,9 @@ const Codigos = () => {
   const tablaa85ef6641d44Ref = useRef(null); //1000
   const tablad4f9bd641d44Ref = useRef(null); //1000
   const tablad402be641d44Ref = useRef(null); //1000
-  // const tablad402be641d44Ref = useRef(null); //1000
+  const tabla5586992Ref = useRef(null); //1000
+  // const tabla5586992Ref = useRef(null); //1000
+
 
 
 
@@ -266,7 +268,7 @@ const Codigos = () => {
             <td className="celda-codigos-img">
               <img
                 style={{ width: "95%", height: "auto" }}
-                src="./codigos/01 OCTUBRE 2024/11-10-2024 SE-n12231344.png"
+                src={`${import.meta.env.BASE_URL}codigos/01-OCTUBRE-2024/11-10-2024-SE-n12231344.png`}
               />
             </td>
           </tr>
@@ -3424,6 +3426,37 @@ const Codigos = () => {
         >
           Descargar Imagen
         </button>
+
+        <div className="separador-codigos-joyvolt"></div>
+        <span className="detalle-codigos">
+          (Fecha de entrega Desconocida.)
+        </span>
+        <span className="detalle-codigos">(Nombre Desconocido)</span>
+        <span className="detalle-codigos">(Tiene fecha de julio porque se genero un nuevo codigo, pero su fecha es incierta, habra que guiarse por el numero de version.)</span>
+        <span className="detalle-codigos">(version 3.7)</span>
+        <table ref={tabla5586992Ref} className="tabla-codigos">
+          <tr>
+            <td className="celda-codigos-serie-largo">SE-n5586992</td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-fecha">29-07-2025</td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-img">
+              <img
+                style={{ width: "95%", height: "auto" }}
+                src="./codigos/09 JULIO 2025/29-07-2025 SE-n5586992.png"
+              />
+            </td>
+          </tr>
+        </table>
+        <button
+          onClick={() => capturarTablaLarga(tabla5586992Ref.current)}
+          className="boton-descarga-codigos"
+        >
+          Descargar Imagen
+        </button>
+
 
       </section>
     </div>

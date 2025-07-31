@@ -1,0 +1,102 @@
+.rol-container {
+  padding: 1rem;
+  font-family: sans-serif;
+}
+
+.titulo-principal {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.mes-seccion {
+  margin-bottom: 2rem;
+}
+
+.mes-titulo {
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #e2e8f0;
+  padding: 0.4rem 0.75rem;
+  border-radius: 0.5rem;
+  margin-bottom: 0.5rem;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+/* Contenedor con flex para 2 columnas lado a lado */
+.columnas-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+/* Cada columna ocupa casi la mitad del ancho */
+.columna {
+  width: 49%;
+  box-sizing: border-box;
+}
+
+.tabla-rutas {
+  width: 100%;
+  font-size: 0.75rem;
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+  background-color: white;
+}
+
+.tabla-rutas th,
+.tabla-rutas td {
+  border: 1px solid #ccc;
+  padding: 0.3rem 0.4rem;
+  text-align: left;
+}
+
+.tabla-rutas thead {
+  background-color: #f1f5f9;
+}
+
+.hoy {
+  background-color: #fff3cd;
+  font-weight: bold;
+}
+
+/* Colores por ruta */
+.ruta-seccion-23 td {
+  background-color: #e6f4ea;
+}
+.ruta-atoluca td {
+  background-color: #f0f8ff;
+}
+.ruta-san-salvador td {
+  background-color: #fff0f5;
+}
+.ruta-ixtlahuaca td {
+  background-color: #fef9e7;
+}
+.ruta-huehueymico td {
+  background-color: #f3e5f5;
+}
+.ruta-espiritu td {
+  background-color: #e0f7fa;
+}
+.ruta-san-miguel td {
+  background-color: #ffecb3;
+}
+.ruta-ayotzingo td {
+  background-color: #ffe0b2;
+}
+.ruta-cipreces td {
+  background-color: #e8eaf6;
+}
+.ruta-infonavit td {
+  background-color: #dcedc8;
+}
+
+/* Prioridad para el día actual */
+.hoy td {
+  background-color: #ffe082 !important;
+  font-weight: bold;
+}
