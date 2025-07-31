@@ -424,7 +424,7 @@ const Codigos = () => {
         <div className="separador-codigos-joyvolt"></div>
         <span className="detalle-codigos">(Fecha de entrega desconocida)</span>
         <span className="detalle-codigos">
-          Era de heriberto rojo 20 y Se le vendio a infeliz
+          Era de heriberto rojo 20 y Se le vendio a Gabriel Bandala
         </span>
         <table ref={tabla15023616Ref} className="tabla-codigos">
           <tr>
@@ -482,7 +482,7 @@ const Codigos = () => {
           (Fecha de entrega 22 de noviembre de 2024)
         </span>
         <span className="detalle-codigos">
-          Lo tenia la muerte, se lo vendio a infeliz e infeliz se lo vendio a
+          Lo tenia la muerte, se lo vendio a Gabriel Bandala y Gabriel Bandala se lo vendio a
           uno de Ruta 01
         </span>
         <table ref={tabla12259500Ref} className="tabla-codigos">

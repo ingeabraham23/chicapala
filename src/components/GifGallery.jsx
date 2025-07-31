@@ -53,13 +53,13 @@ const GifGallery = () => {
         {gifList.map((gif, index) => (
           <div key={index} className="gif-card">
             <img
-              src={`/joyvolt/gifs/${gif}`}
+              src={`${import.meta.env.BASE_URL}gifs/${gif}`}
               alt={`GIF ${index}`}
               className="gif-imagen"
             />
             <p className="gif-nombre">{formatearNombre(gif)}</p>
             <a
-              href={`/joyvolt/gifs/${gif}`}
+              href={`${import.meta.env.BASE_URL}gifs/${gif}`}
               download
               className="boton-descargar"
             >

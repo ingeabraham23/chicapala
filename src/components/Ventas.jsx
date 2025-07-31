@@ -194,7 +194,7 @@ function Ventas() {
   const imprimirTicketCompleto = async () => {
     try {
       // Cargar imagen del logo
-      const response = await fetch("/joyvolt/logo ticket.png");
+      const response = await fetch(`${import.meta.env.BASE_URL}logo ticket.png`);
       const blob = await response.blob();
       const reader = new FileReader();
       const imageLoadPromise = new Promise((resolve) => {
@@ -211,6 +211,7 @@ function Ventas() {
       const fecha = new Date().toLocaleString("es-MX");
       let ticket = "";
       ticket += "JoyVolt Auto Corporation\n";
+      ticket += "Erika Anacleto Ramon\n";
       ticket += "Calle Aquiles Serdan #7 Yopi\n";
       ticket += "Chignautla puebla. C.P. 73950\n";
       ticket += "WhatsApp 231 159 1893\n";

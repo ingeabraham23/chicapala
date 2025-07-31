@@ -24,6 +24,7 @@ const navigationItems = [
   { path: '/curso', icon: faPlay, label: 'Curso' },
   { path: '/gifs', icon: faImages, label: 'Gifs' },
   { path: '/rol', icon: faTableList, label: 'Rol' },
+  { path: '/rol129', icon: faTableList, label: '129' },
 
 ];
 

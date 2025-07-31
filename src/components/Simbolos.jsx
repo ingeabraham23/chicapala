@@ -110,22 +110,22 @@ const pasos = [
   {
     paso: "Paso 1",
     descripcion: "Abre la Play Store en tu celular",
-    imagen: "/joyvolt/guia/playstore-icon.png", // asegúrate de tener esta imagen en public o usar import
+    imagen: `${import.meta.env.BASE_URL}guia/playstore-icon.png`,
   },
   {
     paso: "Paso 2",
     descripcion: 'Da click en buscar y escribe el nombre de la app: "iLED PRO"',
-    imagen: "/joyvolt/guia/lupa.png",
+    imagen: `${import.meta.env.BASE_URL}guia/lupa.png`,
   },
   {
     paso: "Paso 3",
     descripcion: "Verifica que el ícono coincida",
-    imagen: "/joyvolt/guia/iconoapp.png",
+    imagen: `${import.meta.env.BASE_URL}guia/iconoapp.png`,
   },
   {
     paso: "Paso 4",
     descripcion: "Presiona Instalar y espera que se descargue",
-    imagen: "/joyvolt/guia/instalar.png",
+    imagen: `${import.meta.env.BASE_URL}guia/instalar.png`,
   },
 ];
 
@@ -163,7 +163,7 @@ const Simbolos = () => {
             <div className="celda-simbolo" key={index}>
               <div className="caracter">{char}</div>
               <img
-                src={`/joyvolt/simbolos/${imagenes[index]}`}
+                src={`${import.meta.env.BASE_URL}simbolos/${imagenes[index]}`}
                 alt={`Símbolo`}
                 className="imagen-simbolo"
               />
@@ -187,7 +187,7 @@ const Simbolos = () => {
             <div className="celda-simbolo" key={index}>
               <div className="caracter">{char}</div>
               <img
-                src={`/joyvolt/simbolos/${imagenes2[index]}`}
+                src={`${import.meta.env.BASE_URL}simbolos/${imagenes2[index]}`}
                 alt={`Símbolo ${char}`}
                 className="imagen-simbolo"
               />
@@ -210,7 +210,7 @@ const Simbolos = () => {
             <div className="celda-simbolo" key={index}>
               <div className="caracter">{char}</div>
               <img
-                src={`/joyvolt/simbolos/${imagenes3[index]}`}
+                src={`${import.meta.env.BASE_URL}simbolos/${imagenes3[index]}`}
                 alt={`Símbolo ${char}`}
                 className="imagen-simbolo"
               />
@@ -233,7 +233,7 @@ const Simbolos = () => {
             <div className="celda-simbolo" key={index}>
               <div className="caracter">{char}</div>
               <img
-                src={`/joyvolt/simbolos/${imagenes4[index]}`}
+                src={`${import.meta.env.BASE_URL}simbolos/${imagenes4[index]}`}
                 alt={`Símbolo ${char}`}
                 className="imagen-simbolo-grande"
               />
@@ -546,7 +546,7 @@ const Simbolos = () => {
               <th colSpan={2} className="imagen-boton">
                 <div className="paso-imagen-boton">
                   <img
-                    src={"/joyvolt/guia/boton-rojo.png"}
+                    src={`${import.meta.env.BASE_URL}guia/boton-rojo.png`}
                     alt={"Boton rojo"}
                   />
                 </div>
@@ -620,7 +620,7 @@ const Simbolos = () => {
               <th colSpan={2} className="imagen-boton">
                 <div className="paso-imagen-boton">
                   <img
-                    src={"/joyvolt/guia/boton-verde.png"}
+                    src={`${import.meta.env.BASE_URL}guia/boton-verde.png`}
                     alt={"Boton verde"}
                   />
                 </div>
@@ -734,7 +734,7 @@ const Simbolos = () => {
       <br></br>
 
       <div className="imagen-guia">
-        <img src={"/joyvolt/guia/botones_app.png"} alt={"Guia botones app"} />
+        <img src={`${import.meta.env.BASE_URL}guia/botones_app.png`} alt={"Guia botones app"} />
       </div>
       <br></br>
       <br></br>
