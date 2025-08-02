@@ -15,6 +15,7 @@ import 'react-perfect-scrollbar/dist/css/styles.css';
 import GifGallery from "./components/GifGallery";
 import TablaRutas from "./components/TablaRutas";
 import Rol129 from "./components/Rol129";
+import BitacoraTransporte from "./components/BitacoraTransporte";
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
             <Route path="/gifs" element={<GifGallery />} />
             <Route path="/rol" element={<TablaRutas />} />
             <Route path="/rol129" element={<Rol129 />} />
+            <Route path="/bitacora" element={<BitacoraTransporte />} />
           </Routes>
         </div>
     </HashRouter>

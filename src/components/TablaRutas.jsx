@@ -56,7 +56,7 @@ const TablaRutas = () => {
 
   const rutasFiltradas = todasLasRutas.filter(({ fecha }) => {
     const diferencia = (fecha - hoy) / (1000 * 60 * 60 * 24);
-    return diferencia >= -10 && diferencia <= 40;
+    return diferencia >= -3 && diferencia <= 25;
   });
 
   const rutasPorMes = rutasFiltradas.reduce((acc, item) => {

@@ -12,7 +12,7 @@ const gifList = [
   "feria_1_ultrahd.gif",
   "feria_2.gif",
   "feria_2_ultrahd.gif",
-  "ghost_pacmanonda.gif",
+  "ghost_pacman.gif",
   "honda.gif",
   "ken.gif",
   "kong_music.gif",

@@ -25,6 +25,7 @@ const navigationItems = [
   { path: '/gifs', icon: faImages, label: 'Gifs' },
   { path: '/rol', icon: faTableList, label: 'Rol' },
   { path: '/rol129', icon: faTableList, label: '129' },
+  { path: '/bitacora', icon: faTableList, label: 'Bitacora' },
 
 ];
 

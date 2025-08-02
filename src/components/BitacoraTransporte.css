@@ -1,0 +1,73 @@
+/* --- General --- */
+.contenedor-bitacora {
+  padding: 15px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f4f6f9;
+}
+
+/* Título principal */
+h1 {
+  text-align: center;
+  color: #002b5b;
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+}
+
+/* Subtítulos (categorías) */
+h2 {
+  margin-top: 25px;
+  padding: 6px 10px;
+  font-size: 1.2rem;
+  color: white;
+  border-radius: 6px;
+}
+
+/* --- Colores distintos por categoría --- */
+h2.fluids        { background: #007bff; }
+h2.brakes        { background: #28a745; }
+h2.steering      { background: #17a2b8; }
+h2.suspension    { background: #6f42c1; }
+h2.electric      { background: #fd7e14; }
+h2.transmission  { background: #20c997; }
+h2.mechanic      { background: #e83e8c; }
+h2.body          { background: #343a40; }
+h2.dashboard     { background: #ffc107; color: #222; }
+
+/* --- Datos de unidad --- */
+.unidad-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.unidad-info label {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  color: #002b5b;
+  font-size: 0.9rem;
+}
+
+.unidad-info input {
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  margin-top: 3px;
+}
+
+/* --- Botones --- */
+.acciones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.acciones button {
+  background: #007bff;
+  color: wh
+}
