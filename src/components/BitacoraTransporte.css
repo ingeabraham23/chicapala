@@ -9,7 +9,7 @@
 h1 {
   text-align: center;
   color: #002b5b;
-  font-size: 1.6rem;
+  font-size: 1rem;
   margin-bottom: 20px;
 }
 
@@ -67,7 +67,61 @@ h2.dashboard     { background: #ffc107; color: #222; }
   margin-bottom: 20px;
 }
 
-.acciones button {
-  background: #007bff;
-  color: wh
+/* Estilos generales para botones */
+button {
+  padding: 8px 14px;
+  margin: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  border: 1px solid #333;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
+
+/* Botón inicializar */
+.btn-inicializar {
+  background-color: #007bff; /* azul */
+  color: white;
+}
+.btn-inicializar:hover {
+  background-color: #0056b3;
+}
+
+/* Botón ordenar */
+.btn-ordenar {
+  background-color: #17a2b8; /* celeste */
+  color: white;
+}
+.btn-ordenar:hover {
+  background-color: #0d6e7c;
+}
+
+/* Botón exportar PDF */
+.btn-exportar {
+  background-color: #28a745; /* verde */
+  color: white;
+}
+.btn-exportar:hover {
+  background-color: #1e7e34;
+}
+
+/* Botón exportar formato */
+.btn-formato {
+  background-color: #6f42c1; /* morado */
+  color: white;
+}
+.btn-formato:hover {
+  background-color: #4e2a91;
+}
+
+/* Botón limpiar */
+.btn-limpiar {
+  background-color: #dc3545; /* rojo */
+  color: white;
+}
+.btn-limpiar:hover {
+  background-color: #a71d2a;
+}
+
+

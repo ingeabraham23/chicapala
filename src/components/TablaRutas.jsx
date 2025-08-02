@@ -1,21 +1,42 @@
-import React from "react";
+import React, { useState } from "react";
 import { format, addDays, parse } from "date-fns";
 import { es } from "date-fns/locale";
 import "./TablaRutas.css";
 
-const rol = [
-  { ruta: "Sección 23", dias: 4 },
-  { ruta: "Atoluca", dias: 3 },
-  { ruta: "San Salvador", dias: 2 },
-  { ruta: "Ixtlahuaca", dias: 1 },
-  { ruta: "Huehueymico", dias: 2 },
-  { ruta: "Espíritu Santo", dias: 1 },
-  { ruta: "San Miguel", dias: 2 },
-  { ruta: "Ayotzingo", dias: 4 },
-  { ruta: "Atoluca", dias: 1 },
-  { ruta: "Cipreces", dias: 4 },
-  { ruta: "Infonavit", dias: 3 },
-];
+// 🔹 Definición de roles por unidad (cada una con su fecha de inicio)
+const rolesPorUnidad = {
+  138: {
+    inicio: "2025-07-25",
+    rol: [
+      { ruta: "Sección 23", dias: 4 },
+      { ruta: "Atoluca", dias: 3 },
+      { ruta: "San Salvador", dias: 2 },
+      { ruta: "Ixtlahuaca", dias: 1 },
+      { ruta: "Huehueymico", dias: 2 },
+      { ruta: "Espíritu Santo", dias: 1 },
+      { ruta: "San Miguel", dias: 2 },
+      { ruta: "Ayotzingo", dias: 4 },
+      { ruta: "Atoluca", dias: 1 },
+      { ruta: "Cipreces", dias: 4 },
+      { ruta: "Infonavit", dias: 3 },
+    ],
+  },
+  129: {
+    inicio: "2025-07-30", // 👈 ejemplo, unidad 139 arranca en otra fecha
+    rol: [
+      { ruta: "Ayotzingo", dias: 4 },
+      { ruta: "Atoluca", dias: 1 },
+      { ruta: "Cipreces", dias: 3 },
+      { ruta: "Infonavit", dias: 3 },
+      { ruta: "Sección 23", dias: 4 },
+      { ruta: "Atoluca", dias: 3 },
+      { ruta: "San Salvador", dias: 2 },
+      { ruta: "Ixtlahuaca", dias: 2 },
+      { ruta: "Huehueymico", dias: 2 },
+      { ruta: "San Miguel", dias: 3 },
+    ],
+  },
+};
 
 // Mapa ruta -> clase de color
 const rutaClases = {
@@ -33,11 +54,15 @@ const rutaClases = {
 
 const TablaRutas = () => {
   const hoy = new Date();
-  const inicioRol = parse("2025-07-25", "yyyy-MM-dd", new Date());
+  const [unidadSeleccionada, setUnidadSeleccionada] = useState("138");
 
-  const generarRutas = () => {
+  // 🔹 Generar calendario según unidad
+  const generarRutas = (unidad) => {
+    const { inicio, rol } = rolesPorUnidad[unidad];
+    const fechaInicio = parse(inicio, "yyyy-MM-dd", new Date());
+
     const dias = [];
-    let fecha = new Date(inicioRol);
+    let fecha = new Date(fechaInicio);
     let i = 0;
 
     while (dias.length < 100) {
@@ -48,11 +73,10 @@ const TablaRutas = () => {
       }
       i++;
     }
-
     return dias;
   };
 
-  const todasLasRutas = generarRutas();
+  const todasLasRutas = generarRutas(unidadSeleccionada);
 
   const rutasFiltradas = todasLasRutas.filter(({ fecha }) => {
     const diferencia = (fecha - hoy) / (1000 * 60 * 60 * 24);
@@ -68,7 +92,23 @@ const TablaRutas = () => {
 
   return (
     <div className="rol-container">
-      <h2 className="titulo-principal">Rol Ferxxos - Ruta 01 - Unidad 138</h2>
+      <h2 className="titulo-principal">Rol de Rutas por Unidad</h2>
+      {/* 🔹 Selector de unidad */}
+      <div className="unidad-selector">
+        <label>Seleccionar unidad: </label>
+        <select
+          value={unidadSeleccionada}
+          onChange={(e) => setUnidadSeleccionada(e.target.value)}
+        >
+          {Object.keys(rolesPorUnidad).map((unidad) => (
+            <option key={unidad} value={unidad}>
+              Unidad {unidad}
+            </option>
+          ))}
+        </select>
+      </div>
+
+      {/* 🔹 Renderizado de la tabla */}
       {Object.entries(rutasPorMes).map(([mes, items]) => {
         const mitad = Math.ceil(items.length / 2);
         const izquierda = items.slice(0, mitad);
@@ -76,7 +116,9 @@ const TablaRutas = () => {
 
         return (
           <div key={mes} className="mes-seccion">
-            <h3 className="mes-titulo">{mes.charAt(0).toUpperCase() + mes.slice(1)}</h3>
+            <h3 className="mes-titulo">
+              {mes.charAt(0).toUpperCase() + mes.slice(1)}
+            </h3>
             <div className="columnas-container">
               <div className="columna">
                 <table className="tabla-rutas">
@@ -88,11 +130,14 @@ const TablaRutas = () => {
                   </thead>
                   <tbody>
                     {izquierda.map(({ fecha, ruta }, idx) => {
-                      const esHoy = format(fecha, "yyyy-MM-dd") === format(hoy, "yyyy-MM-dd");
+                      const esHoy =
+                        format(fecha, "yyyy-MM-dd") ===
+                        format(hoy, "yyyy-MM-dd");
                       return (
                         <tr
                           key={idx}
-                          className={`${rutaClases[ruta] || ""} ${esHoy ? "hoy" : ""}`}
+                          className={`${rutaClases[ruta] || ""} ${esHoy ? "hoy" : ""
+                            }`}
                         >
                           <td>{format(fecha, "EEEE d", { locale: es })}</td>
                           <td>{ruta}</td>
@@ -113,11 +158,14 @@ const TablaRutas = () => {
                   </thead>
                   <tbody>
                     {derecha.map(({ fecha, ruta }, idx) => {
-                      const esHoy = format(fecha, "yyyy-MM-dd") === format(hoy, "yyyy-MM-dd");
+                      const esHoy =
+                        format(fecha, "yyyy-MM-dd") ===
+                        format(hoy, "yyyy-MM-dd");
                       return (
                         <tr
                           key={idx}
-                          className={`${rutaClases[ruta] || ""} ${esHoy ? "hoy" : ""}`}
+                          className={`${rutaClases[ruta] || ""} ${esHoy ? "hoy" : ""
+                            }`}
                         >
                           <td>{format(fecha, "EEEE d", { locale: es })}</td>
                           <td>{ruta}</td>

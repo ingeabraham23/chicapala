@@ -6,8 +6,9 @@
 .titulo-principal {
   font-size: 1.2rem;
   font-weight: bold;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1px;
   text-align: center;
+  color: black;
 }
 
 .mes-seccion {
@@ -99,4 +100,14 @@
 .hoy td {
   background-color: #ffe082 !important;
   font-weight: bold;
+}
+
+.unidad-selector {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.unidad-selector select {
+  padding: 0.3rem 0.5rem;
+  font-size: 1rem;
 }

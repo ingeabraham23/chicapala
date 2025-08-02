@@ -8,24 +8,29 @@ import {
     faTableList,
     faPlay,
     faImages,
+    faRectangleAd,
+    faMagnifyingGlass,
+    faBookOpenReader,
+    faCartPlus,
+    faRectangleList,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faQrcode } from '@fortawesome/free-solid-svg-icons/faQrcode';
 
 const navigationItems = [
   { path: '/', icon: faTableList, label: 'Inventario' },
-  { path: '/ventas', icon: faMoneyBill, label: 'Ventas' },
-  { path: '/catalogo', icon: faMoneyBill, label: 'Catalogo' },
+  { path: '/ventas', icon: faCartPlus, label: 'Ventas' },
+  { path: '/catalogo', icon: faRectangleList, label: 'Catalogo' },
   { path: '/administar', icon: faDeleteLeft, label: 'Administrar' },
   { path: '/codigos', icon: faQrcode, label: 'Codigos' },
-  { path: '/tabla', icon: faTableCells, label: 'Tabla' },
-  { path: '/simbolos', icon: faTableCells, label: 'Simbolos' },
+  { path: '/tabla', icon: faMagnifyingGlass, label: 'Buscar' },
+  { path: '/simbolos', icon: faBookOpenReader, label: 'Guias' },
   { path: '/kit', icon: faScrewdriverWrench, label: 'Kit' },
   { path: '/curso', icon: faPlay, label: 'Curso' },
   { path: '/gifs', icon: faImages, label: 'Gifs' },
   { path: '/rol', icon: faTableList, label: 'Rol' },
-  { path: '/rol129', icon: faTableList, label: '129' },
-  { path: '/bitacora', icon: faTableList, label: 'Bitacora' },
+  { path: '/bitacora', icon: faTableCells, label: 'Bitacora' },
+  { path: '/letreros', icon: faRectangleAd, label: 'Letreros' },
 
 ];
 
