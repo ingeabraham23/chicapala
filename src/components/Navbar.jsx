@@ -30,7 +30,6 @@ const navigationItems = [
   { path: '/gifs', icon: faImages, label: 'Gifs' },
   { path: '/rol', icon: faTableList, label: 'Rol' },
   { path: '/bitacora', icon: faTableCells, label: 'Bitacora' },
-  { path: '/letreros', icon: faRectangleAd, label: 'Letreros' },
 
 ];
 
