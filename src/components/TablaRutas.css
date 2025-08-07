@@ -18,10 +18,21 @@
 .mes-titulo {
   font-size: 1rem;
   font-weight: bold;
-  background-color: #e2e8f0;
+  background-color: #460246;
   padding: 0.4rem 0.75rem;
   border-radius: 0.5rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1px;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.unidad-titulo {
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #3482e9;
+  border-radius: 0.5rem;
+  padding: 5px;
+  margin-bottom: 1px;
   text-transform: capitalize;
   text-align: center;
 }
@@ -51,7 +62,6 @@
 .tabla-rutas th,
 .tabla-rutas td {
   border: 1px solid #ccc;
-  padding: 0.3rem 0.4rem;
   text-align: left;
 }
 
@@ -60,8 +70,9 @@
 }
 
 .hoy {
-  background-color: #fff3cd;
   font-weight: bold;
+  font-size: 16px;
+  border: 3px solid black;
 }
 
 /* Colores por ruta */
@@ -98,8 +109,8 @@
 
 /* Prioridad para el día actual */
 .hoy td {
-  background-color: #ffe082 !important;
   font-weight: bold;
+  font-size: 16px;
 }
 
 .unidad-selector {
@@ -110,4 +121,8 @@
 .unidad-selector select {
   padding: 0.3rem 0.5rem;
   font-size: 1rem;
+}
+
+.celda-ruta{
+  font-size: 14px;
 }
