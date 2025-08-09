@@ -3005,9 +3005,9 @@ const Codigos = () => {
 
         <div className="separador-codigos-joyvolt"></div>
         <span className="detalle-codigos">
-          (Fecha de entrega Viernes 04 de julio.)
+          (Fecha de entrega Viernes 08 de Agosto.)
         </span>
-        <span className="detalle-codigos">(Nombre desconocido)</span>
+        <span className="detalle-codigos">(Dionisio)</span>
         <span className="detalle-codigos">(version 4.1)</span>
         <table ref={tabla6091bc641d44Ref} className="tabla-codigos">
           <tr>
