@@ -54,6 +54,14 @@
     color: rgb(0, 0, 0);
   }
 
+  .detalle-codigos-extra {
+    text-align: center;
+    font-weight: bold;
+    width: 100%;
+    font-size: 12px;
+    color: rgb(255, 0, 0);
+  }
+
   .titulo-mes-codigos {
     background-color: chartreuse;
     width: 100%;
@@ -104,6 +112,12 @@
     -webkit-text-stroke-color: #000000; /* Color del contorno */
   }
 
+  .celda-codigos-imagen {
+    font-size: 10px;
+    text-align: center;
+    padding: 0px;
+  }
+
   .celda-codigos-serie {
     font-family: "Allerta";
     color: #7bff00;
@@ -130,78 +144,76 @@
   }
 
   .menu-flotante {
-  position: fixed;
-  top: 50%;
-  left: 20px;
-  transform: translateY(-50%);
-  background: rgba(255, 255, 255, 0.9);
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  padding: 2px;
-  z-index: 999;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
+    position: fixed;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 2px;
+    z-index: 999;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
 
-.boton-menu {
-  display: block;
-  margin-bottom: 2px;
-  background-color: transparent;
-  border: 1px solid #999;
-  padding: 4px 6px;
-  border-radius: 4px;
-  cursor: pointer;
-  text-align: left;
-  font-size: 8px;
-  transition: all 0.3s ease;
-}
+  .boton-menu {
+    display: block;
+    margin-bottom: 2px;
+    background-color: transparent;
+    border: 1px solid #999;
+    padding: 4px 6px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: left;
+    font-size: 8px;
+    transition: all 0.3s ease;
+  }
 
-.boton-menu:hover {
-  background-color: #eee;
-}
+  .boton-menu:hover {
+    background-color: #eee;
+  }
 
-.boton-menu.activo {
-  background-color: #007bff;
-  color: white;
-  border-color: #007bff;
-}
+  .boton-menu.activo {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+  }
 
-.contenido-codigos {
-  padding: 20px;
-}
+  .contenido-codigos {
+    padding: 20px;
+  }
 
-.seccion-codigos {
-  margin-bottom: 100px;
-  text-align: center;
-}
+  .seccion-codigos {
+    margin-bottom: 100px;
+    text-align: center;
+  }
 
-.seccion-codigos span {
-  display: block;
-  margin-bottom: 8px; /* o el espacio que quieras */
-}
+  .seccion-codigos span {
+    display: block;
+    margin-bottom: 8px; /* o el espacio que quieras */
+  }
 
-.seccion-codigos.detalle-codigos {
-  text-align: center;
-}
+  .seccion-codigos.detalle-codigos {
+    text-align: center;
+  }
 
-.titulo-mes-codigos {
-  font-size: 24px;
-  margin-bottom: 20px;
-}
+  .titulo-mes-codigos {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
 
-/* Botón flotante en la esquina superior derecha */
-.toggle-boton {
-  position: fixed;
-  top: 120px;
-  right: 10px;
-  z-index: 1001;
-  background-color: #333;
-  color: white;
-  border: none;
-  padding: 10px 14px;
-  border-radius: 8px;
-  font-size: 20px;
-  cursor: pointer;
-}
-
-
+  /* Botón flotante en la esquina superior derecha */
+  .toggle-boton {
+    position: fixed;
+    top: 120px;
+    right: 10px;
+    z-index: 1001;
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 14px;
+    border-radius: 8px;
+    font-size: 20px;
+    cursor: pointer;
+  }
 }

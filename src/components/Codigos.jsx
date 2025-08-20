@@ -5,10 +5,8 @@ import { useRef, useState, useEffect } from "react";
 import html2canvas from "html2canvas";
 
 const Codigos = () => {
-
   const [mostrarMenu, setMostrarMenu] = useState(false);
   const [activo, setActivo] = useState(null);
-
 
   const tabla12231344Ref = useRef(null);
   const tabla6170660Ref = useRef(null);
@@ -126,11 +124,6 @@ const Codigos = () => {
   const tabla5586992Ref = useRef(null); //1000
   // const tabla5586992Ref = useRef(null); //1000
 
-
-
-
-
-
   const capturarTabla = (tabla) => {
     if (!tabla) return;
 
@@ -189,7 +182,6 @@ const Codigos = () => {
   );
 
   useEffect(() => {
-
     const handleScroll = () => {
       // eslint-disable-next-line no-unused-vars
       const scrollY = window.scrollY;
@@ -220,9 +212,7 @@ const Codigos = () => {
   };
 
   return (
-
     <div className="contenedor-codigos-joyvolt">
-
       {/* Botón flotante en la esquina superior derecha */}
       <button
         className="toggle-boton"
@@ -230,7 +220,6 @@ const Codigos = () => {
       >
         {mostrarMenu ? "✖" : "☰"}
       </button>
-
 
       {/* Menú flotante */}
       {mostrarMenu && (
@@ -268,7 +257,9 @@ const Codigos = () => {
             <td className="celda-codigos-img">
               <img
                 style={{ width: "95%", height: "auto" }}
-                src={`${import.meta.env.BASE_URL}codigos/01-OCTUBRE-2024/11-10-2024-SE-n12231344.png`}
+                src={`${
+                  import.meta.env.BASE_URL
+                }codigos/01-OCTUBRE-2024/11-10-2024-SE-n12231344.png`}
               />
             </td>
           </tr>
@@ -482,8 +473,8 @@ const Codigos = () => {
           (Fecha de entrega 22 de noviembre de 2024)
         </span>
         <span className="detalle-codigos">
-          Lo tenia la muerte, se lo vendio a Gabriel Bandala y Gabriel Bandala se lo vendio a
-          uno de Ruta 01
+          Lo tenia la muerte, se lo vendio a Gabriel Bandala y Gabriel Bandala
+          se lo vendio a uno de Ruta 01
         </span>
         <table ref={tabla12259500Ref} className="tabla-codigos">
           <tr>
@@ -574,7 +565,9 @@ const Codigos = () => {
         <div className="separador-codigos-joyvolt"></div>
         <span className="detalle-codigos">(Martes 01 de julio 2025)</span>
         <span className="detalle-codigos">
-          Originalmente de la muerte 46 y actualmente lo trae lobo 28, Se mando a actualizar a la version 4.1 y cambio de numero de serie. Pero sigue siendo el mismo de arriba.
+          Originalmente de la muerte 46 y actualmente lo trae lobo 28, Se mando
+          a actualizar a la version 4.1 y cambio de numero de serie. Pero sigue
+          siendo el mismo de arriba.
         </span>
         <table ref={tablaf4a8422a13d8Ref} className="tabla-codigos">
           <tr>
@@ -2334,6 +2327,14 @@ const Codigos = () => {
             <td className="celda-codigos-fecha">27-05-2025</td>
           </tr>
           <tr>
+            <td className="celda-codigos-imagen">
+              <img
+                style={{ width: "40%", height: "auto" }}
+                src="./codigos/urbanosrojos.png"
+              />
+            </td>
+          </tr>
+          <tr>
             <td className="celda-codigos-img">
               <img
                 style={{ width: "95%", height: "auto" }}
@@ -2362,6 +2363,9 @@ const Codigos = () => {
           (Fecha de entrega martes 17 de junio.)
         </span>
         <span className="detalle-codigos">(Nombre desconocido)</span>
+        <span className="detalle-codigos-extra">
+          (Se le cambio el diodo, ya que quemaba fusibles)
+        </span>
         <span className="detalle-codigos">(version 4.1)</span>
         <table ref={tabla2c6b2c65b7a0Ref} className="tabla-codigos">
           <tr>
@@ -2564,7 +2568,9 @@ const Codigos = () => {
         <span className="detalle-codigos">
           (Fecha de entrega jueves 19 de junio.)
         </span>
-        <span className="detalle-codigos">(Lo tiene abraham desde viernes 20 de junio)</span>
+        <span className="detalle-codigos">
+          (Lo tiene abraham desde viernes 20 de junio)
+        </span>
         <span className="detalle-codigos">(version 4.1)</span>
         <table ref={tabla209e65a84320Ref} className="tabla-codigos">
           <tr>
@@ -2618,7 +2624,6 @@ const Codigos = () => {
           Descargar Imagen
         </button>
 
-
         <div className="separador-codigos-joyvolt"></div>
         <span className="detalle-codigos">
           (Fecha de entrega jueves 19 de junio.)
@@ -2647,7 +2652,6 @@ const Codigos = () => {
         >
           Descargar Imagen
         </button>
-
 
         <div className="separador-codigos-joyvolt"></div>
         <span className="detalle-codigos">
@@ -2678,7 +2682,6 @@ const Codigos = () => {
           Descargar Imagen
         </button>
 
-
         <div className="separador-codigos-joyvolt"></div>
         <span className="detalle-codigos">
           (Fecha de entrega jueves 19 de junio.)
@@ -2707,7 +2710,6 @@ const Codigos = () => {
         >
           Descargar Imagen
         </button>
-
 
         <div className="separador-codigos-joyvolt"></div>
         <span className="detalle-codigos">
@@ -2738,7 +2740,6 @@ const Codigos = () => {
           Descargar Imagen
         </button>
 
-
         <div className="separador-codigos-joyvolt"></div>
         <span className="detalle-codigos">
           (Fecha de entrega jueves 19 de junio.)
@@ -2767,7 +2768,6 @@ const Codigos = () => {
         >
           Descargar Imagen
         </button>
-
 
         <div className="separador-codigos-joyvolt"></div>
         <span className="detalle-codigos">
@@ -2802,7 +2802,9 @@ const Codigos = () => {
         <span className="detalle-codigos">
           (Fecha de entrega jueves 19 de junio.)
         </span>
-        <span className="detalle-codigos">(Ruta 1. No es de JoyVolt se lo compraron al de ayotzingo)</span>
+        <span className="detalle-codigos">
+          (Ruta 1. No es de JoyVolt se lo compraron al de ayotzingo)
+        </span>
         <span className="detalle-codigos">(version 3.2)</span>
         <table ref={tabla5607896Ref} className="tabla-codigos">
           <tr>
@@ -2855,7 +2857,6 @@ const Codigos = () => {
         >
           Descargar Imagen
         </button>
-
 
         <div className="separador-codigos-joyvolt"></div>
         <span className="detalle-codigos">
@@ -2914,7 +2915,6 @@ const Codigos = () => {
         >
           Descargar Imagen
         </button>
-
 
         <div className="separador-codigos-joyvolt"></div>
         <span className="detalle-codigos">
@@ -3090,15 +3090,13 @@ const Codigos = () => {
           Descargar Imagen
         </button>
 
-
-
-
         <div className="separador-codigos-joyvolt"></div>
         <span className="detalle-codigos">
           (Fecha de entrega Miercoles 02 de julio.)
         </span>
         <span className="detalle-codigos">
-          (Llego en mayo pero estaba bloqueado y se regreso para refurbished. y llego en junio.)
+          (Llego en mayo pero estaba bloqueado y se regreso para refurbished. y
+          llego en junio.)
         </span>
         <span className="detalle-codigos">(Nombre desconocido)</span>
         <span className="detalle-codigos">(version 4.1)</span>
@@ -3124,7 +3122,6 @@ const Codigos = () => {
         >
           Descargar Imagen
         </button>
-
 
         <div className="separador-codigos-joyvolt"></div>
         <span className="detalle-codigos">
@@ -3155,11 +3152,8 @@ const Codigos = () => {
           Descargar Imagen
         </button>
 
-
         <div className="separador-codigos-joyvolt"></div>
-        <span className="detalle-codigos">
-          (Fecha de entrega Desconocida.)
-        </span>
+        <span className="detalle-codigos">(Fecha de entrega Desconocida.)</span>
         <span className="detalle-codigos">(Ferxxos Ruta 1 #138 ULTRAHD)</span>
         <span className="detalle-codigos">(version 4.1)</span>
         <table ref={tabla34bc64a84320Ref} className="tabla-codigos">
@@ -3186,7 +3180,6 @@ const Codigos = () => {
         </button>
       </section>
 
-
       <section
         id="julio-2025"
         ref={refs.current["julio-2025"]}
@@ -3195,10 +3188,12 @@ const Codigos = () => {
         <h1 className="titulo-mes-codigos">JULIO 2025</h1>
 
         <div className="separador-codigos-joyvolt"></div>
+        <span className="detalle-codigos">(Fecha de entrega Desconocida.)</span>
         <span className="detalle-codigos">
-          (Fecha de entrega Desconocida.)
+          (Gabriel bandala. Se lo compro a uno de verdes en $800. Su codigo
+          generado es con fecha de julio de 2025, pero su fecha original es
+          desconocida. Por su version parece ser de octubre de 2024.)
         </span>
-        <span className="detalle-codigos">(Gabriel bandala. Se lo compro a uno de verdes en $800. Su codigo generado es con fecha de julio de 2025, pero su fecha original es desconocida. Por su version parece ser de octubre de 2024.)</span>
         <span className="detalle-codigos">(version 4.1)</span>
         <table ref={tabla4549032Ref} className="tabla-codigos">
           <tr>
@@ -3224,9 +3219,7 @@ const Codigos = () => {
         </button>
 
         <div className="separador-codigos-joyvolt"></div>
-        <span className="detalle-codigos">
-          (Fecha de entrega Desconocida.)
-        </span>
+        <span className="detalle-codigos">(Fecha de entrega Desconocida.)</span>
         <span className="detalle-codigos">(Nombre Desconocido)</span>
         <span className="detalle-codigos">(version 4.1)</span>
         <table ref={tabla2ca4bc641d44Ref} className="tabla-codigos">
@@ -3282,9 +3275,7 @@ const Codigos = () => {
         </button>
 
         <div className="separador-codigos-joyvolt"></div>
-        <span className="detalle-codigos">
-          (Fecha de entrega Desconocida.)
-        </span>
+        <span className="detalle-codigos">(Fecha de entrega Desconocida.)</span>
         <span className="detalle-codigos">(Nombre Desconocido)</span>
         <span className="detalle-codigos">(version 4.1)</span>
         <table ref={tabla344ef6641d44Ref} className="tabla-codigos">
@@ -3311,9 +3302,7 @@ const Codigos = () => {
         </button>
 
         <div className="separador-codigos-joyvolt"></div>
-        <span className="detalle-codigos">
-          (Fecha de entrega Desconocida.)
-        </span>
+        <span className="detalle-codigos">(Fecha de entrega Desconocida.)</span>
         <span className="detalle-codigos">(Nombre Desconocido)</span>
         <span className="detalle-codigos">(version 4.1)</span>
         <table ref={tabla9095bc641d44Ref} className="tabla-codigos">
@@ -3340,17 +3329,25 @@ const Codigos = () => {
         </button>
 
         <div className="separador-codigos-joyvolt"></div>
-        <span className="detalle-codigos">
-          (Fecha de entrega Desconocida.)
-        </span>
-        <span className="detalle-codigos">(Nombre Desconocido)</span>
+        <span className="detalle-codigos">(Fecha de entrega Desconocida.)</span>
+        <span className="detalle-codigos">(Castro Ruta 03 Unidad 22)</span>
+        <span className="ruta"></span>
         <span className="detalle-codigos">(version 4.1)</span>
         <table ref={tablaa85ef6641d44Ref} className="tabla-codigos">
           <tr>
             <td className="celda-codigos-serie-largo">SE-na85ef6641d44</td>
           </tr>
+
           <tr>
             <td className="celda-codigos-fecha">10-07-2025</td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-imagen">
+              <img
+                style={{ width: "20%", height: "auto" }}
+                src="./codigos/ruta03.png"
+              />
+            </td>
           </tr>
           <tr>
             <td className="celda-codigos-img">
@@ -3369,10 +3366,11 @@ const Codigos = () => {
         </button>
 
         <div className="separador-codigos-joyvolt"></div>
-        <span className="detalle-codigos">
-          (Fecha de entrega Desconocida.)
-        </span>
+        <span className="detalle-codigos">(Fecha de entrega Desconocida.)</span>
         <span className="detalle-codigos">(Nombre Desconocido)</span>
+        <span className="detalle-codigos-extra">
+          (Se le cambio el diodo, ya que quemaba fusibles)
+        </span>
         <span className="detalle-codigos">(version 4.1)</span>
         <table ref={tablad4f9bd641d44Ref} className="tabla-codigos">
           <tr>
@@ -3397,12 +3395,13 @@ const Codigos = () => {
           Descargar Imagen
         </button>
 
-
         <div className="separador-codigos-joyvolt"></div>
-        <span className="detalle-codigos">
-          (Fecha de entrega Desconocida.)
-        </span>
+        <span className="detalle-codigos">(Fecha de entrega Desconocida.)</span>
         <span className="detalle-codigos">(Nombre Desconocido)</span>
+        <span className="detalle-codigos-extra">
+          (Se le soldo una pieza en el display, ya que no encendia la
+          retroilumincaion del LCD, anteriormente era de la ruta 03 unidad 22.)
+        </span>
         <span className="detalle-codigos">(version 4.1)</span>
         <table ref={tablad402be641d44Ref} className="tabla-codigos">
           <tr>
@@ -3428,11 +3427,12 @@ const Codigos = () => {
         </button>
 
         <div className="separador-codigos-joyvolt"></div>
-        <span className="detalle-codigos">
-          (Fecha de entrega Desconocida.)
-        </span>
+        <span className="detalle-codigos">(Fecha de entrega Desconocida.)</span>
         <span className="detalle-codigos">(Nombre Desconocido)</span>
-        <span className="detalle-codigos">(Tiene fecha de julio porque se genero un nuevo codigo, pero su fecha es incierta, habra que guiarse por el numero de version.)</span>
+        <span className="detalle-codigos">
+          (Tiene fecha de julio porque se genero un nuevo codigo, pero su fecha
+          es incierta, habra que guiarse por el numero de version.)
+        </span>
         <span className="detalle-codigos">(version 3.7)</span>
         <table ref={tabla5586992Ref} className="tabla-codigos">
           <tr>
@@ -3456,8 +3456,6 @@ const Codigos = () => {
         >
           Descargar Imagen
         </button>
-
-
       </section>
     </div>
   );
