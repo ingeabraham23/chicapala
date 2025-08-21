@@ -147,7 +147,7 @@ const datos = {
       codigo: "SE-n5628772",
       color: "linear-gradient(to bottom, #730202, white, #fff377)",
       numero: "88",
-      estado: "ok",
+      estado: "HD",
     }, //Ruta 02 88
     { fecha: "17-03-2025", codigo: "SE-n5558608", color: "#9cf94e" }, //verde
     {
@@ -243,7 +243,9 @@ const datos = {
   ],
 
   "JUNIO 2025": [
-    { fecha: "09-06-2025", codigo: "2c6b2c65b7a0", color: "white" },
+    { fecha: "09-06-2025", codigo: "2c6b2c65b7a0", color: "#9cf94e",
+      estado: "ok",
+    }, //verde
     { fecha: "09-06-2025", codigo: "2c7a64a84320", color: "white" },
     {
       fecha: "09-06-2025",
@@ -295,7 +297,7 @@ const datos = {
     { fecha: "25-06-2025", codigo: "40fcbd641d44", color: "white" },
     { fecha: "25-06-2025", codigo: "48c0f6641d44", color: "white" },
     { fecha: "25-06-2025", codigo: "0890bc641d44", color: "white" },
-    { fecha: "25-06-2025", codigo: "6091bc641d44", color: "white" },
+    { fecha: "25-06-2025", codigo: "6091bc641d44", color: "#9cf94e", estado: "ok" }, //verde
     { fecha: "25-06-2025", codigo: "8429bd641d44", color: "white" },
     { fecha: "25-06-2025", codigo: "dce5f6641d44", color: "white" },
     { fecha: "25-06-2025", codigo: "e8afbc641d44", color: "white" },
@@ -309,6 +311,7 @@ const datos = {
   ],
 
   "JULIO 2025": [
+    { fecha: "01-07-2025", codigo: "ac10bb57ddc4", color: "#9cf94e", numero:"198", estado: "ok" }, //verde
     { fecha: "04-07-2025", codigo: "4549032", color: "#29e8ff", estado: "ok" }, //azul ruta 01 Gabriel bandala
     { fecha: "10-07-2025", codigo: "2ca4bc641d44", color: "white" },
     {
@@ -328,7 +331,8 @@ const datos = {
       estado: "ok",
     }, //Ruta 03 22
     { fecha: "10-07-2025", codigo: "d4f9bd641d44", color: "white" },
-    { fecha: "10-07-2025", codigo: "402be641d44", color: "white" },
+    { fecha: "10-07-2025", codigo: "d402be641d44", color: "white" },
+    { fecha: "29-07-2025", codigo: "5586992", color: "white" },
   ],
 };
 

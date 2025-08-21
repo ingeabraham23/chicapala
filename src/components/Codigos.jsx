@@ -7,6 +7,8 @@ import html2canvas from "html2canvas";
 const Codigos = () => {
   const [mostrarMenu, setMostrarMenu] = useState(false);
   const [activo, setActivo] = useState(null);
+  // Estado para la imagen seleccionada
+  const [imagenSeleccionada, setImagenSeleccionada] = useState("./codigos/sinimagen.png");
 
   const tabla12231344Ref = useRef(null);
   const tabla6170660Ref = useRef(null);
@@ -111,6 +113,8 @@ const Codigos = () => {
   const tablafcb2f6641d44Ref = useRef(null); //1000
   const tabla34bc64a84320Ref = useRef(null); //1000
 
+  //01 DE JULIO
+  const tablaac10bb57ddc4Ref = useRef(null); //1000
   //04 DE JULIO
   const tabla4549032Ref = useRef(null); //1000
   //10 DE JULIO
@@ -161,6 +165,15 @@ const Codigos = () => {
       link.click();
     });
   };
+
+  // Lista de opciones
+  const opcionesImagen = [
+    { label: "Sin imagen", value: "./codigos/sinimagen.png" },
+    { label: "Urbano Verde", value: "./codigos/urbanosverdes.png" },
+    { label: "Urbano Rojo", value: "./codigos/urbanosrojos.png" },
+    { label: "Ruta 01", value: "./codigos/ruta01.png" },
+    { label: "Ruta 03", value: "./codigos/ruta03.png" },
+  ];
 
   const secciones = [
     { id: "octubre-2024", titulo: "Oct 2024" },
@@ -285,7 +298,9 @@ const Codigos = () => {
             <td className="celda-codigos-img">
               <img
                 style={{ width: "95%", height: "auto" }}
-                src="./codigos/01 OCTUBRE 2024/28-10-2024 SE-n8979088.png"
+                src={`${
+                  import.meta.env.BASE_URL
+                }codigos/01-OCTUBRE-2024/28-10-2024 SE-n8979088.png`}
               />
             </td>
           </tr>
@@ -297,6 +312,10 @@ const Codigos = () => {
           Descargar Imagen
         </button>
       </section>
+
+      {/* NOVIEMBRE 2024 * NOVIEMBRE 2024 * NOVIEMBRE 2024 * NOVIEMBRE 2024 * NOVIEMBRE 2024 * NOVIEMBRE 2024*/}
+      {/* NOVIEMBRE 2024 * NOVIEMBRE 2024 * NOVIEMBRE 2024 * NOVIEMBRE 2024 * NOVIEMBRE 2024 * NOVIEMBRE 2024*/}
+      {/* NOVIEMBRE 2024 * NOVIEMBRE 2024 * NOVIEMBRE 2024 * NOVIEMBRE 2024 * NOVIEMBRE 2024 * NOVIEMBRE 2024*/}
 
       <section
         id="noviembre-2024"
@@ -315,6 +334,14 @@ const Codigos = () => {
           </tr>
           <tr>
             <td className="celda-codigos-fecha">11-11-2024</td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-imagen">
+              <img
+                style={{ width: "auto", height: "50px" }}
+                src="./codigos/urbanosrojos.png"
+              />
+            </td>
           </tr>
           <tr>
             <td className="celda-codigos-img">
@@ -341,6 +368,14 @@ const Codigos = () => {
           </tr>
           <tr>
             <td className="celda-codigos-fecha">11-11-2024</td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-imagen">
+              <img
+                style={{ width: "auto", height: "50px" }}
+                src="./codigos/ruta01.png"
+              />
+            </td>
           </tr>
           <tr>
             <td className="celda-codigos-img">
@@ -370,6 +405,14 @@ const Codigos = () => {
             <td className="celda-codigos-fecha">11-11-2024</td>
           </tr>
           <tr>
+            <td className="celda-codigos-imagen">
+              <img
+                style={{ width: "auto", height: "50px" }}
+                src="./codigos/urbanosrojos.png"
+              />
+            </td>
+          </tr>
+          <tr>
             <td className="celda-codigos-img">
               <img
                 style={{ width: "95%", height: "auto" }}
@@ -395,6 +438,14 @@ const Codigos = () => {
           </tr>
           <tr>
             <td className="celda-codigos-fecha">11-11-2024</td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-imagen">
+              <img
+                style={{ width: "auto", height: "50px" }}
+                src="./codigos/urbanosrojos.png"
+              />
+            </td>
           </tr>
           <tr>
             <td className="celda-codigos-img">
@@ -425,6 +476,14 @@ const Codigos = () => {
             <td className="celda-codigos-fecha">11-11-2024</td>
           </tr>
           <tr>
+            <td className="celda-codigos-imagen">
+              <img
+                style={{ width: "auto", height: "50px" }}
+                src="./codigos/ruta01.png"
+              />
+            </td>
+          </tr>
+          <tr>
             <td className="celda-codigos-img">
               <img
                 style={{ width: "95%", height: "auto" }}
@@ -442,7 +501,8 @@ const Codigos = () => {
 
         <div className="separador-codigos-joyvolt"></div>
         <span className="detalle-codigos">
-          (Fecha de entrega miercoles 20 de noviembre de 2024)
+          (Fecha de entrega desconocida. No lo vendimos nosotros, lo vendio
+          Tadeo.)
         </span>
         <span className="detalle-codigos">Samuel Rojo 18</span>
         <table ref={tabla482720Ref} className="tabla-codigos">
@@ -451,6 +511,14 @@ const Codigos = () => {
           </tr>
           <tr>
             <td className="celda-codigos-fecha">18-11-2024</td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-imagen">
+              <img
+                style={{ width: "auto", height: "50px" }}
+                src="./codigos/urbanosrojos.png"
+              />
+            </td>
           </tr>
           <tr>
             <td className="celda-codigos-img">
@@ -484,6 +552,14 @@ const Codigos = () => {
             <td className="celda-codigos-fecha">18-11-2024</td>
           </tr>
           <tr>
+            <td className="celda-codigos-imagen">
+              <img
+                style={{ width: "auto", height: "50px" }}
+                src="./codigos/ruta01.png"
+              />
+            </td>
+          </tr>
+          <tr>
             <td className="celda-codigos-img">
               <img
                 style={{ width: "95%", height: "auto" }}
@@ -499,6 +575,10 @@ const Codigos = () => {
           Descargar Imagen
         </button>
       </section>
+
+      {/*ENERO 2025 * ENERO 2025 * ENERO 2025 * ENERO 2025 * ENERO 2025 * ENERO 2025 * ENERO 2025 */}
+      {/*ENERO 2025 * ENERO 2025 * ENERO 2025 * ENERO 2025 * ENERO 2025 * ENERO 2025 * ENERO 2025 */}
+      {/*ENERO 2025 * ENERO 2025 * ENERO 2025 * ENERO 2025 * ENERO 2025 * ENERO 2025 * ENERO 2025 */}
 
       <section
         id="enero-2025"
@@ -517,6 +597,14 @@ const Codigos = () => {
           </tr>
           <tr>
             <td className="celda-codigos-fecha">13-01-2025</td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-imagen">
+              <img
+                style={{ width: "auto", height: "50px" }}
+                src="./codigos/ruta01.png"
+              />
+            </td>
           </tr>
           <tr>
             <td className="celda-codigos-img">
@@ -545,6 +633,14 @@ const Codigos = () => {
           </tr>
           <tr>
             <td className="celda-codigos-fecha">13-01-2025</td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-imagen">
+              <img
+                style={{ width: "auto", height: "50px" }}
+                src="./codigos/urbanosrojos.png"
+              />
+            </td>
           </tr>
           <tr>
             <td className="celda-codigos-img">
@@ -577,6 +673,14 @@ const Codigos = () => {
             <td className="celda-codigos-fecha">13-01-2025</td>
           </tr>
           <tr>
+            <td className="celda-codigos-imagen">
+              <img
+                style={{ width: "auto", height: "50px" }}
+                src="./codigos/urbanosrojos.png"
+              />
+            </td>
+          </tr>
+          <tr>
             <td className="celda-codigos-img">
               <img
                 style={{ width: "95%", height: "auto" }}
@@ -601,6 +705,14 @@ const Codigos = () => {
           </tr>
           <tr>
             <td className="celda-codigos-fecha">13-01-2025</td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-imagen">
+              <img
+                style={{ width: "auto", height: "50px" }}
+                src="./codigos/urbanosverdes.png"
+              />
+            </td>
           </tr>
           <tr>
             <td className="celda-codigos-img">
@@ -629,6 +741,14 @@ const Codigos = () => {
           </tr>
           <tr>
             <td className="celda-codigos-fecha">13-01-2025</td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-imagen">
+              <img
+                style={{ width: "auto", height: "50px" }}
+                src="./codigos/urbanosrojos.png"
+              />
+            </td>
           </tr>
           <tr>
             <td className="celda-codigos-img">
@@ -711,6 +831,14 @@ const Codigos = () => {
             <td className="celda-codigos-fecha">21-01-2025</td>
           </tr>
           <tr>
+            <td className="celda-codigos-imagen">
+              <img
+                style={{ width: "auto", height: "50px" }}
+                src="./codigos/urbanosrojos.png"
+              />
+            </td>
+          </tr>
+          <tr>
             <td className="celda-codigos-img">
               <img
                 style={{ width: "95%", height: "auto" }}
@@ -779,6 +907,10 @@ const Codigos = () => {
         </button>
       </section>
 
+      {/* FEBRERO 2025 * FEBRERO 2025 * FEBRERO 2025 * FEBRERO 2025 * FEBRERO 2025 * FEBRERO 2025*/}
+      {/* FEBRERO 2025 * FEBRERO 2025 * FEBRERO 2025 * FEBRERO 2025 * FEBRERO 2025 * FEBRERO 2025*/}
+      {/* FEBRERO 2025 * FEBRERO 2025 * FEBRERO 2025 * FEBRERO 2025 * FEBRERO 2025 * FEBRERO 2025*/}
+
       <section
         id="febrero-2025"
         ref={refs.current["febrero-2025"]}
@@ -800,6 +932,14 @@ const Codigos = () => {
           </tr>
           <tr>
             <td className="celda-codigos-fecha">01-02-2025</td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-imagen">
+              <img
+                style={{ width: "auto", height: "50px" }}
+                src="./codigos/urbanosverdes.png"
+              />
+            </td>
           </tr>
           <tr>
             <td className="celda-codigos-img">
@@ -833,6 +973,14 @@ const Codigos = () => {
             <td className="celda-codigos-fecha">04-02-2025</td>
           </tr>
           <tr>
+            <td className="celda-codigos-imagen">
+              <img
+                style={{ width: "auto", height: "50px" }}
+                src="./codigos/urbanosverdes.png"
+              />
+            </td>
+          </tr>
+          <tr>
             <td className="celda-codigos-img">
               <img
                 style={{ width: "95%", height: "auto" }}
@@ -863,6 +1011,14 @@ const Codigos = () => {
             <td className="celda-codigos-fecha">16-02-2025</td>
           </tr>
           <tr>
+            <td className="celda-codigos-imagen">
+              <img
+                style={{ width: "auto", height: "50px" }}
+                src="./codigos/urbanosverdes.png"
+              />
+            </td>
+          </tr>
+          <tr>
             <td className="celda-codigos-img">
               <img
                 style={{ width: "95%", height: "auto" }}
@@ -889,6 +1045,14 @@ const Codigos = () => {
           </tr>
           <tr>
             <td className="celda-codigos-fecha">16-02-2025</td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-imagen">
+              <img
+                style={{ width: "auto", height: "50px" }}
+                src="./codigos/ruta01.png"
+              />
+            </td>
           </tr>
           <tr>
             <td className="celda-codigos-img">
@@ -947,6 +1111,14 @@ const Codigos = () => {
             <td className="celda-codigos-fecha">16-02-2025</td>
           </tr>
           <tr>
+            <td className="celda-codigos-imagen">
+              <img
+                style={{ width: "auto", height: "50px" }}
+                src="./codigos/urbanosverdes.png"
+              />
+            </td>
+          </tr>
+          <tr>
             <td className="celda-codigos-img">
               <img
                 style={{ width: "95%", height: "auto" }}
@@ -964,13 +1136,21 @@ const Codigos = () => {
 
         <div className="separador-codigos-joyvolt"></div>
         <span className="detalle-codigos">(Fecha de entrega desconocida)</span>
-        <span className="detalle-codigos">(Nombre desconocido)</span>
+        <span className="detalle-codigos">(Luna. Urbano rojo 39.)</span>
         <table ref={tabla5642500Ref} className="tabla-codigos">
           <tr>
             <td className="celda-codigos-serie">SE-n5642500</td>
           </tr>
           <tr>
             <td className="celda-codigos-fecha">16-02-2025</td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-imagen">
+              <img
+                style={{ width: "auto", height: "50px" }}
+                src="./codigos/urbanosrojos.png"
+              />
+            </td>
           </tr>
           <tr>
             <td className="celda-codigos-img">
@@ -1053,6 +1233,14 @@ const Codigos = () => {
             <td className="celda-codigos-fecha">18-02-2025</td>
           </tr>
           <tr>
+            <td className="celda-codigos-imagen">
+              <img
+                style={{ width: "auto", height: "50px" }}
+                src="./codigos/ruta03.png"
+              />
+            </td>
+          </tr>
+          <tr>
             <td className="celda-codigos-img">
               <img
                 style={{ width: "95%", height: "auto" }}
@@ -1069,7 +1257,7 @@ const Codigos = () => {
         </button>
 
         <div className="separador-codigos-joyvolt"></div>
-        <span className="detalle-codigos">(Fecha de entrega desconocida)</span>
+        <span className="detalle-codigos">(Fecha de entrega desconocida. Vendido por Tadeo.)</span>
         <span className="detalle-codigos">(Alejandro Rojo 30)</span>
         <table ref={tabla5638324Ref} className="tabla-codigos">
           <tr>
@@ -1077,6 +1265,14 @@ const Codigos = () => {
           </tr>
           <tr>
             <td className="celda-codigos-fecha">20-02-2025</td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-imagen">
+              <img
+                style={{ width: "auto", height: "50px" }}
+                src="./codigos/urbanosrojos.png"
+              />
+            </td>
           </tr>
           <tr>
             <td className="celda-codigos-img">
@@ -1095,6 +1291,10 @@ const Codigos = () => {
         </button>
       </section>
 
+      {/* MARZO 2025 * MARZO 2025 * MARZO 2025 * MARZO 2025 * MARZO 2025 * MARZO 2025 * MARZO 2025 */}
+      {/* MARZO 2025 * MARZO 2025 * MARZO 2025 * MARZO 2025 * MARZO 2025 * MARZO 2025 * MARZO 2025 */}
+      {/* MARZO 2025 * MARZO 2025 * MARZO 2025 * MARZO 2025 * MARZO 2025 * MARZO 2025 * MARZO 2025 */}
+
       <section
         id="marzo-2025"
         ref={refs.current["marzo-2025"]}
@@ -1112,6 +1312,14 @@ const Codigos = () => {
           </tr>
           <tr>
             <td className="celda-codigos-fecha">11-03-2025</td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-imagen">
+              <img
+                style={{ width: "auto", height: "50px" }}
+                src="./codigos/ruta01.png"
+              />
+            </td>
           </tr>
           <tr>
             <td className="celda-codigos-img">
@@ -1230,6 +1438,14 @@ const Codigos = () => {
             <td className="celda-codigos-fecha">12-03-2025</td>
           </tr>
           <tr>
+            <td className="celda-codigos-imagen">
+              <img
+                style={{ width: "auto", height: "50px" }}
+                src="./codigos/urbanosrojos.png"
+              />
+            </td>
+          </tr>
+          <tr>
             <td className="celda-codigos-img">
               <img
                 style={{ width: "95%", height: "auto" }}
@@ -1250,7 +1466,7 @@ const Codigos = () => {
           (Fecha de entrega sabado 15 de marzo)
         </span>
         <span className="detalle-codigos">
-          (JoyBoy Rojo 36. Se le vendio a Ruta 02 Numero )
+          (JoyBoy Rojo 36. Se le vendio a Ruta 02 Numero 88)
         </span>
         <span className="detalle-codigos">(Letrero grande version 3.6)</span>
         <table ref={tabla5628772Ref} className="tabla-codigos">
@@ -1290,6 +1506,14 @@ const Codigos = () => {
             <td className="celda-codigos-fecha">17-03-2025</td>
           </tr>
           <tr>
+            <td className="celda-codigos-imagen">
+              <img
+                style={{ width: "auto", height: "50px" }}
+                src="./codigos/urbanosverdes.png"
+              />
+            </td>
+          </tr>
+          <tr>
             <td className="celda-codigos-img">
               <img
                 style={{ width: "95%", height: "auto" }}
@@ -1317,6 +1541,14 @@ const Codigos = () => {
           </tr>
           <tr>
             <td className="celda-codigos-fecha">17-03-2025</td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-imagen">
+              <img
+                style={{ width: "auto", height: "50px" }}
+                src="./codigos/ruta01.png"
+              />
+            </td>
           </tr>
           <tr>
             <td className="celda-codigos-img">
@@ -1348,6 +1580,14 @@ const Codigos = () => {
             <td className="celda-codigos-fecha">17-03-2025</td>
           </tr>
           <tr>
+            <td className="celda-codigos-imagen">
+              <img
+                style={{ width: "auto", height: "50px" }}
+                src="./codigos/urbanosrojos.png"
+              />
+            </td>
+          </tr>
+          <tr>
             <td className="celda-codigos-img">
               <img
                 style={{ width: "95%", height: "auto" }}
@@ -1375,6 +1615,14 @@ const Codigos = () => {
           </tr>
           <tr>
             <td className="celda-codigos-fecha">17-03-2025</td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-imagen">
+              <img
+                style={{ width: "auto", height: "50px" }}
+                src="./codigos/urbanosverdes.png"
+              />
+            </td>
           </tr>
           <tr>
             <td className="celda-codigos-img">
@@ -1406,6 +1654,14 @@ const Codigos = () => {
             <td className="celda-codigos-fecha">17-03-2025</td>
           </tr>
           <tr>
+            <td className="celda-codigos-imagen">
+              <img
+                style={{ width: "auto", height: "50px" }}
+                src="./codigos/urbanosverdes.png"
+              />
+            </td>
+          </tr>
+          <tr>
             <td className="celda-codigos-img">
               <img
                 style={{ width: "95%", height: "auto" }}
@@ -1435,6 +1691,14 @@ const Codigos = () => {
             <td className="celda-codigos-fecha">17-03-2025</td>
           </tr>
           <tr>
+            <td className="celda-codigos-imagen">
+              <img
+                style={{ width: "auto", height: "50px" }}
+                src="./codigos/urbanosverdes.png"
+              />
+            </td>
+          </tr>
+          <tr>
             <td className="celda-codigos-img">
               <img
                 style={{ width: "95%", height: "auto" }}
@@ -1454,7 +1718,7 @@ const Codigos = () => {
         <span className="detalle-codigos">
           (Fecha de entrega Viernes 28 de marzo)
         </span>
-        <span className="detalle-codigos">(Nombre desconocido)</span>
+        <span className="detalle-codigos">(Ruta 03 Numero C22)</span>
         <span className="detalle-codigos">(version 3.7)</span>
         <table ref={tabla5535508Ref} className="tabla-codigos">
           <tr>
@@ -1462,6 +1726,14 @@ const Codigos = () => {
           </tr>
           <tr>
             <td className="celda-codigos-fecha">25-03-2025</td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-imagen">
+              <img
+                style={{ width: "auto", height: "50px" }}
+                src="./codigos/ruta03.png"
+              />
+            </td>
           </tr>
           <tr>
             <td className="celda-codigos-img">
@@ -1520,6 +1792,14 @@ const Codigos = () => {
           </tr>
           <tr>
             <td className="celda-codigos-fecha">25-03-2025</td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-imagen">
+              <img
+                style={{ width: "auto", height: "50px" }}
+                src="./codigos/urbanosverdes.png"
+              />
+            </td>
           </tr>
           <tr>
             <td className="celda-codigos-img">
@@ -1595,6 +1875,10 @@ const Codigos = () => {
           Descargar Imagen
         </button>
       </section>
+
+      {/* ABRIL 2025 * ABRIL 2025 * ABRIL 2025 * ABRIL 2025 * ABRIL 2025 * ABRIL 2025 * ABRIL 2025*/}
+      {/* ABRIL 2025 * ABRIL 2025 * ABRIL 2025 * ABRIL 2025 * ABRIL 2025 * ABRIL 2025 * ABRIL 2025*/}
+      {/* ABRIL 2025 * ABRIL 2025 * ABRIL 2025 * ABRIL 2025 * ABRIL 2025 * ABRIL 2025 * ABRIL 2025*/}
 
       <section
         id="abril-2025"
@@ -1822,6 +2106,14 @@ const Codigos = () => {
             <td className="celda-codigos-fecha">29-04-2025</td>
           </tr>
           <tr>
+            <td className="celda-codigos-imagen">
+              <img
+                style={{ width: "auto", height: "50px" }}
+                src="./codigos/urbanosverdes.png"
+              />
+            </td>
+          </tr>
+          <tr>
             <td className="celda-codigos-img">
               <img
                 style={{ width: "95%", height: "auto" }}
@@ -1969,6 +2261,14 @@ const Codigos = () => {
             <td className="celda-codigos-fecha">29-04-2025</td>
           </tr>
           <tr>
+            <td className="celda-codigos-imagen">
+              <img
+                style={{ width: "auto", height: "50px" }}
+                src="./codigos/ruta03.png"
+              />
+            </td>
+          </tr>
+          <tr>
             <td className="celda-codigos-img">
               <img
                 style={{ width: "95%", height: "auto" }}
@@ -1984,6 +2284,10 @@ const Codigos = () => {
           Descargar Imagen
         </button>
       </section>
+
+      {/* MAYO 2025 * MAYO 2025 * MAYO 2025 * MAYO 2025 * MAYO 2025 * MAYO 2025 * MAYO 2025 * MAYO 2025 */}
+      {/* MAYO 2025 * MAYO 2025 * MAYO 2025 * MAYO 2025 * MAYO 2025 * MAYO 2025 * MAYO 2025 * MAYO 2025 */}
+      {/* MAYO 2025 * MAYO 2025 * MAYO 2025 * MAYO 2025 * MAYO 2025 * MAYO 2025 * MAYO 2025 * MAYO 2025 */}
 
       <section
         id="mayo-2025"
@@ -2064,6 +2368,14 @@ const Codigos = () => {
           </tr>
           <tr>
             <td className="celda-codigos-fecha">13-05-2025</td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-imagen">
+              <img
+                style={{ width: "auto", height: "50px" }}
+                src="./codigos/ruta01.png"
+              />
+            </td>
           </tr>
           <tr>
             <td className="celda-codigos-img">
@@ -2329,7 +2641,7 @@ const Codigos = () => {
           <tr>
             <td className="celda-codigos-imagen">
               <img
-                style={{ width: "40%", height: "auto" }}
+                style={{ width: "auto", height: "50px" }}
                 src="./codigos/urbanosrojos.png"
               />
             </td>
@@ -2351,6 +2663,10 @@ const Codigos = () => {
         </button>
       </section>
 
+      {/* JUNIO 2025 * JUNIO 2025 * JUNIO 2025 * JUNIO 2025 * JUNIO 2025 * JUNIO 2025 * JUNIO 2025 */}
+      {/* JUNIO 2025 * JUNIO 2025 * JUNIO 2025 * JUNIO 2025 * JUNIO 2025 * JUNIO 2025 * JUNIO 2025 */}
+      {/* JUNIO 2025 * JUNIO 2025 * JUNIO 2025 * JUNIO 2025 * JUNIO 2025 * JUNIO 2025 * JUNIO 2025 */}
+
       <section
         id="junio-2025"
         ref={refs.current["junio-2025"]}
@@ -2360,11 +2676,15 @@ const Codigos = () => {
 
         <div className="separador-codigos-joyvolt"></div>
         <span className="detalle-codigos">
-          (Fecha de entrega martes 17 de junio.)
+          (Fecha de entrega miercoles 20 de agosto. Por JoyBoy.)
         </span>
-        <span className="detalle-codigos">(Nombre desconocido)</span>
+        <span className="detalle-codigos">(Urbano verde)</span>
         <span className="detalle-codigos-extra">
           (Se le cambio el diodo, ya que quemaba fusibles)
+        </span>
+        <span className="detalle-codigos-extra">
+          (Su fecha original es de 09-06-2025 pero se le puso otra modificada
+          para el usuario)
         </span>
         <span className="detalle-codigos">(version 4.1)</span>
         <table ref={tabla2c6b2c65b7a0Ref} className="tabla-codigos">
@@ -2372,7 +2692,15 @@ const Codigos = () => {
             <td className="celda-codigos-serie-largo">SE-n2c6b2c65b7a0</td>
           </tr>
           <tr>
-            <td className="celda-codigos-fecha">09-06-2025</td>
+            <td className="celda-codigos-fecha">20-08-2025</td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-imagen">
+              <img
+                style={{ width: "auto", height: "50px" }}
+                src="./codigos/urbanosverdes.png"
+              />
+            </td>
           </tr>
           <tr>
             <td className="celda-codigos-img">
@@ -2431,6 +2759,14 @@ const Codigos = () => {
           </tr>
           <tr>
             <td className="celda-codigos-fecha">09-06-2025</td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-imagen">
+              <img
+                style={{ width: "auto", height: "50px" }}
+                src="./codigos/urbanosverdes.png"
+              />
+            </td>
           </tr>
           <tr>
             <td className="celda-codigos-img">
@@ -2518,6 +2854,14 @@ const Codigos = () => {
           </tr>
           <tr>
             <td className="celda-codigos-fecha">09-06-2025</td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-imagen">
+              <img
+                style={{ width: "auto", height: "50px" }}
+                src="./codigos/ruta03.png"
+              />
+            </td>
           </tr>
           <tr>
             <td className="celda-codigos-img">
@@ -2667,6 +3011,14 @@ const Codigos = () => {
             <td className="celda-codigos-fecha">13-06-2025</td>
           </tr>
           <tr>
+            <td className="celda-codigos-imagen">
+              <img
+                style={{ width: "auto", height: "50px" }}
+                src="./codigos/ruta03.png"
+              />
+            </td>
+          </tr>
+          <tr>
             <td className="celda-codigos-img">
               <img
                 style={{ width: "95%", height: "auto" }}
@@ -2723,6 +3075,14 @@ const Codigos = () => {
           </tr>
           <tr>
             <td className="celda-codigos-fecha">13-06-2025</td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-imagen">
+              <img
+                style={{ width: "auto", height: "50px" }}
+                src="./codigos/ruta03.png"
+              />
+            </td>
           </tr>
           <tr>
             <td className="celda-codigos-img">
@@ -2783,6 +3143,14 @@ const Codigos = () => {
             <td className="celda-codigos-fecha">16-06-2025</td>
           </tr>
           <tr>
+            <td className="celda-codigos-imagen">
+              <img
+                style={{ width: "auto", height: "50px" }}
+                src="./codigos/ruta01.png"
+              />
+            </td>
+          </tr>
+          <tr>
             <td className="celda-codigos-img">
               <img
                 style={{ width: "95%", height: "auto" }}
@@ -2814,6 +3182,14 @@ const Codigos = () => {
             <td className="celda-codigos-fecha">16-06-2025</td>
           </tr>
           <tr>
+            <td className="celda-codigos-imagen">
+              <img
+                style={{ width: "auto", height: "50px" }}
+                src="./codigos/ruta01.png"
+              />
+            </td>
+          </tr>
+          <tr>
             <td className="celda-codigos-img">
               <img
                 style={{ width: "95%", height: "auto" }}
@@ -2841,6 +3217,14 @@ const Codigos = () => {
           </tr>
           <tr>
             <td className="celda-codigos-fecha">19-06-2025</td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-imagen">
+              <img
+                style={{ width: "auto", height: "50px" }}
+                src="./codigos/urbanosverdes.png"
+              />
+            </td>
           </tr>
           <tr>
             <td className="celda-codigos-img">
@@ -3017,6 +3401,14 @@ const Codigos = () => {
             <td className="celda-codigos-fecha">25-06-2025</td>
           </tr>
           <tr>
+            <td className="celda-codigos-imagen">
+              <img
+                style={{ width: "auto", height: "50px" }}
+                src="./codigos/urbanosverdes.png"
+              />
+            </td>
+          </tr>
+          <tr>
             <td className="celda-codigos-img">
               <img
                 style={{ width: "95%", height: "auto" }}
@@ -3094,7 +3486,7 @@ const Codigos = () => {
         <span className="detalle-codigos">
           (Fecha de entrega Miercoles 02 de julio.)
         </span>
-        <span className="detalle-codigos">
+        <span className="detalle-codigos-extra">
           (Llego en mayo pero estaba bloqueado y se regreso para refurbished. y
           llego en junio.)
         </span>
@@ -3164,6 +3556,14 @@ const Codigos = () => {
             <td className="celda-codigos-fecha">30-06-2025</td>
           </tr>
           <tr>
+            <td className="celda-codigos-imagen">
+              <img
+                style={{ width: "auto", height: "50px" }}
+                src="./codigos/ruta01.png"
+              />
+            </td>
+          </tr>
+          <tr>
             <td className="celda-codigos-img">
               <img
                 style={{ width: "95%", height: "auto" }}
@@ -3180,6 +3580,10 @@ const Codigos = () => {
         </button>
       </section>
 
+      {/* JULIO 2025 * JULIO 2025 * JULIO 2025 * JULIO 2025 * JULIO 2025 * JULIO 2025 * JULIO 2025 */}
+      {/* JULIO 2025 * JULIO 2025 * JULIO 2025 * JULIO 2025 * JULIO 2025 * JULIO 2025 * JULIO 2025 */}
+      {/* JULIO 2025 * JULIO 2025 * JULIO 2025 * JULIO 2025 * JULIO 2025 * JULIO 2025 * JULIO 2025 */}
+
       <section
         id="julio-2025"
         ref={refs.current["julio-2025"]}
@@ -3189,18 +3593,61 @@ const Codigos = () => {
 
         <div className="separador-codigos-joyvolt"></div>
         <span className="detalle-codigos">(Fecha de entrega Desconocida.)</span>
+        <span className="detalle-codigos">(Urbano verde Numero 198.)</span>
+        <span className="detalle-codigos">(version 4.1)</span>
+        <table ref={tablaac10bb57ddc4Ref} className="tabla-codigos">
+          <tr>
+            <td className="celda-codigos-serie-largo">SE-nac10bb57ddc4</td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-fecha">01-07-2025</td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-imagen">
+              <img
+                style={{ width: "auto", height: "50px" }}
+                src="./codigos/urbanosverdes.png"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-img">
+              <img
+                style={{ width: "95%", height: "auto" }}
+                src="./codigos/09 JULIO 2025/01-07-2025 SE-nac10bb57ddc4.png"
+              />
+            </td>
+          </tr>
+        </table>
+        <button
+          onClick={() => capturarTablaLarga(tablaac10bb57ddc4Ref.current)}
+          className="boton-descarga-codigos"
+        >
+          Descargar Imagen
+        </button>
+
+        <div className="separador-codigos-joyvolt"></div>
+        <span className="detalle-codigos">(Fecha de entrega Desconocida.)</span>
         <span className="detalle-codigos">
           (Gabriel bandala. Se lo compro a uno de verdes en $800. Su codigo
           generado es con fecha de julio de 2025, pero su fecha original es
           desconocida. Por su version parece ser de octubre de 2024.)
         </span>
-        <span className="detalle-codigos">(version 4.1)</span>
+        <span className="detalle-codigos">(version 3.0)</span>
         <table ref={tabla4549032Ref} className="tabla-codigos">
           <tr>
             <td className="celda-codigos-serie-largo">SE-n4549032</td>
           </tr>
           <tr>
             <td className="celda-codigos-fecha">04-07-2025</td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-imagen">
+              <img
+                style={{ width: "auto", height: "50px" }}
+                src="./codigos/ruta01.png"
+              />
+            </td>
           </tr>
           <tr>
             <td className="celda-codigos-img">
@@ -3230,6 +3677,15 @@ const Codigos = () => {
             <td className="celda-codigos-fecha">10-07-2025</td>
           </tr>
           <tr>
+            <td className="celda-codigos-imagen">
+              <img
+                style={{ width: "auto", height: "50px" }}
+                src={imagenSeleccionada}
+                alt="Imagen seleccionada"
+              />
+            </td>
+          </tr>
+          <tr>
             <td className="celda-codigos-img">
               <img
                 style={{ width: "95%", height: "auto" }}
@@ -3238,6 +3694,17 @@ const Codigos = () => {
             </td>
           </tr>
         </table>
+        <select
+          value={imagenSeleccionada}
+          onChange={(e) => setImagenSeleccionada(e.target.value)}
+          style={{ marginRight: "10px", padding: "5px" }}
+        >
+          {opcionesImagen.map((opcion) => (
+            <option key={opcion.value} value={opcion.value}>
+              {opcion.label}
+            </option>
+          ))}
+        </select>
         <button
           onClick={() => capturarTablaLarga(tabla2ca4bc641d44Ref.current)}
           className="boton-descarga-codigos"
@@ -3257,6 +3724,14 @@ const Codigos = () => {
           </tr>
           <tr>
             <td className="celda-codigos-fecha">10-07-2025</td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-imagen">
+              <img
+                style={{ width: "auto", height: "50px" }}
+                src="./codigos/ruta03.png"
+              />
+            </td>
           </tr>
           <tr>
             <td className="celda-codigos-img">
@@ -3286,6 +3761,15 @@ const Codigos = () => {
             <td className="celda-codigos-fecha">10-07-2025</td>
           </tr>
           <tr>
+            <td className="celda-codigos-imagen">
+              <img
+                style={{ width: "auto", height: "50px" }}
+                src={imagenSeleccionada}
+                alt="Imagen seleccionada"
+              />
+            </td>
+          </tr>
+          <tr>
             <td className="celda-codigos-img">
               <img
                 style={{ width: "95%", height: "auto" }}
@@ -3294,6 +3778,17 @@ const Codigos = () => {
             </td>
           </tr>
         </table>
+        <select
+          value={imagenSeleccionada}
+          onChange={(e) => setImagenSeleccionada(e.target.value)}
+          style={{ marginRight: "10px", padding: "5px" }}
+        >
+          {opcionesImagen.map((opcion) => (
+            <option key={opcion.value} value={opcion.value}>
+              {opcion.label}
+            </option>
+          ))}
+        </select>
         <button
           onClick={() => capturarTablaLarga(tabla344ef6641d44Ref.current)}
           className="boton-descarga-codigos"
@@ -3313,6 +3808,15 @@ const Codigos = () => {
             <td className="celda-codigos-fecha">10-07-2025</td>
           </tr>
           <tr>
+            <td className="celda-codigos-imagen">
+              <img
+                style={{ width: "auto", height: "50px" }}
+                src={imagenSeleccionada}
+                alt="Imagen seleccionada"
+              />
+            </td>
+          </tr>
+          <tr>
             <td className="celda-codigos-img">
               <img
                 style={{ width: "95%", height: "auto" }}
@@ -3321,6 +3825,17 @@ const Codigos = () => {
             </td>
           </tr>
         </table>
+        <select
+          value={imagenSeleccionada}
+          onChange={(e) => setImagenSeleccionada(e.target.value)}
+          style={{ marginRight: "10px", padding: "5px" }}
+        >
+          {opcionesImagen.map((opcion) => (
+            <option key={opcion.value} value={opcion.value}>
+              {opcion.label}
+            </option>
+          ))}
+        </select>
         <button
           onClick={() => capturarTablaLarga(tabla9095bc641d44Ref.current)}
           className="boton-descarga-codigos"
@@ -3329,7 +3844,9 @@ const Codigos = () => {
         </button>
 
         <div className="separador-codigos-joyvolt"></div>
-        <span className="detalle-codigos">(Fecha de entrega Desconocida.)</span>
+        <span className="detalle-codigos">
+          (Fecha de entrega 14 de Agosto de 2025. Por JoyBoy.)
+        </span>
         <span className="detalle-codigos">(Castro Ruta 03 Unidad 22)</span>
         <span className="ruta"></span>
         <span className="detalle-codigos">(version 4.1)</span>
@@ -3344,7 +3861,7 @@ const Codigos = () => {
           <tr>
             <td className="celda-codigos-imagen">
               <img
-                style={{ width: "20%", height: "auto" }}
+                style={{ width: "auto", height: "50px" }}
                 src="./codigos/ruta03.png"
               />
             </td>
@@ -3380,6 +3897,15 @@ const Codigos = () => {
             <td className="celda-codigos-fecha">10-07-2025</td>
           </tr>
           <tr>
+            <td className="celda-codigos-imagen">
+              <img
+                style={{ width: "auto", height: "50px" }}
+                src={imagenSeleccionada}
+                alt="Imagen seleccionada"
+              />
+            </td>
+          </tr>
+          <tr>
             <td className="celda-codigos-img">
               <img
                 style={{ width: "95%", height: "auto" }}
@@ -3388,6 +3914,17 @@ const Codigos = () => {
             </td>
           </tr>
         </table>
+        <select
+          value={imagenSeleccionada}
+          onChange={(e) => setImagenSeleccionada(e.target.value)}
+          style={{ marginRight: "10px", padding: "5px" }}
+        >
+          {opcionesImagen.map((opcion) => (
+            <option key={opcion.value} value={opcion.value}>
+              {opcion.label}
+            </option>
+          ))}
+        </select>
         <button
           onClick={() => capturarTablaLarga(tablad4f9bd641d44Ref.current)}
           className="boton-descarga-codigos"
@@ -3411,6 +3948,15 @@ const Codigos = () => {
             <td className="celda-codigos-fecha">10-07-2025</td>
           </tr>
           <tr>
+            <td className="celda-codigos-imagen">
+              <img
+                style={{ width: "auto", height: "50px" }}
+                src={imagenSeleccionada}
+                alt="Imagen seleccionada"
+              />
+            </td>
+          </tr>
+          <tr>
             <td className="celda-codigos-img">
               <img
                 style={{ width: "95%", height: "auto" }}
@@ -3419,6 +3965,17 @@ const Codigos = () => {
             </td>
           </tr>
         </table>
+        <select
+          value={imagenSeleccionada}
+          onChange={(e) => setImagenSeleccionada(e.target.value)}
+          style={{ marginRight: "10px", padding: "5px" }}
+        >
+          {opcionesImagen.map((opcion) => (
+            <option key={opcion.value} value={opcion.value}>
+              {opcion.label}
+            </option>
+          ))}
+        </select>
         <button
           onClick={() => capturarTablaLarga(tablad402be641d44Ref.current)}
           className="boton-descarga-codigos"
