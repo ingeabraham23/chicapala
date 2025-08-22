@@ -274,7 +274,7 @@ const Simbolos = () => {
             </tr>
             <tr>
               <td className="celda-tipos">Resolucion: </td>
-              <td className="celda-tipos">1024 Leds.</td>
+              <td className="celda-tipos">1024 Leds. 64 px x 16 px</td>
             </tr>
             <tr>
               <td className="celda-vacia"></td>
@@ -290,7 +290,7 @@ const Simbolos = () => {
             </tr>
             <tr>
               <td className="celda-tipos">Resolucion: </td>
-              <td className="celda-tipos">1800 Leds.</td>
+              <td className="celda-tipos">1600 Leds. 80 px x 20 px.</td>
             </tr>
             <tr>
               <td className="celda-vacia"></td>
@@ -306,7 +306,7 @@ const Simbolos = () => {
             </tr>
             <tr>
               <td className="celda-tipos">Resolucion: </td>
-              <td className="celda-tipos">4096 Leds.</td>
+              <td className="celda-tipos">4096 Leds. 128 px x 32 px.</td>
             </tr>
             <tr>
               <td className="celda-vacia"></td>
