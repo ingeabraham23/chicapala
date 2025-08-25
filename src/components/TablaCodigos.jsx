@@ -334,6 +334,24 @@ const datos = {
     { fecha: "10-07-2025", codigo: "d402be641d44", color: "white" },
     { fecha: "29-07-2025", codigo: "5586992", color: "white" },
   ],
+
+  "AGOSTO 2025": [
+    { fecha: "07-08-2025", codigo: "3cc11dab4c24", color: "white" },
+    { fecha: "07-08-2025", codigo: "6c3e64a84320r", color: "white" },
+    { fecha: "07-08-2025", codigo: "048ebc641d44", color: "white" },
+    { fecha: "07-08-2025", codigo: "cce0540b65f4", color: "white" },
+    { fecha: "07-08-2025", codigo: "dcf9412a13d8", color: "white" },
+
+    { fecha: "15-08-2025", codigo: "0c390486e694", color: "linear-gradient(to bottom, red, white, green)",
+      numero: "22",
+      estado: "ok",
+    }, //Ruta 03 65
+    { fecha: "15-08-2025", codigo: "80ed540b65f4", color: "#29e8ff", estado: "ok" }, //Ruta 01 84
+    { fecha: "15-08-2025", codigo: "fc5a77cd31e8", color: "#f94e4e",
+      numero: "47",
+      estado: "ok",
+    }, //rojo 33
+  ],
 };
 
 const TablaCodigos = () => {

@@ -126,7 +126,25 @@ const Codigos = () => {
   const tablad4f9bd641d44Ref = useRef(null); //1000
   const tablad402be641d44Ref = useRef(null); //1000
   const tabla5586992Ref = useRef(null); //1000
-  // const tabla5586992Ref = useRef(null); //1000
+
+  //07 DE AGOSTO 2025
+  const tabla3cc11dab4c24Ref = useRef(null); //1000
+  const tabla6c3e64a84320rRef = useRef(null); //1000
+  const tabla048ebc641d44Ref = useRef(null); //1000
+  const tablacce0540b65f4Ref = useRef(null); //1000
+  const tabladcf9412a13d8Ref = useRef(null); //1000
+
+  //15 DE AGOSTO 2025
+  const tabla0c390486e694Ref = useRef(null); //1000
+  const tabla80ed540b65f4Ref = useRef(null); //1000
+  const tablafc5a77cd31e8Ref = useRef(null); //1000
+
+  //19 DE AGOSTO 2025
+  const tabla10afbc641d44Ref = useRef(null); //1000
+  // const tabla10afbc641d44Ref = useRef(null); //1000
+
+  
+
 
   const capturarTabla = (tabla) => {
     if (!tabla) return;
@@ -185,6 +203,7 @@ const Codigos = () => {
     { id: "mayo-2025", titulo: "May 2025" },
     { id: "junio-2025", titulo: "Jun 2025" },
     { id: "julio-2025", titulo: "Jul 2025" },
+    { id: "agosto-2025", titulo: "Ago 2025" },
   ];
 
   const refs = useRef(
@@ -4009,6 +4028,411 @@ const Codigos = () => {
         </table>
         <button
           onClick={() => capturarTablaLarga(tabla5586992Ref.current)}
+          className="boton-descarga-codigos"
+        >
+          Descargar Imagen
+        </button>
+      </section>
+
+      {/* AGOSTO 2025 * AGOSTO 2025 * AGOSTO 2025 * AGOSTO 2025 * AGOSTO 2025 * AGOSTO 2025 * AGOSTO 2025 */}
+      {/* AGOSTO 2025 * AGOSTO 2025 * AGOSTO 2025 * AGOSTO 2025 * AGOSTO 2025 * AGOSTO 2025 * AGOSTO 2025 */}
+      {/* AGOSTO 2025 * AGOSTO 2025 * AGOSTO 2025 * AGOSTO 2025 * AGOSTO 2025 * AGOSTO 2025 * AGOSTO 2025 */}
+
+      <section
+        id="agosto-2025"
+        ref={refs.current["agosto-2025"]}
+        className="seccion-codigos"
+      >
+        <h1 className="titulo-mes-codigos">AGOSTO 2025</h1>
+
+        <div className="separador-codigos-joyvolt"></div>
+        <span className="detalle-codigos">(Fecha de entrega Desconocida.)</span>
+        <span className="detalle-codigos">(Nombre Desconocido)</span>
+        <span className="detalle-codigos">(version 4.1)</span>
+        <table ref={tabla3cc11dab4c24Ref} className="tabla-codigos">
+          <tr>
+            <td className="celda-codigos-serie-largo">SE-n3cc11dab4c24</td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-fecha">07-08-2025</td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-imagen">
+              <img
+                style={{ width: "auto", height: "50px" }}
+                src={imagenSeleccionada}
+                alt="Imagen seleccionada"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-img">
+              <img
+                style={{ width: "95%", height: "auto" }}
+                src="./codigos/10 AGOSTO 2025/07-08-2025 SE-n3cc11dab4c24.png"
+              />
+            </td>
+          </tr>
+        </table>
+        <select
+          value={imagenSeleccionada}
+          onChange={(e) => setImagenSeleccionada(e.target.value)}
+          style={{ marginRight: "10px", padding: "5px" }}
+        >
+          {opcionesImagen.map((opcion) => (
+            <option key={opcion.value} value={opcion.value}>
+              {opcion.label}
+            </option>
+          ))}
+        </select>
+        <button
+          onClick={() => capturarTablaLarga(tabla3cc11dab4c24Ref.current)}
+          className="boton-descarga-codigos"
+        >
+          Descargar Imagen
+        </button>
+
+        <div className="separador-codigos-joyvolt"></div>
+        <span className="detalle-codigos">(Fecha de entrega Desconocida.)</span>
+        <span className="detalle-codigos">(Nombre Desconocido)</span>
+        <span className="detalle-codigos">(version 4.1)</span>
+        <table ref={tabla6c3e64a84320rRef} className="tabla-codigos">
+          <tr>
+            <td className="celda-codigos-serie-largo">SE-n6c3e64a84320</td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-fecha">07-08-2025</td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-imagen">
+              <img
+                style={{ width: "auto", height: "50px" }}
+                src={imagenSeleccionada}
+                alt="Imagen seleccionada"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-img">
+              <img
+                style={{ width: "95%", height: "auto" }}
+                src="./codigos/10 AGOSTO 2025/07-08-2025 SE-n6c3e64a84320.png"
+              />
+            </td>
+          </tr>
+        </table>
+        <select
+          value={imagenSeleccionada}
+          onChange={(e) => setImagenSeleccionada(e.target.value)}
+          style={{ marginRight: "10px", padding: "5px" }}
+        >
+          {opcionesImagen.map((opcion) => (
+            <option key={opcion.value} value={opcion.value}>
+              {opcion.label}
+            </option>
+          ))}
+        </select>
+        <button
+          onClick={() => capturarTablaLarga(tabla6c3e64a84320rRef.current)}
+          className="boton-descarga-codigos"
+        >
+          Descargar Imagen
+        </button>
+
+        <div className="separador-codigos-joyvolt"></div>
+        <span className="detalle-codigos">(Fecha de entrega Desconocida.)</span>
+        <span className="detalle-codigos">(Nombre Desconocido)</span>
+        <span className="detalle-codigos">(version 4.1)</span>
+        <table ref={tabla048ebc641d44Ref} className="tabla-codigos">
+          <tr>
+            <td className="celda-codigos-serie-largo">SE-n048ebc641d44</td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-fecha">07-08-2025</td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-imagen">
+              <img
+                style={{ width: "auto", height: "50px" }}
+                src={imagenSeleccionada}
+                alt="Imagen seleccionada"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-img">
+              <img
+                style={{ width: "95%", height: "auto" }}
+                src="./codigos/10 AGOSTO 2025/07-08-2025 SE-n048ebc641d44.png"
+              />
+            </td>
+          </tr>
+        </table>
+        <select
+          value={imagenSeleccionada}
+          onChange={(e) => setImagenSeleccionada(e.target.value)}
+          style={{ marginRight: "10px", padding: "5px" }}
+        >
+          {opcionesImagen.map((opcion) => (
+            <option key={opcion.value} value={opcion.value}>
+              {opcion.label}
+            </option>
+          ))}
+        </select>
+        <button
+          onClick={() => capturarTablaLarga(tabla048ebc641d44Ref.current)}
+          className="boton-descarga-codigos"
+        >
+          Descargar Imagen
+        </button>
+
+        <div className="separador-codigos-joyvolt"></div>
+        <span className="detalle-codigos">(Fecha de entrega Desconocida.)</span>
+        <span className="detalle-codigos">(Nombre Desconocido)</span>
+        <span className="detalle-codigos">(version 4.1)</span>
+        <table ref={tablacce0540b65f4Ref} className="tabla-codigos">
+          <tr>
+            <td className="celda-codigos-serie-largo">SE-ncce0540b65f4</td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-fecha">07-08-2025</td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-imagen">
+              <img
+                style={{ width: "auto", height: "50px" }}
+                src={imagenSeleccionada}
+                alt="Imagen seleccionada"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-img">
+              <img
+                style={{ width: "95%", height: "auto" }}
+                src="./codigos/10 AGOSTO 2025/07-08-2025 SE-ncce0540b65f4.png"
+              />
+            </td>
+          </tr>
+        </table>
+        <select
+          value={imagenSeleccionada}
+          onChange={(e) => setImagenSeleccionada(e.target.value)}
+          style={{ marginRight: "10px", padding: "5px" }}
+        >
+          {opcionesImagen.map((opcion) => (
+            <option key={opcion.value} value={opcion.value}>
+              {opcion.label}
+            </option>
+          ))}
+        </select>
+        <button
+          onClick={() => capturarTablaLarga(tablacce0540b65f4Ref.current)}
+          className="boton-descarga-codigos"
+        >
+          Descargar Imagen
+        </button>
+
+        <div className="separador-codigos-joyvolt"></div>
+        <span className="detalle-codigos">(Fecha de entrega Desconocida.)</span>
+        <span className="detalle-codigos">(Nombre Desconocido)</span>
+        <span className="detalle-codigos">(version 4.1)</span>
+        <table ref={tabladcf9412a13d8Ref} className="tabla-codigos">
+          <tr>
+            <td className="celda-codigos-serie-largo">SE-ndcf9412a13d8</td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-fecha">07-08-2025</td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-imagen">
+              <img
+                style={{ width: "auto", height: "50px" }}
+                src={imagenSeleccionada}
+                alt="Imagen seleccionada"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-img">
+              <img
+                style={{ width: "95%", height: "auto" }}
+                src="./codigos/10 AGOSTO 2025/07-08-2025 SE-ndcf9412a13d8.png"
+              />
+            </td>
+          </tr>
+        </table>
+        <select
+          value={imagenSeleccionada}
+          onChange={(e) => setImagenSeleccionada(e.target.value)}
+          style={{ marginRight: "10px", padding: "5px" }}
+        >
+          {opcionesImagen.map((opcion) => (
+            <option key={opcion.value} value={opcion.value}>
+              {opcion.label}
+            </option>
+          ))}
+        </select>
+        <button
+          onClick={() => capturarTablaLarga(tabladcf9412a13d8Ref.current)}
+          className="boton-descarga-codigos"
+        >
+          Descargar Imagen
+        </button>
+
+
+
+        <div className="separador-codigos-joyvolt"></div>
+        <span className="detalle-codigos">(Fecha de entrega Lunes 25 de Agosto 2025.)</span>
+        <span className="detalle-codigos">(Depredador)</span>
+        <span className="detalle-codigos-extra">(Se mando a reparación, era de cesar 41, se lo vendio.)</span>
+        <span className="detalle-codigos">(version 4.1)</span>
+        <table ref={tabla0c390486e694Ref} className="tabla-codigos">
+          <tr>
+            <td className="celda-codigos-serie-largo">SE-n0c390486e694</td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-fecha">15-08-2025</td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-imagen">
+              <img
+                style={{ width: "auto", height: "50px" }}
+                src="./codigos/ruta03.png"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-img">
+              <img
+                style={{ width: "95%", height: "auto" }}
+                src="./codigos/10 AGOSTO 2025/15-08-2025 SE-n0c390486e694.png"
+              />
+            </td>
+          </tr>
+        </table>
+        <button
+          onClick={() => capturarTablaLarga(tabla0c390486e694Ref.current)}
+          className="boton-descarga-codigos"
+        >
+          Descargar Imagen
+        </button>
+
+        <div className="separador-codigos-joyvolt"></div>
+        <span className="detalle-codigos">(Fecha de entrega Lunes 25 de Agosto 2025.)</span>
+        <span className="detalle-codigos">(Ruta 01 Unidad 84)</span>
+        <span className="detalle-codigos-extra">(Se mando a actualizar.)</span>
+        <span className="detalle-codigos">(version 4.1)</span>
+        <table ref={tabla80ed540b65f4Ref} className="tabla-codigos">
+          <tr>
+            <td className="celda-codigos-serie-largo">SE-n80ed540b65f4</td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-fecha">15-08-2025</td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-imagen">
+              <img
+                style={{ width: "auto", height: "50px" }}
+                src="./codigos/ruta01.png"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-img">
+              <img
+                style={{ width: "95%", height: "auto" }}
+                src="./codigos/10 AGOSTO 2025/15-08-2025 SE-n80ed540b65f4.png"
+              />
+            </td>
+          </tr>
+        </table>
+        <button
+          onClick={() => capturarTablaLarga(tabla80ed540b65f4Ref.current)}
+          className="boton-descarga-codigos"
+        >
+          Descargar Imagen
+        </button>
+
+        <div className="separador-codigos-joyvolt"></div>
+        <span className="detalle-codigos">(No se entrego.)</span>
+        <span className="detalle-codigos">(Pimpinela Urbano rojo Unidad 33)</span>
+        <span className="detalle-codigos-extra">(Se mando a actualizar. Regreso con la misma falla. Se va a mandar a mexico por falla)</span>
+        <span className="detalle-codigos">(version 4.1)</span>
+        <table ref={tablafc5a77cd31e8Ref} className="tabla-codigos">
+          <tr>
+            <td className="celda-codigos-serie-largo">SE-nfc5a77cd31e8</td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-fecha">15-08-2025</td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-imagen">
+              <img
+                style={{ width: "auto", height: "50px" }}
+                src="./codigos/urbanosrojos.png"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-img">
+              <img
+                style={{ width: "95%", height: "auto" }}
+                src="./codigos/10 AGOSTO 2025/15-08-2025 SE-nfc5a77cd31e8.png"
+              />
+            </td>
+          </tr>
+        </table>
+        <button
+          onClick={() => capturarTablaLarga(tablafc5a77cd31e8Ref.current)}
+          className="boton-descarga-codigos"
+        >
+          Descargar Imagen
+        </button>
+
+        <div className="separador-codigos-joyvolt"></div>
+        <span className="detalle-codigos">(Fecha de entrega Lunes 25 de Agosto 2025.)</span>
+        <span className="detalle-codigos">(Prestado a pimpinela)</span>
+        <span className="detalle-codigos-extra">(Prestado a pimpinela)</span>
+        <span className="detalle-codigos">(version 4.1)</span>
+        <table ref={tabla10afbc641d44Ref} className="tabla-codigos">
+          <tr>
+            <td className="celda-codigos-serie-largo">SE-n10afbc641d44</td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-fecha">19-08-2025</td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-imagen">
+              <img
+                style={{ width: "auto", height: "50px" }}
+                src={imagenSeleccionada}
+                alt="Imagen seleccionada"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-img">
+              <img
+                style={{ width: "95%", height: "auto" }}
+                src="./codigos/10 AGOSTO 2025/19-08-2025 SE-n10afbc641d44.png"
+              />
+            </td>
+          </tr>
+        </table>
+        <select
+          value={imagenSeleccionada}
+          onChange={(e) => setImagenSeleccionada(e.target.value)}
+          style={{ marginRight: "10px", padding: "5px" }}
+        >
+          {opcionesImagen.map((opcion) => (
+            <option key={opcion.value} value={opcion.value}>
+              {opcion.label}
+            </option>
+          ))}
+        </select>
+        <button
+          onClick={() => capturarTablaLarga(tabla10afbc641d44Ref.current)}
           className="boton-descarga-codigos"
         >
           Descargar Imagen
