@@ -34,6 +34,8 @@ const gifList = [
   "pacman.gif",
   "pacman_2.gif",
   "pacman_neon.gif",
+  "por_que_me_gustas_wey.gif",
+  "por_que_me_gustas_wey_64_x_32.gif",
   "ryu.gif",
   "ryu_cammy.gif",
   "status.gif",
