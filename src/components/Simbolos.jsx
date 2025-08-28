@@ -148,7 +148,7 @@ const Simbolos = () => {
   const tabla04Ref = useRef(null);
   const tablatiposRef = useRef(null);
   const tablaterminosRef = useRef(null);
-
+  const tablaGifsRef = useRef(null);
   const tablaStandardRef = useRef(null);
   const tablaBotonRojoRef = useRef(null);
   const tablaBotonVerdeRef = useRef(null);
@@ -738,6 +738,119 @@ const Simbolos = () => {
       </div>
       <br></br>
       <br></br>
+
+      <div>
+      <table className="tabla-gifs" ref={tablaGifsRef}>
+        <thead>
+          <tr>
+            <th colSpan={2} className="tabla-titulo-gifs">
+              Diseño GIF para Letreros LED
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          {/* Tipo Básico */}
+          <tr>
+            <td className="precio neon-verde" colSpan={2}>
+              💡 $40 MXN
+            </td>
+          </tr>
+          <tr>
+            <td className="tipo">Tipo:</td>
+            <td className="detalle">Básico</td>
+          </tr>
+          <tr>
+            <td className="tipo">Incluye:</td>
+            <td className="detalle">
+              Texto simple, cambio de colores, parpadeo.
+            </td>
+          </tr>
+          <tr>
+            <td className="espacio" colSpan={2}></td>
+          </tr>
+
+          {/* Tipo Intermedio */}
+          <tr>
+            <td className="precio neon-azul" colSpan={2}>
+              🎨 $80 MXN
+            </td>
+          </tr>
+          <tr>
+            <td className="tipo">Tipo:</td>
+            <td className="detalle">Intermedio</td>
+          </tr>
+          <tr>
+            <td className="tipo">Incluye:</td>
+            <td className="detalle">
+              Texto + íconos simples, animación básica.
+            </td>
+          </tr>
+          <tr>
+            <td className="espacio" colSpan={2}></td>
+          </tr>
+
+          {/* Tipo Avanzado */}
+          <tr>
+            <td className="precio neon-rojo" colSpan={2}>
+              🔥 $150 MXN
+            </td>
+          </tr>
+          <tr>
+            <td className="tipo">Tipo:</td>
+            <td className="detalle">Avanzado</td>
+          </tr>
+          <tr>
+            <td className="tipo">Incluye:</td>
+            <td className="detalle">
+              Animaciones complejas, personajes, múltiples efectos.
+            </td>
+          </tr>
+
+          {/* Términos */}
+          <tr>
+            <td className="espacio" colSpan={2}></td>
+          </tr>
+          <tr>
+            <td className="terminos" colSpan={2}>
+              ⏳ Entrega: 5 días hábiles.
+            </td>
+          </tr>
+          <tr>
+            <td className="terminos" colSpan={2}>
+              ✅ Anticipo del 50%, resto al entregar.
+            </td>
+          </tr>
+          <tr>
+            <td className="terminos" colSpan={2}>
+              ✅ Envío por correo, WhatsApp o Telegram.
+            </td>
+          </tr>
+          <tr>
+            <td className="terminos" colSpan={2}>
+              ✅ Hasta 2 correcciones sin costo.
+            </td>
+          </tr>
+          <tr>
+            <td className="terminos" colSpan={2}>
+              ☎ WhatsApp: 231 128 4412
+            </td>
+          </tr>
+          <tr>
+            <td className="terminos" colSpan={2}>
+              📧 Correo: ingeabraham23@gmail.com
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <button
+        className="boton-capturar-simbolos"
+        onClick={() => capturarTabla(tablaGifsRef.current, "Tabla GIFs")}
+      >
+        📸 Capturar Tabla Precios
+      </button>
+    </div>
+
     </div>
   );
 };
