@@ -3,6 +3,7 @@ import React from "react";
 import "./GifGallery.css";
 
 const gifList = [
+  "bandera.gif",
   "central_de_abastos.gif",
   "corazon.gif",
   "cranky_01.gif",
@@ -16,6 +17,9 @@ const gifList = [
   "feria_2_ultrahd.gif",
   "ghost_pacman.gif",
   "honda.gif",
+  "halloween.gif",
+  "imss.gif",
+  "imss_2.gif",
   "ken.gif",
   "kong_music.gif",
   "mario_bros.gif",
@@ -36,10 +40,20 @@ const gifList = [
   "pacman_neon.gif",
   "por_que_me_gustas_wey.gif",
   "por_que_me_gustas_wey_64_x_32.gif",
+  "predator_01.gif",
+  "predator_02.gif",
   "ryu.gif",
   "ryu_cammy.gif",
+  "sonic.gif",
   "status.gif",
   "status_b.gif",
+  "viva_mexico.gif",
+  "viva_mexico_2.gif",
+  "viva_mexico_3.gif",
+  "viva_mexico_4.gif",
+  "viva_mexico_5.gif",
+  "viva_mexico_6.gif",
+  "viva_mexico_5_ultra.gif",
   "yoshi.gif",
   "you_onda.gif",
 
