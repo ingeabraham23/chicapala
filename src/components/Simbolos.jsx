@@ -750,11 +750,11 @@ const Simbolos = () => {
         </thead>
         <tbody>
           {/* Tipo Básico */}
-          <tr>
+          {/* <tr>
             <td className="precio neon-verde" colSpan={2}>
               💡 $40 MXN
             </td>
-          </tr>
+          </tr> */}
           <tr>
             <td className="tipo">Tipo:</td>
             <td className="detalle">Básico</td>
@@ -770,11 +770,11 @@ const Simbolos = () => {
           </tr>
 
           {/* Tipo Intermedio */}
-          <tr>
+          {/* <tr>
             <td className="precio neon-azul" colSpan={2}>
               🎨 $80 MXN
             </td>
-          </tr>
+          </tr> */}
           <tr>
             <td className="tipo">Tipo:</td>
             <td className="detalle">Intermedio</td>
@@ -790,11 +790,11 @@ const Simbolos = () => {
           </tr>
 
           {/* Tipo Avanzado */}
-          <tr>
+          {/* <tr>
             <td className="precio neon-rojo" colSpan={2}>
               🔥 $150 MXN
             </td>
-          </tr>
+          </tr> */}
           <tr>
             <td className="tipo">Tipo:</td>
             <td className="detalle">Avanzado</td>

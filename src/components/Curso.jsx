@@ -401,6 +401,45 @@ const Curso = () => {
         </button>
       </div>
 
+
+<div className="separador-kit-joyvolt"></div>
+      <p className="direccion-web">
+        Cargar Gifs desde la aplicacion.
+      </p>
+      {/* Video embebido */}
+      <div style={{ width: "50vw", margin: "0 auto" }}>
+        <iframe
+          width="100%"
+          height="auto"
+          style={{ aspectRatio: "16 / 9" }}
+          src="https://www.youtube.com/embed/OGgi6S0Fsp8"
+          title="YouTube video player"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        ></iframe>
+      </div>
+      <p className="direccion-web">https://youtu.be/OGgi6S0Fsp8</p>
+      <div className="link-container">
+        <a
+          href={"https://youtu.be/OGgi6S0Fsp8"}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="boton-enlace"
+        >
+          Abrir Enlace
+        </a>
+        <button
+          onClick={() => {
+            navigator.clipboard.writeText("https://youtu.be/OGgi6S0Fsp8");
+            alert("Enlace copiado al portapapeles");
+          }}
+          className="boton-copiar"
+        >
+          Copiar Enlace
+        </button>
+      </div>
+
       <div className="separador-kit-joyvolt"></div>
     </div>
   );

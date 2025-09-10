@@ -105,7 +105,7 @@ const rolesPorUnidad = {
   },
 
   93: {
-    inicio: "2025-07-31", // 👈 ejemplo, unidad 139 arranca en otra fecha
+    inicio: "2025-08-01", // 👈 ejemplo, unidad 139 arranca en otra fecha
     rol: [
       { ruta: "Ayotzingo", dias: 6 },
       { ruta: "Paraíso", dias: 10 },

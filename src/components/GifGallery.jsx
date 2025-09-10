@@ -3,7 +3,11 @@ import React from "react";
 import "./GifGallery.css";
 
 const gifList = [
+  "adp.gif",
   "bandera.gif",
+  "bruja.gif",
+  "calabazas.gif",
+  "calabaza.gif",
   "central_de_abastos.gif",
   "corazon.gif",
   "cranky_01.gif",
@@ -18,6 +22,10 @@ const gifList = [
   "ghost_pacman.gif",
   "honda.gif",
   "halloween.gif",
+  "halloween_02.gif",
+  "halloween_03.gif",
+  "halloween_04.gif",
+  "halloween_full.gif",
   "imss.gif",
   "imss_2.gif",
   "ken.gif",

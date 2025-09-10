@@ -129,6 +129,7 @@ const Codigos = () => {
 
   //07 DE AGOSTO 2025
   const tabla3cc11dab4c24Ref = useRef(null); //1000
+  const tabla4caabc641d44Ref = useRef(null); //1000
   const tabla6c3e64a84320rRef = useRef(null); //1000
   const tabla048ebc641d44Ref = useRef(null); //1000
   const tablacce0540b65f4Ref = useRef(null); //1000
@@ -141,9 +142,12 @@ const Codigos = () => {
 
   //19 DE AGOSTO 2025
   const tabla10afbc641d44Ref = useRef(null); //1000
+  const tabla4545292Ref = useRef(null); //1000
   // const tabla10afbc641d44Ref = useRef(null); //1000
 
   
+
+
 
 
   const capturarTabla = (tabla) => {
@@ -289,9 +293,8 @@ const Codigos = () => {
             <td className="celda-codigos-img">
               <img
                 style={{ width: "95%", height: "auto" }}
-                src={`${
-                  import.meta.env.BASE_URL
-                }codigos/01-OCTUBRE-2024/11-10-2024-SE-n12231344.png`}
+                src={`${import.meta.env.BASE_URL
+                  }codigos/01-OCTUBRE-2024/11-10-2024-SE-n12231344.png`}
               />
             </td>
           </tr>
@@ -317,9 +320,8 @@ const Codigos = () => {
             <td className="celda-codigos-img">
               <img
                 style={{ width: "95%", height: "auto" }}
-                src={`${
-                  import.meta.env.BASE_URL
-                }codigos/01-OCTUBRE-2024/28-10-2024 SE-n8979088.png`}
+                src={`${import.meta.env.BASE_URL
+                  }codigos/01-OCTUBRE-2024/28-10-2024 SE-n8979088.png`}
               />
             </td>
           </tr>
@@ -4096,6 +4098,49 @@ const Codigos = () => {
         <span className="detalle-codigos">(Fecha de entrega Desconocida.)</span>
         <span className="detalle-codigos">(Nombre Desconocido)</span>
         <span className="detalle-codigos">(version 4.1)</span>
+        <table ref={tabla4caabc641d44Ref} className="tabla-codigos">
+          <tr>
+            <td className="celda-codigos-serie-largo">SE-n4caabc641d44</td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-fecha">07-08-2025</td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-imagen">
+              <img
+                style={{ width: "auto", height: "50px" }}
+                src="./codigos/urbanosverdes.png"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-img">
+              <img
+                style={{ width: "95%", height: "auto" }}
+                src="./codigos/10 AGOSTO 2025/07-08-2025 SE-n4caabc641d44.png"
+              />
+            </td>
+          </tr>
+        </table>
+        <button
+          onClick={() => capturarTablaLarga(tabla4caabc641d44Ref.current)}
+          className="boton-descarga-codigos"
+        >
+          Descargar Imagen
+        </button>
+
+
+
+
+
+
+
+
+
+        <div className="separador-codigos-joyvolt"></div>
+        <span className="detalle-codigos">(Fecha de entrega Desconocida.)</span>
+        <span className="detalle-codigos">(Nombre Desconocido)</span>
+        <span className="detalle-codigos">(version 4.1)</span>
         <table ref={tabla6c3e64a84320rRef} className="tabla-codigos">
           <tr>
             <td className="celda-codigos-serie-largo">SE-n6c3e64a84320</td>
@@ -4433,6 +4478,41 @@ const Codigos = () => {
         </select>
         <button
           onClick={() => capturarTablaLarga(tabla10afbc641d44Ref.current)}
+          className="boton-descarga-codigos"
+        >
+          Descargar Imagen
+        </button>
+
+        <div className="separador-codigos-joyvolt"></div>
+        <span className="detalle-codigos">(Dionisio.)</span>
+        <span className="detalle-codigos">(Urbano verde)</span>
+        <span className="detalle-codigos">(version 3.2)</span>
+        <table ref={tabla4545292Ref} className="tabla-codigos">
+          <tr>
+            <td className="celda-codigos-serie-largo">SE-n4545292</td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-fecha">05-09-2025</td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-imagen">
+              <img
+                style={{ width: "auto", height: "50px" }}
+                src="./codigos/urbanosverdes.png"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-img">
+              <img
+                style={{ width: "95%", height: "auto" }}
+                src="./codigos/10 AGOSTO 2025/05-09-2025 SE-n4545292.png"
+              />
+            </td>
+          </tr>
+        </table>
+        <button
+          onClick={() => capturarTablaLarga(tabla4545292Ref.current)}
           className="boton-descarga-codigos"
         >
           Descargar Imagen
