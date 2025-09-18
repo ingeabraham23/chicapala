@@ -93,7 +93,10 @@
   }
 
   .tabla-codigos {
-    border-collapse: collapse;
+    border: 1px solid black; /* Borde de la tabla */
+    border-radius: 40px; /* Esquinas redondeadas */
+    border-collapse: separate; /* Importante para que funcione el border-radius */
+    overflow: hidden; /* Para que las esquinas recorten bien */
   }
 
   .celda-codigos-img {
@@ -101,15 +104,19 @@
   }
 
   .celda-codigos-fecha {
-    font-family: "Allerta";
     letter-spacing: 2px; /* Ajusta el espaciado según sea necesario */
-    color: #eeff00;
-    font-size: 10 px;
+    color: #000000;
+    font-size: 15px;
     text-align: center;
     padding: 1px;
+  }
 
-    -webkit-text-stroke-width: 0.5px; /* Grosor del contorno */
-    -webkit-text-stroke-color: #000000; /* Color del contorno */
+  .celda-codigos-version {
+    letter-spacing: 2px; /* Ajusta el espaciado según sea necesario */
+    color: #e100ff;
+    font-size: 13px;
+    text-align: center;
+    padding: 1px;
   }
 
   .celda-codigos-imagen {

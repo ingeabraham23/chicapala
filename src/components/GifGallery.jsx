@@ -4,6 +4,8 @@ import "./GifGallery.css";
 
 const gifList = [
   "adp.gif",
+  "araña.gif",
+  "araña_joyboy.gif",
   "bandera.gif",
   "bruja.gif",
   "calabazas.gif",
@@ -30,6 +32,7 @@ const gifList = [
   "imss_2.gif",
   "ken.gif",
   "kong_music.gif",
+  "logo.gif",
   "mario_bros.gif",
   "mario_chiquito.gif",
   "mario_long.gif",
@@ -53,6 +56,7 @@ const gifList = [
   "ryu.gif",
   "ryu_cammy.gif",
   "sonic.gif",
+  "spider_joyboy.gif",
   "status.gif",
   "status_b.gif",
   "viva_mexico.gif",

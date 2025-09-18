@@ -470,10 +470,10 @@
 }
 
 .tabla-titulo-gifs {
-  font-size: 20px;
+  font-size: 15px;
   color: #fff;
   background: linear-gradient(90deg, #00ffea, #ff00f7);
-  padding: 15px;
+  padding: 5px;
   text-shadow: 0 0 10px #0ff;
 }
 
@@ -505,7 +505,7 @@
 
 .tipo, .detalle {
   color: #ddd;
-  padding: 8px;
+  padding: 2px;
   font-size: 1rem;
 }
 
@@ -516,7 +516,7 @@
 .terminos, .contacto {
   color: #bbb;
   font-size: 0.9rem;
-  padding: 8px;
+  padding: 5px;
 }
 
 .acciones {

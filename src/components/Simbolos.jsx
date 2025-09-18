@@ -744,17 +744,16 @@ const Simbolos = () => {
         <thead>
           <tr>
             <th colSpan={2} className="tabla-titulo-gifs">
-              Diseño GIF para Letreros LED
+              Diseño y creación de GIFs para Letreros iLED PRO
             </th>
           </tr>
         </thead>
         <tbody>
           {/* Tipo Básico */}
-          {/* <tr>
+          <tr>
             <td className="precio neon-verde" colSpan={2}>
-              💡 $40 MXN
             </td>
-          </tr> */}
+          </tr>
           <tr>
             <td className="tipo">Tipo:</td>
             <td className="detalle">Básico</td>
@@ -770,11 +769,10 @@ const Simbolos = () => {
           </tr>
 
           {/* Tipo Intermedio */}
-          {/* <tr>
+          <tr>
             <td className="precio neon-azul" colSpan={2}>
-              🎨 $80 MXN
             </td>
-          </tr> */}
+          </tr>
           <tr>
             <td className="tipo">Tipo:</td>
             <td className="detalle">Intermedio</td>
@@ -790,11 +788,10 @@ const Simbolos = () => {
           </tr>
 
           {/* Tipo Avanzado */}
-          {/* <tr>
+          <tr>
             <td className="precio neon-rojo" colSpan={2}>
-              🔥 $150 MXN
             </td>
-          </tr> */}
+          </tr>
           <tr>
             <td className="tipo">Tipo:</td>
             <td className="detalle">Avanzado</td>
@@ -810,6 +807,16 @@ const Simbolos = () => {
           <tr>
             <td className="espacio" colSpan={2}></td>
           </tr>
+            <tr>
+              <td className="terminos" colSpan={2}>
+                Asegurate de que tu letrero sea versión 4.0 o súperior.
+              </td>
+            </tr>
+            <tr>
+              <td className="terminos" colSpan={2}>
+                Asegurate de tener la medida en LEDS de tu letrero. Ejemplo 64 x 16, 128 x 32, 64 x 32, etc.
+              </td>
+            </tr>
           <tr>
             <td className="terminos" colSpan={2}>
               ⏳ Entrega: 5 días hábiles.
@@ -820,9 +827,14 @@ const Simbolos = () => {
               ✅ Anticipo del 50%, resto al entregar.
             </td>
           </tr>
+            <tr>
+              <td className="terminos" colSpan={2}>
+                ✅ Transferrencia bancaria o pago en farmacia del ahorro.
+              </td>
+            </tr>
           <tr>
             <td className="terminos" colSpan={2}>
-              ✅ Envío por correo, WhatsApp o Telegram.
+              ✅ Envío de GIF por correo, WhatsApp o Telegram.
             </td>
           </tr>
           <tr>
@@ -840,6 +852,11 @@ const Simbolos = () => {
               📧 Correo: ingeabraham23@gmail.com
             </td>
           </tr>
+            <tr>
+              <td className="terminos" colSpan={2}>
+                💲 Pide tu cotizacion
+              </td>
+            </tr>
         </tbody>
       </table>
 
