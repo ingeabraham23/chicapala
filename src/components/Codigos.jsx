@@ -142,13 +142,19 @@ const Codigos = () => {
 
   //19 DE AGOSTO 2025
   const tabla10afbc641d44Ref = useRef(null); //1000
-  const tabla4545292Ref = useRef(null); //1000
+  
   const tabla18aabc641d44Ref = useRef(null); //1000
   
+  //05 DE SEPTIEMBRE DE 2025
+  const tabla4545292Ref = useRef(null); //1000
 
   //09 DE SEPTIEMBRE 2025
   const tablaa810be641d44Ref = useRef(null); //1000
-  // const tablaa810be641d44Ref = useRef(null); //1000
+
+  //23 DE SEPTIEMBRE 2025
+  const tablac8b1bc641d44Ref = useRef(null); //1000
+  // const tablac8b1bc641d44Ref = useRef(null); //1000
+
 
   
 
@@ -4609,6 +4615,38 @@ const Codigos = () => {
         </table>
         <button
           onClick={() => capturarTablaLarga(tablaa810be641d44Ref.current)}
+          className="boton-descarga-codigos"
+        >
+          Descargar Imagen
+        </button>
+
+
+        <div className="separador-codigos-joyvolt"></div>
+        <span className="detalle-codigos">(Nombre desconocido)</span>
+        <span className="detalle-codigos">(Linea desconocida)</span>
+        <span className="detalle-codigos">(version desconocida)</span>
+        <span className="detalle-codigos-extra">(No es de joyvolt auto corporation)</span>
+        <table ref={tablac8b1bc641d44Ref} className="tabla-codigos">
+          <tr>
+            <td className="celda-codigos-serie-largo">SE-nc8b1bc641d44</td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-fecha">23-09-2025</td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-version">(version desconocida)</td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-img">
+              <img
+                style={{ width: "95%", height: "auto" }}
+                src="./codigos/11 SEPTIEMBRE 2025/23-09-2025 SE-nc8b1bc641d44.png"
+              />
+            </td>
+          </tr>
+        </table>
+        <button
+          onClick={() => capturarTablaLarga(tablac8b1bc641d44Ref.current)}
           className="boton-descarga-codigos"
         >
           Descargar Imagen
