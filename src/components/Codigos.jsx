@@ -125,6 +125,11 @@ const Codigos = () => {
   const tablaa85ef6641d44Ref = useRef(null); //1000
   const tablad4f9bd641d44Ref = useRef(null); //1000
   const tablad402be641d44Ref = useRef(null); //1000
+
+  //24 DE JULIO DE 2025 FERXXOS SHIKITO
+  const tablaac47f6641d44Ref = useRef(null); //1000
+  
+  //19 DE JULIO DE 2025
   const tabla5586992Ref = useRef(null); //1000
 
   //07 DE AGOSTO 2025
@@ -4019,6 +4024,44 @@ const Codigos = () => {
         </button>
 
         <div className="separador-codigos-joyvolt"></div>
+        <span className="detalle-codigos">(24 de julio de 2025.)</span>
+        <span className="detalle-codigos">(Ferxxos Shikito)</span>
+        <span className="detalle-codigos">(version 4.1)</span>
+        <span className="detalle-codigos-extra">(64x32 pixeles)</span>
+        <table ref={tablaac47f6641d44Ref} className="tabla-codigos">
+          <tr>
+            <td className="celda-codigos-serie-largo">SE-nac47f6641d44</td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-fecha">24-07-2025</td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-imagen">
+              <img
+                style={{ width: "auto", height: "50px" }}
+                src="./codigos/ruta01.png"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-img">
+              <img
+                style={{ width: "95%", height: "auto" }}
+                src="./codigos/09 JULIO 2025/24-07-2025 SE-nac47f6641d44.png"
+              />
+            </td>
+          </tr>
+        </table>
+        <button
+          onClick={() => capturarTablaLarga(tablaac47f6641d44Ref.current)}
+          className="boton-descarga-codigos"
+        >
+          Descargar Imagen
+        </button>
+
+
+
+        <div className="separador-codigos-joyvolt"></div>
         <span className="detalle-codigos">(Fecha de entrega Desconocida.)</span>
         <span className="detalle-codigos">(Nombre Desconocido)</span>
         <span className="detalle-codigos">
@@ -4142,14 +4185,6 @@ const Codigos = () => {
         >
           Descargar Imagen
         </button>
-
-
-
-
-
-
-
-
 
         <div className="separador-codigos-joyvolt"></div>
         <span className="detalle-codigos">(Fecha de entrega Desconocida.)</span>
