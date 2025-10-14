@@ -158,7 +158,10 @@ const Codigos = () => {
 
   //23 DE SEPTIEMBRE 2025
   const tablac8b1bc641d44Ref = useRef(null); //1000
-  // const tablac8b1bc641d44Ref = useRef(null); //1000
+  const tablae88cbc641d44Ref = useRef(null); //1000
+  const tablaac7fbd641d44Ref = useRef(null); //1000
+  // const tablaac7fbd641d44Ref = useRef(null); //1000
+
 
 
   
@@ -4657,6 +4660,47 @@ const Codigos = () => {
 
 
         <div className="separador-codigos-joyvolt"></div>
+        <span className="detalle-codigos">(Unidad 153)</span>
+        <span className="detalle-codigos">(Ruta 01)</span>
+        <span className="detalle-codigos">(Version 4.1)</span>
+        <table ref={tablaac7fbd641d44Ref} className="tabla-codigos">
+          <tr>
+            <td className="celda-codigos-serie-largo">SE-nac7fbd641d44</td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-fecha">23-09-2025</td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-imagen">
+              <img
+                style={{ width: "auto", height: "50px" }}
+                src="./codigos/ruta01.png"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-version">(4.1)</td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-img">
+              <img
+                style={{ width: "95%", height: "auto" }}
+                src="./codigos/11 SEPTIEMBRE 2025/23-09-2025 SE-nac7fbd641d44.png"
+              />
+            </td>
+          </tr>
+        </table>
+        <button
+          onClick={() => capturarTablaLarga(tablaac7fbd641d44Ref.current)}
+          className="boton-descarga-codigos"
+        >
+          Descargar Imagen
+        </button>
+
+
+
+
+        <div className="separador-codigos-joyvolt"></div>
         <span className="detalle-codigos">(Nombre desconocido)</span>
         <span className="detalle-codigos">(Linea desconocida)</span>
         <span className="detalle-codigos">(version desconocida)</span>
@@ -4682,6 +4726,37 @@ const Codigos = () => {
         </table>
         <button
           onClick={() => capturarTablaLarga(tablac8b1bc641d44Ref.current)}
+          className="boton-descarga-codigos"
+        >
+          Descargar Imagen
+        </button>
+
+
+        <div className="separador-codigos-joyvolt"></div>
+        <span className="detalle-codigos">(Vendedor Gaby)</span>
+        <span className="detalle-codigos">(Pasajera acateno)</span>
+        <span className="detalle-codigos">(version 4.1)</span>
+        <table ref={tablae88cbc641d44Ref} className="tabla-codigos">
+          <tr>
+            <td className="celda-codigos-serie-largo">SE-ne88cbc641d44</td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-fecha">23-09-2025</td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-version">(version 4.1)</td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-img">
+              <img
+                style={{ width: "95%", height: "auto" }}
+                src="./codigos/11 SEPTIEMBRE 2025/23-09-2025 SE-ne88cbc641d44.png"
+              />
+            </td>
+          </tr>
+        </table>
+        <button
+          onClick={() => capturarTablaLarga(tablae88cbc641d44Ref.current)}
           className="boton-descarga-codigos"
         >
           Descargar Imagen
