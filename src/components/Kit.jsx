@@ -5,6 +5,32 @@ import "./Kit.css";
 const Kit = () => {
   return (
     <div className="contenedor-kit-joyvolt">
+
+    <p className="direccion-web">https://ingeabraham23.github.io/gifs/</p>
+      <div className="link-container">
+        <a
+          href={"https://ingeabraham23.github.io/gifs/"}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="boton-enlace"
+        >
+          Abrir Enlace
+        </a>
+        <button
+          onClick={() => {
+            navigator.clipboard.writeText(
+              "https://ingeabraham23.github.io/gifs/"
+            );
+            alert("Enlace copiado al portapapeles");
+          }}
+          className="boton-copiar"
+        >
+          Copiar Enlace
+        </button>
+      </div>
+      <div className="separador-kit-joyvolt"></div>
+
+
       <p className="direccion-web">https://ingeabraham23.github.io/urbanosrojos/</p>
       <div className="link-container">
         <a
