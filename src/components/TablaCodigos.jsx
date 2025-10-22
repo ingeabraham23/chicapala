@@ -243,7 +243,8 @@ const datos = {
   ],
 
   "JUNIO 2025": [
-    { fecha: "09-06-2025", codigo: "2c6b2c65b7a0", color: "#9cf94e",
+    {
+      fecha: "09-06-2025", codigo: "2c6b2c65b7a0", color: "#9cf94e",
       estado: "ok",
     }, //verde
     { fecha: "09-06-2025", codigo: "2c7a64a84320", color: "white" },
@@ -311,7 +312,7 @@ const datos = {
   ],
 
   "JULIO 2025": [
-    { fecha: "01-07-2025", codigo: "ac10bb57ddc4", color: "#9cf94e", numero:"198", estado: "ok" }, //verde
+    { fecha: "01-07-2025", codigo: "ac10bb57ddc4", color: "#9cf94e", numero: "198", estado: "ok" }, //verde
     { fecha: "04-07-2025", codigo: "4549032", color: "#29e8ff", estado: "ok" }, //azul ruta 01 Gabriel bandala
     { fecha: "10-07-2025", codigo: "2ca4bc641d44", color: "white" },
     {
@@ -342,15 +343,31 @@ const datos = {
     { fecha: "07-08-2025", codigo: "cce0540b65f4", color: "white" },
     { fecha: "07-08-2025", codigo: "dcf9412a13d8", color: "white" },
 
-    { fecha: "15-08-2025", codigo: "0c390486e694", color: "linear-gradient(to bottom, red, white, green)",
+    {
+      fecha: "15-08-2025", codigo: "0c390486e694", color: "linear-gradient(to bottom, red, white, green)",
       numero: "22",
       estado: "ok",
     }, //Ruta 03 65
     { fecha: "15-08-2025", codigo: "80ed540b65f4", color: "#29e8ff", estado: "ok" }, //Ruta 01 84
-    { fecha: "15-08-2025", codigo: "fc5a77cd31e8", color: "#f94e4e",
+    {
+      fecha: "15-08-2025", codigo: "fc5a77cd31e8", color: "#f94e4e",
       numero: "47",
       estado: "ok",
     }, //rojo 33
+    { fecha: "19-08-2025", codigo: "10afbc641d44", color: "white", estado: "ok" }, //
+    { fecha: "19-08-2025", codigo: "18aabc641d44", color: "white", estado: "ok" }, //
+  ],
+
+  "SEPTIEMBRE 2025": [
+    { fecha: "05-09-2025", codigo: "4545292", color: "#9cf94e", estado: "ok" }, //verde
+    { fecha: "09-09-2025", codigo: "a810be641d44", color: "#f94e4e", numero: "20", estado: "ok" },
+
+    { fecha: "23-09-2025", codigo: "ac7fbd641d44", color: "#29e8ff", numero: "153", estado: "ok" }, //Ruta 01 153
+
+    { fecha: "23-09-2025", codigo: "c8b1bc641d44", color: "white" },
+
+    { fecha: "23-09-2025", codigo: "e88cbc641d44", color: "#fbff00ff" },
+    
   ],
 };
 

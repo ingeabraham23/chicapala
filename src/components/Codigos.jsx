@@ -164,11 +164,6 @@ const Codigos = () => {
 
 
 
-  
-
-
-
-
   const capturarTabla = (tabla) => {
     if (!tabla) return;
 
