@@ -141,7 +141,7 @@ const TablaRutas = () => {
     let fecha = new Date(fechaInicio);
     let i = 0;
 
-    while (dias.length < 100) {
+    while (dias.length < 200) {
       const { ruta, dias: cantidad } = rol[i % rol.length];
       for (let j = 0; j < cantidad; j++) {
         dias.push({ fecha: new Date(fecha), ruta });

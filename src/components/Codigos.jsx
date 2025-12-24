@@ -160,7 +160,13 @@ const Codigos = () => {
   const tablac8b1bc641d44Ref = useRef(null); //1000
   const tablae88cbc641d44Ref = useRef(null); //1000
   const tablaac7fbd641d44Ref = useRef(null); //1000
-  // const tablaac7fbd641d44Ref = useRef(null); //1000
+
+  //24 DE OCTUBRE 2025
+  const tabla9423be641d44Ref = useRef(null); //1000
+  // const tabla9423be641d44Ref = useRef(null); //1000
+
+  //30 DE NOVIEMBRE 2025
+  const tabla94e2f6641d44Ref = useRef(null); //1000
 
 
 
@@ -223,6 +229,9 @@ const Codigos = () => {
     { id: "julio-2025", titulo: "Jul 2025" },
     { id: "agosto-2025", titulo: "Ago 2025" },
     { id: "septiembre-2025", titulo: "Sep 2025" },
+    { id: "octubre-2025", titulo: "Oct 2025" },
+    { id: "noviembre-2025", titulo: "Nov 2025" },
+    { id: "diciembre-2025", titulo: "Dic 2025" },
   ];
 
   const refs = useRef(
@@ -4757,7 +4766,201 @@ const Codigos = () => {
           Descargar Imagen
         </button>
 
+
+        <div className="separador-codigos-joyvolt"></div>
+        <span className="detalle-codigos">(Vendedor Gaby)</span>
+        <span className="detalle-codigos">(Urbano verde #16)</span>
+        <span className="detalle-codigos">(version 4.1)</span>
+        <table ref={tabla9423be641d44Ref} className="tabla-codigos">
+          <tr>
+            <td className="celda-codigos-serie-largo">SE-n9423be641d44</td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-fecha">24-10-2025</td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-imagen">
+              <img
+                style={{ width: "auto", height: "50px" }}
+                src="./codigos/urbanosverdes.png"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-version">(version 4.1)</td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-img">
+              <img
+                style={{ width: "95%", height: "auto" }}
+                src="./codigos/12 OCTUBRE 2025/24-10-2025 SE-n9423be641d44.png"
+              />
+            </td>
+          </tr>
+        </table>
+        <button
+          onClick={() => capturarTablaLarga(tabla9423be641d44Ref.current)}
+          className="boton-descarga-codigos"
+        >
+          Descargar Imagen
+        </button>
+
       </section>
+
+      {/* OCTUBRE 2025 - OCTUBRE 2025 - OCTUBRE 2025 - OCTUBRE 2025 - OCTUBRE 2025 - OCTUBRE 2025 */}
+      {/* OCTUBRE 2025 - OCTUBRE 2025 - OCTUBRE 2025 - OCTUBRE 2025 - OCTUBRE 2025 - OCTUBRE 2025 */}
+      {/* OCTUBRE 2025 - OCTUBRE 2025 - OCTUBRE 2025 - OCTUBRE 2025 - OCTUBRE 2025 - OCTUBRE 2025 */}
+
+      <section
+        id="octubre-2025"
+        ref={refs.current["octubre-2025"]}
+        className="seccion-codigos"
+      >
+        <h1 className="titulo-mes-codigos">OCTUBRE 2025</h1>
+
+        <div className="separador-codigos-joyvolt"></div>
+        <span className="detalle-codigos">(Vendedor Gaby)</span>
+        <span className="detalle-codigos">(Urbano verde #16)</span>
+        <span className="detalle-codigos">(version 4.1)</span>
+        <table ref={tabla9423be641d44Ref} className="tabla-codigos">
+          <tr>
+            <td className="celda-codigos-serie-largo">SE-n9423be641d44</td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-fecha">24-10-2025</td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-imagen">
+              <img
+                style={{ width: "auto", height: "50px" }}
+                src="./codigos/urbanosverdes.png"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-version">(version 4.1)</td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-img">
+              <img
+                style={{ width: "95%", height: "auto" }}
+                src="./codigos/12 OCTUBRE 2025/24-10-2025 SE-n9423be641d44.png"
+              />
+            </td>
+          </tr>
+        </table>
+        <button
+          onClick={() => capturarTablaLarga(tabla9423be641d44Ref.current)}
+          className="boton-descarga-codigos"
+        >
+          Descargar Imagen
+        </button>
+
+      </section>
+
+      {/* NOVIEMBRE 2025 - NOVIEMBRE 2025 - NOVIEMBRE 2025 - NOVIEMBRE 2025 - NOVIEMBRE 2025 */}
+      {/* NOVIEMBRE 2025 - NOVIEMBRE 2025 - NOVIEMBRE 2025 - NOVIEMBRE 2025 - NOVIEMBRE 2025 */}
+      {/* NOVIEMBRE 2025 - NOVIEMBRE 2025 - NOVIEMBRE 2025 - NOVIEMBRE 2025 - NOVIEMBRE 2025 */}
+
+      <section
+        id="noviembre-2025"
+        ref={refs.current["noviembre-2025"]}
+        className="seccion-codigos"
+      >
+        <h1 className="titulo-mes-codigos">NOVIEMBRE 2025</h1>
+
+        <div className="separador-codigos-joyvolt"></div>
+        <span className="detalle-codigos">(RUTA 3 #99)</span>
+        <span className="detalle-codigos">(version 4.3)</span>
+        <table ref={tabla94e2f6641d44Ref} className="tabla-codigos">
+          <tr>
+            <td className="celda-codigos-serie-largo">SE-n94e2f6641d44</td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-fecha">30-11-2025</td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-imagen">
+              <img
+                style={{ width: "auto", height: "50px" }}
+                src="./codigos/ruta03.png"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-version">(version 4.3)</td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-img">
+              <img
+                style={{ width: "95%", height: "auto" }}
+                src="./codigos/13 NOVIEMBRE 2025/30-11-2025 SE-n94e2f6641d44.png"
+              />
+            </td>
+          </tr>
+        </table>
+        <button
+          onClick={() => capturarTablaLarga(tabla94e2f6641d44Ref.current)}
+          className="boton-descarga-codigos"
+        >
+          Descargar Imagen
+        </button>
+
+      </section>
+
+
+      {/* DICIEMBRE 2025 - DICIEMBRE 2025 - DICIEMBRE 2025 - DICIEMBRE 2025 - DICIEMBRE 2025 */}
+      {/* DICIEMBRE 2025 - DICIEMBRE 2025 - DICIEMBRE 2025 - DICIEMBRE 2025 - DICIEMBRE 2025 */}
+      {/* DICIEMBRE 2025 - DICIEMBRE 2025 - DICIEMBRE 2025 - DICIEMBRE 2025 - DICIEMBRE 2025 */}
+
+
+      <section
+        id="diciembre-2025"
+        ref={refs.current["diciembre-2025"]}
+        className="seccion-codigos"
+      >
+        <h1 className="titulo-mes-codigos">DICIEMBRE 2025</h1>
+
+        <div className="separador-codigos-joyvolt"></div>
+        <span className="detalle-codigos">(Vendedor Gaby)</span>
+        <span className="detalle-codigos">(Urbano verde #16)</span>
+        <span className="detalle-codigos">(version 4.1)</span>
+        <table ref={tabla9423be641d44Ref} className="tabla-codigos">
+          <tr>
+            <td className="celda-codigos-serie-largo">SE-n9423be641d44</td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-fecha">24-10-2025</td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-imagen">
+              <img
+                style={{ width: "auto", height: "50px" }}
+                src="./codigos/urbanosverdes.png"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-version">(version 4.1)</td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-img">
+              <img
+                style={{ width: "95%", height: "auto" }}
+                src="./codigos/12 OCTUBRE 2025/24-10-2025 SE-n9423be641d44.png"
+              />
+            </td>
+          </tr>
+        </table>
+        <button
+          onClick={() => capturarTablaLarga(tabla9423be641d44Ref.current)}
+          className="boton-descarga-codigos"
+        >
+          Descargar Imagen
+        </button>
+
+      </section>
+
 
     </div>
   );

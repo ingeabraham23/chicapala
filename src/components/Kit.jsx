@@ -631,6 +631,54 @@ const Kit = () => {
       </div>
       <div className="separador-kit-joyvolt"></div>
 
+      <p className="direccion-web">https://ingeabraham23.github.io/cooperacion/</p>
+      <div className="link-container">
+        <a
+          href={"https://ingeabraham23.github.io/cooperacion/"}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="boton-enlace"
+        >
+          Abrir Enlace
+        </a>
+        <button
+          onClick={() => {
+            navigator.clipboard.writeText(
+              "https://ingeabraham23.github.io/cooperacion/"
+            );
+            alert("Enlace copiado al portapapeles");
+          }}
+          className="boton-copiar"
+        >
+          Copiar Enlace
+        </button>
+      </div>
+      <div className="separador-kit-joyvolt"></div>
+
+      <p className="direccion-web">https://mariasalomea.github.io/iledprogifs/</p>
+      <div className="link-container">
+        <a
+          href={"https://mariasalomea.github.io/iledprogifs/"}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="boton-enlace"
+        >
+          Abrir Enlace
+        </a>
+        <button
+          onClick={() => {
+            navigator.clipboard.writeText(
+              "https://mariasalomea.github.io/iledprogifs/"
+            );
+            alert("Enlace copiado al portapapeles");
+          }}
+          className="boton-copiar"
+        >
+          Copiar Enlace
+        </button>
+      </div>
+      <div className="separador-kit-joyvolt"></div>
+
     </div>
   );
 };
