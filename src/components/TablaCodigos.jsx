@@ -366,9 +366,26 @@ const datos = {
 
     { fecha: "23-09-2025", codigo: "c8b1bc641d44", color: "white" },
 
-    { fecha: "23-09-2025", codigo: "e88cbc641d44", color: "#fbff00ff" },
-    
+    { fecha: "23-09-2025", codigo: "e88cbc641d44", color: "#fbff00ff" }, //PASAJERA
+
+    { fecha: "25-09-2025", codigo: "3806be641d44", color: "#ff0000ff", numero: "38", estado: "12832" },// ROJO
+
   ],
+
+  "OCTUBRE 2025": [
+    { fecha: "24-10-2025", codigo: "9423be641d44", color: "#9cf94e", estado: "ok" }, //verde
+  ],
+
+  "NOVIEMBRE 2025": [
+    { fecha: "17-11-2025", codigo: "c880bd641d44", color: "#29e8ff", estado: "6416" },
+    { fecha: "17-11-2025", codigo: "d0c9f6641d44", color: "white", estado: "6416" },
+    { fecha: "17-11-2025", codigo: "e09dbd641d44", color: "#29e8ff", estado: "6416" },
+    { fecha: "30-11-2025", codigo: "94e2f6641d44", color: "linear-gradient(to bottom, red, white, green)", numero: "99", estado: "12832" }, //RUTA 3
+    { fecha: "30-11-2025", codigo: "5433be641d44", color: "#29e8ff", numero: "138", estado: "12832" }, //RUTA 01
+
+  ],
+
+
 };
 
 const TablaCodigos = () => {
