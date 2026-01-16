@@ -353,8 +353,11 @@ const datos = {
       fecha: "15-08-2025", codigo: "fc5a77cd31e8", color: "#f94e4e",
       numero: "47",
       estado: "ok",
-    }, //rojo 33
-    { fecha: "19-08-2025", codigo: "10afbc641d44", color: "white", estado: "ok" }, //
+    }, //rojo 47
+    {
+      fecha: "19-08-2025", codigo: "10afbc641d44", color: "#f94e4e",
+      numero: "30",
+      estado: "ok", }, // ROJO 30
     { fecha: "19-08-2025", codigo: "18aabc641d44", color: "white", estado: "ok" }, //
   ],
 

@@ -310,6 +310,11 @@ const Codigos = () => {
         </div>
       )}
 
+      {/* OCTUBRE 2024 * OCTUBRE 2024 * OCTUBRE 2024 * OCTUBRE 2024 * OCTUBRE 2024 * OCTUBRE 2024*/}
+      {/* OCTUBRE 2024 * OCTUBRE 2024 * OCTUBRE 2024 * OCTUBRE 2024 * OCTUBRE 2024 * OCTUBRE 2024*/}
+      {/* OCTUBRE 2024 * OCTUBRE 2024 * OCTUBRE 2024 * OCTUBRE 2024 * OCTUBRE 2024 * OCTUBRE 2024*/}
+
+
       <section
         id="octubre-2024"
         ref={refs.current["octubre-2024"]}
@@ -4506,9 +4511,8 @@ const Codigos = () => {
         </button>
 
         <div className="separador-codigos-joyvolt"></div>
-        <span className="detalle-codigos">(Fecha de entrega Lunes 25 de Agosto 2025.)</span>
-        <span className="detalle-codigos">(Prestado a pimpinela)</span>
-        <span className="detalle-codigos-extra">(Prestado a pimpinela)</span>
+        <span className="detalle-codigos">(Fecha de entrega Sabado 06 de Diciembre 2025.)</span>
+        <span className="detalle-codigos">(Alejandro rojo 30)</span>
         <span className="detalle-codigos">(version 4.1)</span>
         <table ref={tabla10afbc641d44Ref} className="tabla-codigos">
           <tr>
@@ -4521,8 +4525,7 @@ const Codigos = () => {
             <td className="celda-codigos-imagen">
               <img
                 style={{ width: "auto", height: "50px" }}
-                src={imagenSeleccionada}
-                alt="Imagen seleccionada"
+                src="./codigos/urbanosrojos.png"
               />
             </td>
           </tr>

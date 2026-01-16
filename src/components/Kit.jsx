@@ -6,6 +6,58 @@ const Kit = () => {
   return (
     <div className="contenedor-kit-joyvolt">
 
+
+      <p className="direccion-web">https://ingeabraham23.github.io/ahorrorojo/</p>
+      <div className="link-container">
+        <a
+          href={"https://ingeabraham23.github.io/ahorrorojo/"}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="boton-enlace"
+        >
+          Abrir Enlace
+        </a>
+        <button
+          onClick={() => {
+            navigator.clipboard.writeText(
+              "https://ingeabraham23.github.io/ahorrorojo/"
+            );
+            alert("Enlace copiado al portapapeles");
+          }}
+          className="boton-copiar"
+        >
+          Copiar Enlace
+        </button>
+      </div>
+      <div className="separador-kit-joyvolt"></div>
+
+
+      <p className="direccion-web">https://ingeabraham23.github.io/york/</p>
+      <div className="link-container">
+        <a
+          href={"https://ingeabraham23.github.io/york/"}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="boton-enlace"
+        >
+          Abrir Enlace
+        </a>
+        <button
+          onClick={() => {
+            navigator.clipboard.writeText(
+              "https://ingeabraham23.github.io/york/"
+            );
+            alert("Enlace copiado al portapapeles");
+          }}
+          className="boton-copiar"
+        >
+          Copiar Enlace
+        </button>
+      </div>
+      <div className="separador-kit-joyvolt"></div>
+
+
+
     <p className="direccion-web">https://ingeabraham23.github.io/gifs/</p>
       <div className="link-container">
         <a

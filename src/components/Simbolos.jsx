@@ -265,7 +265,7 @@ const Simbolos = () => {
             </tr>
             <tr>
               <td className="celda-tipos-encabezado" colSpan={2}>
-                $ 1,800.00
+                $ 1,850.00
               </td>
             </tr>
             <tr>
@@ -274,14 +274,14 @@ const Simbolos = () => {
             </tr>
             <tr>
               <td className="celda-tipos">Resolucion: </td>
-              <td className="celda-tipos">1024 Leds. 64 px x 16 px</td>
+              <td className="celda-tipos">1024 Leds. 64 leds x 16 leds</td>
             </tr>
             <tr>
               <td className="celda-vacia"></td>
             </tr>
             <tr>
               <td className="celda-tipos-encabezado" colSpan={2}>
-                $ 2,400.00
+                $ 2,450.00
               </td>
             </tr>
             <tr>
@@ -290,14 +290,14 @@ const Simbolos = () => {
             </tr>
             <tr>
               <td className="celda-tipos">Resolucion: </td>
-              <td className="celda-tipos">1600 Leds. 80 px x 20 px.</td>
+              <td className="celda-tipos">1600 Leds. 80 leds x 20 leds.</td>
             </tr>
             <tr>
               <td className="celda-vacia"></td>
             </tr>
             <tr>
               <td className="celda-tipos-encabezado" colSpan={2}>
-                $ 2,950.00
+                $ 3,000.00
               </td>
             </tr>
             <tr>
@@ -306,7 +306,7 @@ const Simbolos = () => {
             </tr>
             <tr>
               <td className="celda-tipos">Resolucion: </td>
-              <td className="celda-tipos">4096 Leds. 128 px x 32 px.</td>
+              <td className="celda-tipos">4096 Leds. 128 leds x 32 leds.</td>
             </tr>
             <tr>
               <td className="celda-vacia"></td>
