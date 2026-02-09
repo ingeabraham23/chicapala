@@ -1638,12 +1638,14 @@ const Codigos = () => {
         </span>
         <span className="detalle-codigos">(Fausto Rojo 46)</span>
         <span className="detalle-codigos">(version 3.7)</span>
+        <span className="detalle-codigos">(fecha original 17 03 2025 se le cambio la fecha para venta a peticion del cliente fausto)</span>
+        <span className="detalle-codigos">(se le vendio a doña salia para unidad 35)</span>
         <table ref={tabla5614692Ref} className="tabla-codigos">
           <tr>
             <td className="celda-codigos-serie">SE-n5614692</td>
           </tr>
           <tr>
-            <td className="celda-codigos-fecha">17-03-2025</td>
+            <td className="celda-codigos-fecha">17-01-2026</td>
           </tr>
           <tr>
             <td className="celda-codigos-imagen">

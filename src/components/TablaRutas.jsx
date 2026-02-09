@@ -132,7 +132,7 @@ const TablaRutas = () => {
   const hoy = new Date();
   const [unidadSeleccionada, setUnidadSeleccionada] = useState("138");
 
-  // 🔹 Generar calendario según unidad
+  /* // 🔹 Generar calendario según unidad
   const generarRutas = (unidad) => {
     const { inicio, rol } = rolesPorUnidad[unidad];
     const fechaInicio = parse(inicio, "yyyy-MM-dd", new Date());
@@ -150,7 +150,31 @@ const TablaRutas = () => {
       i++;
     }
     return dias;
+  }; */
+
+  const generarRutas = (unidad) => {
+    const { inicio, rol } = rolesPorUnidad[unidad];
+    const fechaInicio = parse(inicio, "yyyy-MM-dd", new Date());
+
+    const dias = [];
+    let fecha = new Date(fechaInicio);
+    let i = 0;
+
+    // Generamos solo lo suficiente para cubrir hasta 40 días adelante de hoy
+    const limite = addDays(hoy, 40);
+
+    while (fecha <= limite) {
+      const { ruta, dias: cantidad } = rol[i % rol.length];
+      for (let j = 0; j < cantidad && fecha <= limite; j++) {
+        dias.push({ fecha: new Date(fecha), ruta });
+        fecha = addDays(fecha, 1);
+      }
+      i++;
+    }
+
+    return dias;
   };
+
 
   const todasLasRutas = generarRutas(unidadSeleccionada);
 

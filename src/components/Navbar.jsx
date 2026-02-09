@@ -2,13 +2,11 @@ import { Link } from 'react-router-dom';
 import "./Navbar.css"
 import {
     faDeleteLeft,
-    faMoneyBill,
     faScrewdriverWrench,
     faTableCells,
     faTableList,
     faPlay,
     faImages,
-    faRectangleAd,
     faMagnifyingGlass,
     faBookOpenReader,
     faCartPlus,
