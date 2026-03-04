@@ -181,13 +181,20 @@ const Codigos = () => {
   const tabla94e2f6641d44Ref = useRef(null); //1000
   const tabla5433be641d44Ref = useRef(null); //1000
 
+  //20 DE DICIEMBRE 2025
+  const tablae88fbc641d44Ref = useRef(null); //1000
+
+  //19 DE ENERO 2026
+  const tablae87bb6215788Ref = useRef(null); //1000
+
+
 
 
 
   const capturarTabla = (tabla) => {
     if (!tabla) return;
 
-    html2canvas(tabla).then((canvas) => {
+    html2canvas(tabla, {scale: 6}).then((canvas) => {
       const imgData = canvas.toDataURL("image/png");
 
       const link = document.createElement("a");
@@ -206,7 +213,7 @@ const Codigos = () => {
   const capturarTablaLarga = (tabla) => {
     if (!tabla) return;
 
-    html2canvas(tabla).then((canvas) => {
+    html2canvas(tabla, {scale: 6}).then((canvas) => {
       const imgData = canvas.toDataURL("image/png");
 
       const link = document.createElement("a");
@@ -246,6 +253,7 @@ const Codigos = () => {
     { id: "octubre-2025", titulo: "Oct 2025" },
     { id: "noviembre-2025", titulo: "Nov 2025" },
     { id: "diciembre-2025", titulo: "Dic 2025" },
+    { id: "enero-2026", titulo: "Ene 2026" },
   ];
 
   const refs = useRef(
@@ -2143,6 +2151,17 @@ const Codigos = () => {
           </tr>
           <tr>
             <td className="celda-codigos-fecha">29-04-2025</td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-imagen">
+              <img
+                style={{ width: "auto", height: "50px" }}
+                src="./codigos/ruta03.png"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-version">(version 3.7)</td>
           </tr>
           <tr>
             <td className="celda-codigos-img">
@@ -5102,11 +5121,6 @@ const Codigos = () => {
 
 
 
-
-
-
-
-
       {/* DICIEMBRE 2025 - DICIEMBRE 2025 - DICIEMBRE 2025 - DICIEMBRE 2025 - DICIEMBRE 2025 */}
       {/* DICIEMBRE 2025 - DICIEMBRE 2025 - DICIEMBRE 2025 - DICIEMBRE 2025 - DICIEMBRE 2025 */}
       {/* DICIEMBRE 2025 - DICIEMBRE 2025 - DICIEMBRE 2025 - DICIEMBRE 2025 - DICIEMBRE 2025 */}
@@ -5120,38 +5134,93 @@ const Codigos = () => {
         <h1 className="titulo-mes-codigos">DICIEMBRE 2025</h1>
 
         <div className="separador-codigos-joyvolt"></div>
-        <span className="detalle-codigos">(Vendedor Gaby)</span>
-        <span className="detalle-codigos">(Urbano verde #16)</span>
-        <span className="detalle-codigos">(version 4.1)</span>
-        <table ref={tabla9423be641d44Ref} className="tabla-codigos">
+        <span className="detalle-codigos">(Vendedor Ferxxos)</span>
+        <span className="detalle-codigos">(Ruta 03 #12)</span>
+        <span className="detalle-codigos">(version 4.3)</span>
+        <table ref={tablae88fbc641d44Ref} className="tabla-codigos">
           <tr>
-            <td className="celda-codigos-serie-largo">SE-n9423be641d44</td>
+            <td className="celda-codigos-serie-largo">SE-ne88fbc641d44</td>
           </tr>
           <tr>
-            <td className="celda-codigos-fecha">24-10-2025</td>
+            <td className="celda-codigos-fecha">20-12-2025</td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-fecha">Unidad numero 64</td>
           </tr>
           <tr>
             <td className="celda-codigos-imagen">
               <img
                 style={{ width: "auto", height: "50px" }}
-                src="./codigos/urbanosverdes.png"
+                src="./codigos/ruta03.png"
               />
             </td>
           </tr>
           <tr>
-            <td className="celda-codigos-version">(version 4.1)</td>
+            <td className="celda-codigos-version">(version 4.3)</td>
           </tr>
           <tr>
             <td className="celda-codigos-img">
               <img
                 style={{ width: "95%", height: "auto" }}
-                src="./codigos/12 OCTUBRE 2025/24-10-2025 SE-n9423be641d44.png"
+                src="./codigos/14 DICIEMBRE 2025/20-12-2025 SE-ne88fbc641d44.png"
               />
             </td>
           </tr>
         </table>
         <button
-          onClick={() => capturarTablaLarga(tabla9423be641d44Ref.current)}
+          onClick={() => capturarTablaLarga(tablae88fbc641d44Ref.current)}
+          className="boton-descarga-codigos"
+        >
+          Descargar Imagen
+        </button>
+
+      </section>
+
+      {/* ENERO 2026 - ENERO 2026 - ENERO 2026 - ENERO 2026 - ENERO 2026 */}
+      {/* ENERO 2026 - ENERO 2026 - ENERO 2026 - ENERO 2026 - ENERO 2026 */}
+      {/* ENERO 2026 - ENERO 2026 - ENERO 2026 - ENERO 2026 - ENERO 2026 */}
+
+
+      <section
+        id="enero-2026"
+        ref={refs.current["ENERO-2026"]}
+        className="seccion-codigos"
+      >
+        <h1 className="titulo-mes-codigos">ENERO 2026</h1>
+
+        <div className="separador-codigos-joyvolt"></div>
+        <span className="detalle-codigos">(Vendedor Ferxxos)</span>
+        <span className="detalle-codigos">(Ruta 03 #12)</span>
+        <span className="detalle-codigos">(version 4.3)</span>
+        <table ref={tablae87bb6215788Ref} className="tabla-codigos">
+          <tr>
+            <td className="celda-codigos-serie-largo">SE-ne87bb6215788</td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-fecha">19-01-2026</td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-imagen">
+              <img
+                style={{ width: "auto", height: "50px" }}
+                src="./codigos/ruta03.png"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-version">(version 4.3)</td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-img">
+              <img
+                style={{ width: "95%", height: "auto" }}
+                src="./codigos/15 ENERO 2026/19-01-2026 SE-ne87bb6215788.png"
+              />
+            </td>
+          </tr>
+        </table>
+        <button
+          onClick={() => capturarTablaLarga(tablae87bb6215788Ref.current)}
           className="boton-descarga-codigos"
         >
           Descargar Imagen
