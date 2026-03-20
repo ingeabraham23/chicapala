@@ -397,7 +397,16 @@ const datos = {
 
   "ENERO 2026": [
     { fecha: "19-01-2026", codigo: "e87bb6215788", color: "linear-gradient(to bottom, red, white, green)", numero: "12",estado: "12832" },
+    { fecha: "26-01-2026", codigo: "0ce2da3c1c78", color: "#ff0000ff", numero: "22", estado: "6416" },
+    { fecha: "26-01-2026", codigo: "04dcb2215788", color: "#ff0000ff", estado: "6416" },//pasajero acateno
+
     { fecha: "26-01-2026", codigo: "586dc1215788", color: "#ff0000ff", numero: "41", estado: "6416" },
+
+
+  ],
+
+  "MARZO 2026": [
+    { fecha: "04-03-2026", codigo: "1840b3215788", color: "linear-gradient(to bottom, red, white, green)", numero: "88", estado: "12832" },//amotac sheriff
 
 
   ],
