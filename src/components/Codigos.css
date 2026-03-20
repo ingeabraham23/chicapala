@@ -93,8 +93,6 @@
   }
 
   .tabla-codigos {
-    border: 1px solid black; /* Borde de la tabla */
-    border-radius: 40px; /* Esquinas redondeadas */
     border-collapse: separate; /* Importante para que funcione el border-radius */
     overflow: hidden; /* Para que las esquinas recorten bien */
   }

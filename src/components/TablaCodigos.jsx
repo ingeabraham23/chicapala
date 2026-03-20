@@ -389,6 +389,7 @@ const datos = {
   ],
 
   "DICIEMBRE 2025": [
+    { fecha: "01-12-2025", codigo: "f84d560b65f4", color: "#29e8ff", numero: "129", estado: "12832" },
     { fecha: "20-12-2025", codigo: "e88fbc641d44", color: "linear-gradient(to bottom, red, white, green)", numero: "64", estado: "12832" },
 
 
@@ -396,6 +397,7 @@ const datos = {
 
   "ENERO 2026": [
     { fecha: "19-01-2026", codigo: "e87bb6215788", color: "linear-gradient(to bottom, red, white, green)", numero: "12",estado: "12832" },
+    { fecha: "26-01-2026", codigo: "586dc1215788", color: "#ff0000ff", numero: "41", estado: "6416" },
 
 
   ],

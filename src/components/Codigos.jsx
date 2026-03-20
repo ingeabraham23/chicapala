@@ -181,11 +181,28 @@ const Codigos = () => {
   const tabla94e2f6641d44Ref = useRef(null); //1000
   const tabla5433be641d44Ref = useRef(null); //1000
 
+  //01 DE DICIEMBRE 2025
+  const tablaf84d560b65f4Ref = useRef(null); //1000
+
   //20 DE DICIEMBRE 2025
   const tablae88fbc641d44Ref = useRef(null); //1000
+  
+
 
   //19 DE ENERO 2026
   const tablae87bb6215788Ref = useRef(null); //1000
+  // const tablae87bb6215788Ref = useRef(null); //1000
+
+
+//26 DE ENERO 2026
+  const tabla0ce2da3c1c78Ref = useRef(null); //1000
+  const tabla04dcb2215788Ref = useRef(null); //1000
+  const tabla586dc1215788Ref = useRef(null); //1000
+
+//04 DE MARZO 2026
+
+ const tabla1840b3215788Ref = useRef(null); //1000
+//const tabla1840b3215788Ref = useRef(null); //1000
 
 
 
@@ -236,6 +253,7 @@ const Codigos = () => {
     { label: "Urbano Rojo", value: "./codigos/urbanosrojos.png" },
     { label: "Ruta 01", value: "./codigos/ruta01.png" },
     { label: "Ruta 03", value: "./codigos/ruta03.png" },
+    { label: "AMOTAC", value: "./codigos/amotac.png" },
   ];
 
   const secciones = [
@@ -254,6 +272,7 @@ const Codigos = () => {
     { id: "noviembre-2025", titulo: "Nov 2025" },
     { id: "diciembre-2025", titulo: "Dic 2025" },
     { id: "enero-2026", titulo: "Ene 2026" },
+    { id: "marzo-2026", titulo: "Mar 2026" },
   ];
 
   const refs = useRef(
@@ -5135,6 +5154,53 @@ const Codigos = () => {
 
         <div className="separador-codigos-joyvolt"></div>
         <span className="detalle-codigos">(Vendedor Ferxxos)</span>
+        <span className="detalle-codigos">(Ruta 01 #129)</span>
+        <span className="detalle-codigos">(version 4.3)</span>
+        <table ref={tablaf84d560b65f4Ref} className="tabla-codigos">
+          <tr>
+            <td className="celda-codigos-serie-largo">SE-nf84d560b65f4</td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-fecha">01-12-2025</td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-fecha">Unidad numero 129</td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-imagen">
+              <img
+                style={{ width: "auto", height: "50px" }}
+                src="./codigos/ruta01.png"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-version">(version 4.3)</td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-version">(128 x 32 Pixeles Chico)</td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-img">
+              <img
+                style={{ width: "95%", height: "auto" }}
+                src="./codigos/14 DICIEMBRE 2025/01-12-2025 SE-nf84d560b65f4.png"
+              />
+            </td>
+          </tr>
+        </table>
+        <button
+          onClick={() => capturarTablaLarga(tablaf84d560b65f4Ref.current)}
+          className="boton-descarga-codigos"
+        >
+          Descargar Imagen
+        </button>
+
+
+
+
+        <div className="separador-codigos-joyvolt"></div>
+        <span className="detalle-codigos">(Vendedor Ferxxos)</span>
         <span className="detalle-codigos">(Ruta 03 #12)</span>
         <span className="detalle-codigos">(version 4.3)</span>
         <table ref={tablae88fbc641d44Ref} className="tabla-codigos">
@@ -5145,7 +5211,7 @@ const Codigos = () => {
             <td className="celda-codigos-fecha">20-12-2025</td>
           </tr>
           <tr>
-            <td className="celda-codigos-fecha">Unidad numero 64</td>
+            <td className="celda-codigos-fecha">Unidad numero 12</td>
           </tr>
           <tr>
             <td className="celda-codigos-imagen">
@@ -5211,6 +5277,9 @@ const Codigos = () => {
             <td className="celda-codigos-version">(version 4.3)</td>
           </tr>
           <tr>
+            <td className="celda-codigos-version">(128 x 32 Pixeles)</td>
+          </tr>
+          <tr>
             <td className="celda-codigos-img">
               <img
                 style={{ width: "95%", height: "auto" }}
@@ -5226,7 +5295,184 @@ const Codigos = () => {
           Descargar Imagen
         </button>
 
+
+        <div className="separador-codigos-joyvolt"></div>
+        <span className="detalle-codigos">(Vendedor JoyBoy)</span>
+        <span className="detalle-codigos">(Urbanos Rojos #22)</span>
+        <span className="detalle-codigos">(version 4.3)</span>
+        <table ref={tabla0ce2da3c1c78Ref} className="tabla-codigos">
+          <tr>
+            <td className="celda-codigos-serie-largo">SE-n0ce2da3c1c78</td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-fecha">26-01-2026</td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-imagen">
+              <img
+                style={{ width: "auto", height: "50px" }}
+                src="./codigos/urbanosrojos.png"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-version">(version 4.3)</td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-version">(64 X 16 Pixeles)</td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-img">
+              <img
+                style={{ width: "95%", height: "auto" }}
+                src="./codigos/15 ENERO 2026/26-01-2026 SE-n0ce2da3c1c78.png"
+              />
+            </td>
+          </tr>
+        </table>
+        <button
+          onClick={() => capturarTablaLarga(tabla0ce2da3c1c78Ref.current)}
+          className="boton-descarga-codigos"
+        >
+          Descargar Imagen
+        </button>
+
+
+
+
+        <div className="separador-codigos-joyvolt"></div>
+        <span className="detalle-codigos">(Vendedor JoyBoy)</span>
+        <span className="detalle-codigos">(Pasajera Acateno)</span>
+        <span className="detalle-codigos">(version 4.3)</span>
+        <table ref={tabla04dcb2215788Ref} className="tabla-codigos">
+          <tr>
+            <td className="celda-codigos-serie-largo">SE-n04dcb2215788</td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-fecha">26-01-2026</td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-version">(version 4.5)</td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-version">(64 X 16 Pixeles)</td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-img">
+              <img
+                style={{ width: "95%", height: "auto" }}
+                src="./codigos/15 ENERO 2026/26-01-2026 SE-n04dcb2215788.png"
+              />
+            </td>
+          </tr>
+        </table>
+        <button
+          onClick={() => capturarTablaLarga(tabla04dcb2215788Ref.current)}
+          className="boton-descarga-codigos"
+        >
+          Descargar Imagen
+        </button>
+
+
+
+        <div className="separador-codigos-joyvolt"></div>
+        <span className="detalle-codigos">(Vendedor JoyBoy)</span>
+        <span className="detalle-codigos">(Urbanos Rojos #41)</span>
+        <span className="detalle-codigos">(version 4.5)</span>
+        <table ref={tabla586dc1215788Ref} className="tabla-codigos">
+          <tr>
+            <td className="celda-codigos-serie-largo">SE-n586dc1215788</td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-fecha">26-01-2026</td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-imagen">
+              <img
+                style={{ width: "auto", height: "50px" }}
+                src="./codigos/urbanosrojos.png"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-version">(version 4.5)</td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-version">(64 X 16 Pixeles)</td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-img">
+              <img
+                style={{ width: "95%", height: "auto" }}
+                src="./codigos/15 ENERO 2026/26-01-2026 SE-n586dc1215788.png"
+              />
+            </td>
+          </tr>
+        </table>
+        <button
+          onClick={() => capturarTablaLarga(tabla586dc1215788Ref.current)}
+          className="boton-descarga-codigos"
+        >
+          Descargar Imagen
+        </button>
+
+
+
       </section>
+
+
+      {/* MARZO 2026 - MARZO 2026 - MARZO 2026 - MARZO 2026 - MARZO 2026 */}
+      {/* MARZO 2026 - MARZO 2026 - MARZO 2026 - MARZO 2026 - MARZO 2026 */}
+      {/* MARZO 2026 - MARZO 2026 - MARZO 2026 - MARZO 2026 - MARZO 2026 */}
+
+
+      <section
+        id="marzo-2026"
+        ref={refs.current["marzo-2026"]}
+        className="seccion-codigos"
+      >
+        <h1 className="titulo-mes-codigos">MARZO 2026</h1>
+
+        <div className="separador-codigos-joyvolt"></div>
+        <span className="detalle-codigos">(Vendedor JoyBoy)</span>
+        <span className="detalle-codigos">(Amotac #88)</span>
+        <span className="detalle-codigos">(version 4.5)</span>
+        <table ref={tabla1840b3215788Ref} className="tabla-codigos">
+          <tr>
+            <td className="celda-codigos-serie-largo">SE-n1840b3215788</td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-fecha">04-03-2026</td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-imagen">
+              <img
+                style={{ width: "auto", height: "50px" }}
+                src="./codigos/amotac.png"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-version">(version 4.5)</td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-img">
+              <img
+                style={{ width: "95%", height: "auto" }}
+                src="./codigos/16 MARZO 2026/04-03-2026 SE-n1840b3215788.png"
+              />
+            </td>
+          </tr>
+        </table>
+        <button
+          onClick={() => capturarTablaLarga(tabla1840b3215788Ref.current)}
+          className="boton-descarga-codigos"
+        >
+          Descargar Imagen
+        </button>
+
+      </section>
+
 
 
     </div>
