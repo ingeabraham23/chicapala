@@ -186,7 +186,7 @@ const Codigos = () => {
 
   //20 DE DICIEMBRE 2025
   const tablae88fbc641d44Ref = useRef(null); //1000
-  
+
 
 
   //19 DE ENERO 2026
@@ -194,15 +194,20 @@ const Codigos = () => {
   // const tablae87bb6215788Ref = useRef(null); //1000
 
 
-//26 DE ENERO 2026
+  //26 DE ENERO 2026
   const tabla0ce2da3c1c78Ref = useRef(null); //1000
   const tabla04dcb2215788Ref = useRef(null); //1000
   const tabla586dc1215788Ref = useRef(null); //1000
 
-//04 DE MARZO 2026
+  //04 DE MARZO 2026
 
- const tabla1840b3215788Ref = useRef(null); //1000
-//const tabla1840b3215788Ref = useRef(null); //1000
+  const tabla1840b3215788Ref = useRef(null); //1000
+
+  //19 DE MARZO 2026
+  const tabla946dbd641d44Ref = useRef(null); //1000
+  const tabla20a0bc641d44Ref = useRef(null); //1000
+
+  
 
 
 
@@ -211,7 +216,7 @@ const Codigos = () => {
   const capturarTabla = (tabla) => {
     if (!tabla) return;
 
-    html2canvas(tabla, {scale: 6}).then((canvas) => {
+    html2canvas(tabla, { scale: 6 }).then((canvas) => {
       const imgData = canvas.toDataURL("image/png");
 
       const link = document.createElement("a");
@@ -230,7 +235,7 @@ const Codigos = () => {
   const capturarTablaLarga = (tabla) => {
     if (!tabla) return;
 
-    html2canvas(tabla, {scale: 6}).then((canvas) => {
+    html2canvas(tabla, { scale: 6 }).then((canvas) => {
       const imgData = canvas.toDataURL("image/png");
 
       const link = document.createElement("a");
@@ -5466,6 +5471,94 @@ const Codigos = () => {
         </table>
         <button
           onClick={() => capturarTablaLarga(tabla1840b3215788Ref.current)}
+          className="boton-descarga-codigos"
+        >
+          Descargar Imagen
+        </button>
+
+
+        <div className="separador-codigos-joyvolt"></div>
+        <span className="detalle-codigos">(Vendedor JoyBoy)</span>
+        <span className="detalle-codigos">(Verde #112)</span>
+        <span className="detalle-codigos">(version 4.5)</span>
+        <table ref={tabla20a0bc641d44Ref} className="tabla-codigos">
+          <tr>
+            <td className="celda-codigos-serie-largo">SE-n20a0bc641d44</td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-fecha">19-03-2026</td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-imagen">
+              <img
+                style={{ width: "auto", height: "50px" }}
+                src="./codigos/urbanosverdes.png"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-version">(version 4.5)</td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-version">(128 x 32 Pixeles)</td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-version">(Unidad # 112)</td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-img">
+              <img
+                style={{ width: "95%", height: "auto" }}
+                src="./codigos/16 MARZO 2026/19-03-2026 SE-n20a0bc641d44.png"
+              />
+            </td>
+          </tr>
+        </table>
+        <button
+          onClick={() => capturarTablaLarga(tabla20a0bc641d44Ref.current)}
+          className="boton-descarga-codigos"
+        >
+          Descargar Imagen
+        </button>
+
+
+
+        <div className="separador-codigos-joyvolt"></div>
+        <span className="detalle-codigos">(Vendedor JoyBoy)</span>
+        <span className="detalle-codigos">(Verde #62)</span>
+        <span className="detalle-codigos">(version 4.5)</span>
+        <table ref={tabla946dbd641d44Ref} className="tabla-codigos">
+          <tr>
+            <td className="celda-codigos-serie-largo">SE-n946dbd641d44</td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-fecha">19-03-2026</td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-imagen">
+              <img
+                style={{ width: "auto", height: "50px" }}
+                src="./codigos/urbanosverdes.png"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-version">(version 4.5)</td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-version">(128 x 32 Pixeles)</td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-img">
+              <img
+                style={{ width: "95%", height: "auto" }}
+                src="./codigos/16 MARZO 2026/19-03-2026 SE-n946dbd641d44.png"
+              />
+            </td>
+          </tr>
+        </table>
+        <button
+          onClick={() => capturarTablaLarga(tabla946dbd641d44Ref.current)}
           className="boton-descarga-codigos"
         >
           Descargar Imagen

@@ -10,9 +10,7 @@ import Codigos from "./components/Codigos";
 import Kit from "./components/Kit";
 import Curso from "./components/Curso";
 import TablaCodigos from "./components/TablaCodigos";
-import Simbolos from "./components/Simbolos";
 import 'react-perfect-scrollbar/dist/css/styles.css';
-import GifGallery from "./components/GifGallery";
 import TablaRutas from "./components/TablaRutas";
 import BitacoraTransporte from "./components/BitacoraTransporte";
 
@@ -28,10 +26,8 @@ function App() {
             <Route path="/administar" element={<Administracion />} />
             <Route path="/codigos" element={<Codigos />} />
             <Route path="/tabla" element={<TablaCodigos />} />
-            <Route path="/simbolos" element={<Simbolos />} />
             <Route path="/kit" element={<Kit />} />
             <Route path="/curso" element={<Curso />} />
-            <Route path="/gifs" element={<GifGallery />} />
             <Route path="/rol" element={<TablaRutas />} />
             <Route path="/bitacora" element={<BitacoraTransporte />} />
           </Routes>

@@ -587,29 +587,6 @@ const Kit = () => {
       </div>
       <div className="separador-kit-joyvolt"></div>
 
-      <p className="direccion-web">https://ingeabraham23.github.io/apoyaaeloy/</p>
-      <div className="link-container">
-        <a
-          href={"https://ingeabraham23.github.io/apoyaaeloy/"}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="boton-enlace"
-        >
-          Abrir Enlace
-        </a>
-        <button
-          onClick={() => {
-            navigator.clipboard.writeText(
-              "https://ingeabraham23.github.io/apoyaaeloy/"
-            );
-            alert("Enlace copiado al portapapeles");
-          }}
-          className="boton-copiar"
-        >
-          Copiar Enlace
-        </button>
-      </div>
-      <div className="separador-kit-joyvolt"></div>
 
       <p className="direccion-web">https://ingeabraham23.github.io/scooper/</p>
       <div className="link-container">
@@ -649,30 +626,6 @@ const Kit = () => {
           onClick={() => {
             navigator.clipboard.writeText(
               "https://ingeabraham23.github.io/lilith/"
-            );
-            alert("Enlace copiado al portapapeles");
-          }}
-          className="boton-copiar"
-        >
-          Copiar Enlace
-        </button>
-      </div>
-      <div className="separador-kit-joyvolt"></div>
-
-      <p className="direccion-web">https://ingeabraham23.github.io/cap03/</p>
-      <div className="link-container">
-        <a
-          href={"https://ingeabraham23.github.io/cap03/"}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="boton-enlace"
-        >
-          Abrir Enlace
-        </a>
-        <button
-          onClick={() => {
-            navigator.clipboard.writeText(
-              "https://ingeabraham23.github.io/cap03/"
             );
             alert("Enlace copiado al portapapeles");
           }}

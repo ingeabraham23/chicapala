@@ -210,13 +210,13 @@ function Ventas() {
       // Construir texto del ticket
       const fecha = new Date().toLocaleString("es-MX");
       let ticket = "";
-      ticket += "JoyVolt Auto Corporation\n";
+      ticket += "JoyVolt Auto\n";
       ticket += "Erika Anacleto Ramon\n";
-      ticket += "Calle Aquiles Serdan #7 Yopi\n";
-      ticket += "Chignautla puebla. C.P. 73950\n";
+      ticket += "Av.Hidalgo # 811 Col. Centro\n";
+      ticket += "Teziutlan puebla. C.P. 73950\n";
       ticket += "WhatsApp 231 159 1893\n";
       ticket += "-----------------------------\n";
-      ticket += `Cliente: ${venta.nombreCliente || "Sin nombre"}\n`;
+      ticket += `Cliente: ${venta.nombreCliente || "Cliente"}\n`;
       ticket += `Fecha: ${fecha}\n`;
       ticket += "-----------------------------\n\n";
 

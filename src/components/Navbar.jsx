@@ -6,9 +6,7 @@ import {
     faTableCells,
     faTableList,
     faPlay,
-    faImages,
     faMagnifyingGlass,
-    faBookOpenReader,
     faCartPlus,
     faRectangleList,
 } from "@fortawesome/free-solid-svg-icons";
@@ -22,10 +20,8 @@ const navigationItems = [
   { path: '/administar', icon: faDeleteLeft, label: 'Administrar' },
   { path: '/codigos', icon: faQrcode, label: 'Codigos' },
   { path: '/tabla', icon: faMagnifyingGlass, label: 'Buscar' },
-  { path: '/simbolos', icon: faBookOpenReader, label: 'Guias' },
   { path: '/kit', icon: faScrewdriverWrench, label: 'Kit' },
   { path: '/curso', icon: faPlay, label: 'Curso' },
-  { path: '/gifs', icon: faImages, label: 'Gifs' },
   { path: '/rol', icon: faTableList, label: 'Rol' },
   { path: '/bitacora', icon: faTableCells, label: 'Bitacora' },
 
