@@ -207,6 +207,12 @@ const Codigos = () => {
   const tabla946dbd641d44Ref = useRef(null); //1000
   const tabla20a0bc641d44Ref = useRef(null); //1000
 
+  //11 DE MAYO 2026
+  const tabla24a4bc641d44Ref = useRef(null); //1000
+
+  //02 DE JULIO 2026
+  const tabla0c390486e694Ref2 = useRef(null); //1000
+
   
 
 
@@ -278,6 +284,8 @@ const Codigos = () => {
     { id: "diciembre-2025", titulo: "Dic 2025" },
     { id: "enero-2026", titulo: "Ene 2026" },
     { id: "marzo-2026", titulo: "Mar 2026" },
+    { id: "mayo-2026", titulo: "May 2026" },
+    { id: "julio-2026", titulo: "Jul 2026" },
   ];
 
   const refs = useRef(
@@ -5563,11 +5571,102 @@ const Codigos = () => {
         >
           Descargar Imagen
         </button>
-
       </section>
 
 
+      <section
+        id="mayo-2026"
+        ref={refs.current["mayo-2026"]}
+        className="seccion-codigos"
+      >
+        <h1 className="titulo-mes-codigos">MAYO 2026</h1>
 
+        <div className="separador-codigos-joyvolt"></div>
+        <span className="detalle-codigos">(Vendedor Gabriel)</span>
+        <span className="detalle-codigos">(Ruta 2 unidad 15 edgar torres)</span>
+        <span className="detalle-codigos">(version 5.0)</span>
+        <table ref={tabla24a4bc641d44Ref} className="tabla-codigos">
+          <tr>
+            <td className="celda-codigos-serie-largo">SE-n24a4bc641d44</td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-fecha">01-07-2026</td>
+          </tr>
+{/*           <tr>
+            <td className="celda-codigos-imagen">
+              <img
+                style={{ width: "auto", height: "50px" }}
+                src="./codigos/amotac.png"
+              />
+            </td>
+          </tr> */}
+          <tr>
+            <td className="celda-codigos-version">(version 5.0)</td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-img">
+              <img
+                style={{ width: "95%", height: "auto" }}
+                src="./codigos/17 MAYO 2026/11-05-2026 SE-n24a4bc641d44.png"
+              />
+            </td>
+          </tr>
+        </table>
+        <button
+          onClick={() => capturarTablaLarga(tabla24a4bc641d44Ref.current)}
+          className="boton-descarga-codigos"
+        >
+          Descargar Imagen
+        </button>
+
+      </section>
+
+      <section
+        id="julio-2026"
+        ref={refs.current["julio-2026"]}
+        className="seccion-codigos"
+      >
+        <h1 className="titulo-mes-codigos">JULIO 2026</h1>
+
+        <div className="separador-codigos-joyvolt"></div>
+        <span className="detalle-codigos">(Vendedor Desconocido)</span>
+        <span className="detalle-codigos">(Ruta 2 unidad 101)</span>
+        <span className="detalle-codigos">(version desconocida)</span>
+        <table ref={tabla0c390486e694Ref2} className="tabla-codigos">
+          <tr>
+            <td className="celda-codigos-serie-largo">SE-n0c390486e694</td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-fecha">15-08-2025</td>
+          </tr>
+{/*           <tr>
+            <td className="celda-codigos-imagen">
+              <img
+                style={{ width: "auto", height: "50px" }}
+                src="./codigos/amotac.png"
+              />
+            </td>
+          </tr> */}
+          <tr>
+            <td className="celda-codigos-version">(version 4.1)</td>
+          </tr>
+          <tr>
+            <td className="celda-codigos-img">
+              <img
+                style={{ width: "95%", height: "auto" }}
+                src="./codigos/18 JULIO 2026/02-07-2026 SE-n0c390486e694.png"
+              />
+            </td>
+          </tr>
+        </table>
+        <button
+          onClick={() => capturarTablaLarga(tabla0c390486e694Ref2.current)}
+          className="boton-descarga-codigos"
+        >
+          Descargar Imagen
+        </button>
+
+      </section>
     </div>
   );
 };
