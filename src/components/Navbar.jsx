@@ -2,10 +2,8 @@ import { Link } from 'react-router-dom';
 import "./Navbar.css"
 import {
     faDeleteLeft,
-    faScrewdriverWrench,
     faTableCells,
     faTableList,
-    faPlay,
     faMagnifyingGlass,
     faCartPlus,
     faRectangleList,
@@ -20,8 +18,6 @@ const navigationItems = [
   { path: '/administar', icon: faDeleteLeft, label: 'Administrar' },
   { path: '/codigos', icon: faQrcode, label: 'Codigos' },
   { path: '/tabla', icon: faMagnifyingGlass, label: 'Buscar' },
-  { path: '/kit', icon: faScrewdriverWrench, label: 'Kit' },
-  { path: '/curso', icon: faPlay, label: 'Curso' },
   { path: '/rol', icon: faTableList, label: 'Rol' },
   { path: '/bitacora', icon: faTableCells, label: 'Bitacora' },
 

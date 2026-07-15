@@ -5592,14 +5592,14 @@ const Codigos = () => {
           <tr>
             <td className="celda-codigos-fecha">01-07-2026</td>
           </tr>
-{/*           <tr>
+           <tr>
             <td className="celda-codigos-imagen">
               <img
                 style={{ width: "auto", height: "50px" }}
-                src="./codigos/amotac.png"
+                src="./codigos/ruta02.png"
               />
             </td>
-          </tr> */}
+          </tr>
           <tr>
             <td className="celda-codigos-version">(version 5.0)</td>
           </tr>
@@ -5639,14 +5639,14 @@ const Codigos = () => {
           <tr>
             <td className="celda-codigos-fecha">15-08-2025</td>
           </tr>
-{/*           <tr>
+          <tr>
             <td className="celda-codigos-imagen">
               <img
                 style={{ width: "auto", height: "50px" }}
-                src="./codigos/amotac.png"
+                src="./codigos/ruta02.png"
               />
             </td>
-          </tr> */}
+          </tr>
           <tr>
             <td className="celda-codigos-version">(version 4.1)</td>
           </tr>
